@@ -1,0 +1,198 @@
+                                                      <!-- 
+                                                      ################################
+                                                      ***Definindo uma Tabela HTML***
+                                                      #################################
+                                                        -->    
+
+<!-- Uma tabela HTML é definida com a tag <table>. -->
+<!-- Cada linha da tabela é definida com a tag <tr>. Um cabeçalho de tabela é definido com a tag <th>. 
+Por padrão, os títulos das tabelas estão em negrito e centralizados. Uma tabela de dados / célula é definida com a tag <td>.
+EX:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+-->
+<!-- Nota: Os elementos <td> são os contêineres de dados da tabela. 
+Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
+ -->
+
+                                                      <!-- Tabela HTML - Adicionando uma Borda -->
+
+<!-- Se você não especificar uma borda para a tabela, ela será exibida sem bordas.
+Uma borda é definida usando a borderpropriedade CSS :
+
+table, th, td {
+  border: 1px solid black;
+}
+ -->               
+ <!-- Lembre-se de definir bordas para a tabela e as células da tabela. -->                                       
+
+                                                      <!-- Tabela HTML - Bordas Recolhidas -->
+
+<!-- Se você quiser que as bordas se colapsem em uma borda, adicione a border-collapse propriedade CSS :
+
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+-->  
+
+                                              <!-- Tabela HTML - Adicionando preenchimento de célula -->
+
+<!-- O preenchimento de célula especifica o espaço entre o conteúdo da célula e suas bordas.
+Se você não especificar um preenchimento, as células da tabela serão exibidas sem preenchimento.
+Para definir o preenchimento, use a paddingpropriedade CSS :
+
+th, td {
+  padding: 15px;
+}
+ -->                                              
+
+                                         <!-- Tabela HTML - alinhamentos alinhados à esquerda -->
+
+<!-- Por padrão, os títulos das tabelas estão em negrito e centralizados.
+Para alinhar à esquerda os títulos da tabela, use a text-alignpropriedade CSS :
+
+th {
+  text-align: left;
+}
+-->                                              
+
+                                            <!-- Tabela HTML - Adicionando Espaçamento de Borda -->
+
+<!-- Espaçamento de borda especifica o espaço entre as células.
+Para definir o espaçamento de borda para uma tabela, use a border-spacingpropriedade CSS :
+
+table {
+  border-spacing: 5px;
+}
+ -->                                            
+<!-- Nota: Se a tabela tiver bordas recolhidas, border-spacingnão terá efeito. -->
+
+                                          <!-- Tabela HTML - Células que abrangem muitas colunas -->
+
+<!-- Para fazer uma célula abranger mais de uma coluna, use o atributo colspan:
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+-->
+
+                                                <!-- Tabela HTML - Células que abrangem muitas linhas -->
+
+<!-- Para fazer uma célula abranger mais de uma linha, use o rowspanatributo:
+
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+ -->                                                
+
+                                              <!-- Tabela HTML - Adicionando uma legenda -->
+
+<!-- Para adicionar uma legenda a uma tabela, use a tag <caption>:
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+ -->                                              
+<!-- Nota: a tag <caption> deve ser inserida imediatamente após a tag <table>. -->
+
+                                                            <!-- Um estilo especial para uma tabela -->
+
+<!-- Para definir um estilo especial para uma tabela especial, adicione um id atributo à tabela:
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+ -->                                                            
+
+<!-- Agora você pode definir um estilo especial para esta tabela:
+
+table#t01 {
+  width: 100%; 
+  background-color: #f1f1c1;
+}
+-->
+<!-- E adicione mais estilos:
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#t01 th {
+  color: white;
+  background-color: black;
+}  
+-->
+
+<!-- Resumo do capítulo
+Use o <table>elemento HTML para definir uma tabela
+Use o <tr>elemento HTML para definir uma linha da tabela
+Use o <td>elemento HTML para definir os dados de uma tabela
+Use o <th>elemento HTML para definir um cabeçalho de tabela
+Use o <caption>elemento HTML para definir uma legenda de tabela
+Use a borderpropriedade CSS para definir uma borda
+Use a border-collapsepropriedade CSS para recolher as bordas das células
+Use a paddingpropriedade CSS para adicionar preenchimento às células
+Use a text-alignpropriedade CSS para alinhar o texto da célula
+Use a border-spacingpropriedade CSS para definir o espaçamento entre as células
+Use o colspanatributo para tornar uma célula com várias colunas
+Use o rowspanatributo para fazer uma célula estender muitas linhas
+Use o idatributo para definir exclusivamente uma tabela
+ -->

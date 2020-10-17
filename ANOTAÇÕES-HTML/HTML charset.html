@@ -1,0 +1,73 @@
+                                              <!-- 
+                                              ################################################
+                                              ***Codificação HTML (Conjuntos de Caracteres)***
+                                              ################################################
+                                                -->   
+
+<!-- Para exibir uma página HTML corretamente, um navegador da Web deve saber
+qual conjunto de caracteres (codificação de caracteres) deve ser usado. -->
+
+                                            <!-- O que é codificação de caracteres? -->
+
+<!-- ASCII foi o primeiro padrão de codificação de caracteres (também chamado de conjunto de caracteres). 
+O ASCII definiu 128 caracteres alfanuméricos diferentes que podem ser usados ​​na Internet:
+números (0-9), letras inglesas (AZ) e alguns caracteres especiais como! $ + - () @ <>.
+ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. 
+Esse conjunto de caracteres também suportava 256 códigos de caracteres diferentes.
+ANSI (Windows-1252) foi o conjunto de caracteres original do Windows. ANSI é idêntico ao ISO-8859-1, exceto que o ANSI tem 32 caracteres extras.
+Como o ANSI e o ISO-8859-1 eram tão limitados, o HTML 4 também suportava o UTF-8. 
+
+UTF-8 (Unicode) abrange quase todos os personagens e símbolos do mundo.
+
+A codificação de caracteres padrão para HTML5 é UTF-8.-->
+
+                                                <!-- O atributo charset HTML -->
+
+<!-- Para exibir uma página HTML corretamente, um navegador da Web deve conhecer o conjunto de caracteres usado na página.
+Isso é especificado na tag <meta>:
+
+Para HTML4:
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+
+Para HTML5:
+
+<meta charset="UTF-8">
+
+Se um navegador detectar ISO-8859-1 em uma página da Web, o padrão será ANSI.-->
+
+                                                <!-- O conjunto de caracteres ASCII -->
+
+<!-- O ASCII usa os valores de 0 a 31 (e 127) para caracteres de controle.
+O ASCII usa os valores de 32 a 126 para letras, dígitos e símbolos.
+ASCII não usa os valores de 128 a 255. -->
+
+                                        <!-- O conjunto de caracteres ANSI (Windows-1252) -->
+
+<!-- ANSI é idêntico ao ASCII para os valores de 0 a 127.
+ANSI tem um conjunto de caracteres proprietários para os valores de 128 a 159.
+ANSI é idêntico ao UTF-8 para os valores de 160 a 255. -->
+
+                                            <!-- O conjunto de caracteres ISO-8859-1 -->
+
+<!-- 8859-1 é idêntico ao ASCII para os valores de 0 a 127.
+8859-1 não usa os valores de 128 a 159.
+8859-1 é idêntico ao UTF-8 para os valores de 160 a 255. -->
+
+                                            <!-- O conjunto de caracteres UTF-8 -->
+
+<!-- O UTF-8 é idêntico ao ASCII para os valores de 0 a 127.
+O UTF-8 não usa os valores de 128 a 159. 
+O UTF-8 é idêntico ao ANSI e ao 8859-1 para os valores de 160 a 255.
+O UTF-8 continua a partir do valor 256 com mais de 10 000 caracteres diferentes. -->
+
+                                                <!-- A regra CSS @charset -->
+
+<!-- Você pode usar a @charsetregra CSS para especificar a codificação de caracteres usada em uma folha de estilos:
+
+Exemplo:
+
+Defina a codificação da folha de estilo para Unicode UTF-8:
+
+@charset "UTF-8";
+-->

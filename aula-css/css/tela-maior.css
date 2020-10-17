@@ -1,0 +1,67 @@
+@media screen and (min-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        width: 800px;
+        margin: auto;
+    }
+
+    #cabebecalho, #rodape {
+        background-color: red;
+        height: 200px;
+        width: 100%;
+    }
+
+    #corpo {
+        height: 600px;
+        width: 100%;
+    }
+
+    #conteudo {
+        height: 100%;
+        width: 650px;
+        float: left;
+    }
+
+    #menu-lateral {
+        height: 100%;
+        width: 150px;
+        float: left;
+        background-color: magenta;
+    }
+
+    #imagem-noticia {
+        background-color: aquamarine;
+        width: 100%;
+        height: 200px;
+    }
+
+    #noticia {
+        background-color: blueviolet;
+        width: 100%;
+        height: 400px;
+    }
+
+    #imagem-figure {
+        width: 650px;
+        height: 100%;
+        float: right;
+
+    }
+
+    #xd {
+        background-color: darkgreen;
+    }
+
+    #zzz {
+
+    }
+
+}
+
+    
+

@@ -1,0 +1,40 @@
+/*
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p {
+    background-color: chocolate;
+    color: blueviolet;
+    font-style: italic;
+    font-size: 16pt;
+    margin: 0px 40px;
+    border-radius: 10px;
+}
+#titulo2 {
+    color: blue;
+}
+*/
+@font-face {
+    font-family: ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+
+}
+    .alinhamento-centralizado {
+        text-align: center;
+    }
+        .cor-fonte-azul {
+            color: blue;
+        }
+            .texto-em-maiusculo {
+                text-transform: uppercase;
+            }
+                #autor {
+                    font-family: 'ubuntu', 'arial';
+                    font-size: 14pt;
+                    font-weight: bold;
+                    text-align: right;
+                    color: rgba(255, 0, 0, 0.5);
+                }

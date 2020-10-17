@@ -1,0 +1,5048 @@
+                                            <!-- 
+                                            ######################
+                                            ***DOCUMENTOS HTML***
+                                            ######################
+                                             -->
+
+<!DOCTYPE html> <!-- Todos os documentos HTML devem começar com uma declaração do tipo de documento: <!DOCTYPE html>. -->
+
+  <html lang="pt-BR"> <!-- O próprio documento HTML começa com <html>e termina com </html>. --> <!-- A linguagem do documento pode ser declarada na tag <html>. --> <!-- O idioma é declarado com o atributo lang. --> <!-- Declarar um idioma é importante para aplicativos de acessibilidade (leitores de tela) e mecanismos de pesquisa. -->
+
+                                            <!-- 
+                                            ############################
+                                            ***O ELEMENTO <head> HTML***
+                                            ############################
+                                             -->
+
+     <head> <!-- O elemento <head> HTML não tem nada a ver com títulos HTML. -->
+        <meta charset="UTF-8">
+          <title>Meu primeiro HTML</title>
+        </head> <!-- O elemento <head> é um contêiner para metadados. Metadados HTML são dados sobre o documento HTML. Metadados não são exibidos. --> <!-- O elemento <head> é colocado entre a tag <html> e a tag <body> -->
+
+          <body style="background-color:powderblue;"> <!-- A parte visível do documento HTML no NAVEGADOR está entre <body> e </body>. --> <!-- A propriedade background-color define a cor de fundo para um elemento HTML. -->
+
+                                            <!-- 
+                                            ######################
+                                            ***TÍTULOS HTML***
+                                            ######################
+                                             -->
+
+        <h1>Meu primeiro título 1</h1> <!-- Os títulos HTML são definidos com as tags <h1> até <h6>. -->
+        <h2>Meu segundo título 2</h2>
+        <h3>Meu terceiro título 3</h3>
+        <h4>Meu quarto título 4</h4>
+        <h5>Meu quinto título 5</h5>
+        <h6>Meu sexto título 6</h6> <!-- <h1> define o cabeçalho mais importante. <h6> define o cabeçalho menos importante:  -->
+        <hr> <!-- Linha horizontal -->
+        <h1 style="font-size:60px;">Título 1</h1> <!-- Cada título HTML tem um tamanho padrão. No entanto, você pode especificar o tamanho de qualquer título com o atributo style, usando a font-size propriedade CSS. -->
+        <hr> <!-- Linha horizontal -->
+
+                                            <!-- 
+                                            ######################
+                                            ***PARÁGRAFOS HTML***
+                                            ######################
+                                             -->          
+
+          <p>Meu primeiro parágrafo.</p> <!-- Os parágrafos HTML são definidos com a tag: <p> -->
+          <p>Meu segundo parágrafo.</p> 
+          <hr> <!-- Linha horizontal -->
+
+                                            <!-- 
+                                            ######################
+                                            ***LINKS HTML***
+                                            ######################
+                                             -->          
+
+<!-- Links HTML são definidos com a tag: <a> --> 
+<!-- O destino do link é especificado no atributo href.Atributos são  usados ​​para fornecer informações adicionais sobre elementos HTML.  -->
+
+          <a href="https://www.w3schools.com">Isso é um link</a> 
+            <hr> <!-- Linha horizontal -->
+
+
+                                            <!-- 
+                                            ######################
+                                            ***IMAGENS HTML***
+                                            ######################
+                                             -->          
+
+<!-- Imagens HTML são definidas com a tag: <img> --> <!-- O arquivo de origem ( src), texto alternativo ( alt), (width) largura, e (height) altura são fornecidos como atributos. -->
+   
+           <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> 
+            <hr> <!-- Linha horizontal -->
+
+
+                                            <!-- 
+                                            #################
+                                            ***BOTÕES HTML***
+                                            #################
+                                             -->          
+
+                <button>Clique Aqui</button> <!-- Botões HTML são definidos com a tag: <button> -->
+                <hr> <!-- Linha horizontal -->
+
+
+                                            <!-- 
+                                            #################
+                                            ***LISTAS HTML***
+                                            #################
+                                             -->    
+
+                   <!-- As listas HTML são definidas com a tag <ul> (unordered / bullet list),(lista não ordenada / lista de marcadores) seguida pela tag <li> -->      
+                  <ul>
+                    <li>Café</li>
+                    <li>Chá</li>
+                    <li>Leite</li>
+                  </ul>
+                  <hr> <!-- Linha horizontal -->
+
+                  <!-- As listas HTML são definidas com a tag <ol> (ordered / numbered list),(lista ordenada / lista numerada) seguida pela tag <li> -->
+                  <ol>
+                    <li>Suco</li>
+                    <li>Água</li>
+                    <li>Vinho</li>
+                  </ol>
+                  <hr> <!-- Linha horizontal -->
+
+
+                                            <!-- 
+                                            #################################
+                                            ***ELEMENTOS HTML VAZIOS/ORFÃS***
+                                            #################################
+                                             -->    
+
+                    <p> Este é um parágrafo <br> com uma quebra de linha. </ p> <!-- Elementos HTML sem conteúdo são chamados de elementos vazios. -->
+                                                                                <!-- <br> é um elemento vazio sem uma tag de fechamento (a tag <br> define uma quebra de linha) -->
+                    <hr> <!-- Linha horizontal -->
+
+                                            <!-- 
+                                            #####################
+                                            ***ATRIBUTOS HTML***
+                                            #####################
+                                             -->    
+
+                        <!-- Todos os elementos HTML podem ter atributos.
+                             Atributos fornecem informações adicionais sobre um elemento.
+                             Atributos são sempre especificados na tag de início.
+                             Atributos geralmente vêm em pares nome / valor como: name = "value"
+                             No W3Schools nós sempre usamos nomes de atributos em letras minúsculas.
+                             Na W3Schools sempre citação valores de atributos com aspas duplas.
+                         -->
+
+                                            <!-- 
+                                            #######################
+                                            ***O ATRIBUTO ESTILO***
+                                            #######################
+                                             -->    
+
+<!-- O atributo style é usado para especificar o estilo de um elemento, como cor, fonte, tamanho etc. -->
+
+<p style="color:red">Isso é um parágrafo</p> 
+
+                                            <!-- 
+                                            #######################
+                                            ***O ATRIBUTO TÍTULO***
+                                            #######################
+                                             -->    
+
+<!-- Aqui, um atributo title é adicionado ao elemento <p>. O valor do atributo title será exibido como uma dica ao  passar o mouse sobre o parágrafo: -->
+
+<p title="Sou uma dica de ferramenta">Isso é um parágrafo.</p> 
+<hr> <!-- Linha horizontal -->
+
+                                            <!-- 
+                                            ################################
+                                            ***REGRAS HORIZONTAIS EM HTML***
+                                            ################################
+                                             -->    
+
+                                            <h1>Este é o título 1</h1>
+                                            <p>Isso é algum texto.</p>
+                                            <hr> <!-- A tag <hr> define uma quebra temática em uma página HTML e é exibida com mais frequência como uma regra horizontal. -->
+                                            <h2>Este é o título 2</h2>
+                                            <p>Este é outro texto.</p>
+                                            <hr> <!-- O elemento <hr> é usado para separar o conteúdo (ou definir uma alteração) em uma página HTML. -->
+
+                                            <!-- 
+                                            ################################
+                                            ***O ELEMENTO HTML <pre>***
+                                            ################################
+                                             -->    
+
+       <pre> <!-- O elemento <pre> HTML define o texto pré-formatado. -->
+
+        Minha Bonnie está sobre o oceano.
+
+        Meu Bonnie está no mar.
+
+        Minha Bonnie está sobre o oceano.
+
+        Traga de volta a minha Bonnie para mim.
+
+      </pre> <!-- O texto dentro de um elemento <pre> é exibido em uma fonte de largura fixa (geralmente Courier) e preserva os espaços e as quebras de linha -->
+
+                                                              <!-- 
+                                                              ################################
+                                                              ***O ATRIBUTO DE ESTILO HTML***
+                                                              ################################
+                                                               -->    
+
+<!-- O atributo style HTML possui a seguinte sintaxe : --> <!-- Definir o estilo de um elemento HTML, pode ser feito com o atributo style. -->
+<!--  A propriedade é uma propriedade CSS. O valor é um valor de CSS. -->
+
+<tagname style="propriedade:valor;">      
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ##########################
+                                                              ***COR DO TEXTO EM HTML***
+                                                              ##########################
+                                                               -->    
+
+<!-- A colorpropriedade define a cor do texto para um elemento HTML: --> 
+
+<h1 style="color:blue;">Este é um título</h1>
+<p style="color:red;">Este é um parágrafo.</p>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              #################
+                                                              ***Fontes HTML***
+                                                              #################
+                                                               -->    
+
+<!-- A propriedade font-family define a fonte a ser usada para um elemento HTML: -->
+
+<h1 style="font-family:verdana;">Este é um título</h1>
+<p style="font-family:courier;">Este é um parágrafo.</p>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ##############################
+                                                              ***TAMANHO DO TEXTO EM HTML***
+                                                              ##############################
+                                                               -->    
+
+<!-- A propriedade font-size define o tamanho do texto para um elemento HTML: --> 
+
+<h1 style="font-size:300%;">Este é um título</h1>
+<p style="font-size:160%;">Este é um parágrafo.</p>
+ <hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ##############################
+                                                              ***ALINHAMENTO DE TEXTO HTML***
+                                                              ##############################
+                                                               -->    
+
+<!-- A propriedade text-align define o alinhamento horizontal do texto para um elemento HTML: --> 
+
+<h1 style="text-align:center;">Título Centralizado</h1>
+<p style="text-align:center;">Parágrafo centralizado.</p>
+ <hr> <!-- Linha horizontal -->
+
+
+<!-- Use o atributo style para estilizar elementos HTML.
+Use background-color para cor de fundo.
+--------------------------------------
+Use color para cores de texto.
+------------------------------
+Use font-family para fontes de texto.
+-------------------------------------
+Use font-size para tamanhos de texto.
+-------------------------------------
+Use text-align para alinhamento de texto.
+-----------------------------------------
+ -->
+
+                                                              <!-- 
+                                                              ##################################
+                                                              ***ELEMENTOS DE FORMATAÇÃO HTML***
+                                                              ##################################
+                                                               -->    
+
+<!-- No capítulo anterior, você aprendeu sobre o atributo de estilo HTML .
+
+O HTML também define elementos especiais para definir o texto com um significado especial .
+
+O HTML usa elementos como <b>e <i>para formatação de saída, como texto em negrito ou itálico .
+
+Os elementos de formatação foram projetados para exibir tipos especiais de texto: -->
+
+<!-- <b> - Texto em negrito --> <b>Esse texto é em negrito</b>
+                                    <br> <!--  Quebra de linha--> <hr> <!-- Linha horizontal -->
+
+<!-- <strong> - texto importante --> <strong>Este texto é forte</strong>
+                                       <br> <!--  Quebra de linha--> <hr> <!-- Linha horizontal -->
+
+<!-- <i> - texto em itálico --> <i>Este texto é em itálico</i>
+                                  <br> <!--  Quebra de linha--> <hr> <!-- Linha horizontal -->
+
+<!-- <em> - texto enfatizado --> <em>Este texto é enfatizado</em>
+                                   <br> <!--  Quebra de linha--> <hr> <!-- Linha horizontal -->
+
+<!-- <mark> - texto marcado --> <h2>Formatação <mark>Marcada</mark> em HTML</h2>
+                                  <hr> <!-- Linha horizontal -->
+
+<!-- <small> - pequeno texto --> <h2>Formatação <small>Pequena</small> em HTML</h2>
+                                   <hr> <!-- Linha horizontal -->
+
+<!-- <del> - texto excluído --> <p>Minha cor favorita é <del>Azul</del> Vermelho.</p>
+                                  <hr> <!-- Linha horizontal -->
+
+<!-- <ins> - texto inserido --> <p>Minha cor favorita é <ins>Cor</ins> é vermelho.</p>
+                                  <hr> <!-- Linha horizontal -->
+
+<!-- <sub> - texto subscrito --> <p>Este é um <sub>Texto</sub> Subscrito.</p>
+                                  <hr> <!-- Linha horizontal -->
+
+<!-- <sup> - Texto sobrescrito --> <p>Este é um <sup>Texto</sup> Subscrito.</p>
+                                     <hr> <!-- Linha horizontal -->
+
+<!-- Nota: Os navegadores são exibidos <strong> como <b> e <em> como <i>. No entanto, há uma diferença no significado dessas tags: <b> e <i> define o texto em negrito e itálico, mas <strong> e <em> significa que o texto é "importante". -->
+
+                                                              <!-- 
+                                                              ##################################
+                                                              ***HTML <q> PARA CITAÇÕES CURTAS***
+                                                              ##################################
+                                                               -->    
+
+<!-- O elemento <q> HTML define uma cotação curta.Os navegadores geralmente inserem aspas ao redor do elemento <q>. --> 
+
+<p>O objetivo do WWF é: <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q>
+</p>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              #####################################
+                                                              ***HTML <blockquote> PARA COTAÇÕES***
+                                                              #####################################
+                                                               -->    
+
+<!-- O elemento <blockquote> HTML define uma seção que é citada de outra fonte.Navegadores geralmente recuam <blockquote>elementos. -->
+
+<p>Aqui está uma citação do site da WWF:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+Há 50 anos, o WWF vem protegendo o futuro da natureza.
+A principal organização de conservação do mundo,
+O WWF trabalha em 100 países e é apoiado por
+1,2 milhões de membros nos Estados Unidos e
+perto de 5 milhões globalmente.
+</blockquote>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              #####################################
+                                                              ***HTML <abbr> PARA ABREVIATURAS***
+                                                              #####################################
+                                                               -->    
+
+<!-- O elemento <abbr> HTML define uma abreviação ou um acrônimo.Abreviaturas de marcação podem fornecer informações úteis para navegadores, sistemas de tradução e mecanismos de pesquisa. -->
+
+<p>A <abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.</p>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              #################################################
+                                                              ***HTML <address> para informações de contato***
+                                                              #################################################
+                                                               -->    
+
+<!-- O elemento <address> HTML define informações de contato (autor / proprietário) de um documento ou artigo.O elemento <address> geralmente é exibido em itálico. A maioria dos navegadores adicionará uma quebra de linha antes e depois do elemento. -->
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ##########################################
+                                                              ***HTML <cite> PARA O TÍTULO DE TRBALHO***
+                                                              ##########################################
+                                                               -->    
+
+<!-- O elemento <cite> HTML define o título de um trabalho.Os navegadores geralmente exibem elementos <cite> em itálico. -->
+
+<p><cite>O grito</cite> por Edvard Munch. Pintado em 1893.</p>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ###############################################
+                                                              ***HTML <bdo> PARA SUBSTITUIÇÃO BIDIRECIONAL***
+                                                              ###############################################
+                                                               -->    
+
+<!-- O elemento <bdo> HTML define substituição bidirecional.O elemento <bdo> é usado para substituir a direção do texto atual: -->
+
+<bdo dir="rtl">Este texto será escrito da direita para a esquerda</bdo>
+<hr> <!-- Linha horizontal -->
+
+                                                              <!-- 
+                                                              ################################
+                                                              ***TAGS DE COMENTÁRIO EM HTML***
+                                                              ################################
+                                                               -->    
+
+<!-- Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe: --> <!-- Escreva seus comentários aqui --> 
+
+<!-- Observe que há um ponto de exclamação (!) Na tag de abertura, mas não na tag de fechamento. --> 
+
+<!-- Nota: Os comentários não são exibidos pelo navegador, mas podem ajudar a documentar seu código-fonte HTML. -->
+
+<!-- Com os comentários, você pode inserir notificações e lembretes em seu HTML: -->
+
+<!-- Este é um comentário -->
+
+<p>Este é um parágrafo.</p>
+<hr> <!-- Linha horizontal -->
+
+<!-- Lembre-se de adicionar mais informações aqui -->
+
+<!-- Comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML, uma de cada vez, para procurar por erros: -->
+
+<!-- Não mostre isso no momento
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+
+                                                              <!-- 
+                                                              ###################
+                                                              ***CORES EM HTML***
+                                                              ###################
+                                                               -->    
+
+<!-- As cores HTML são especificadas usando nomes de cores predefinidos ou valores RGB, HEX, HSL, RGBA, HSLA. -->
+
+                                                  <!-- Nomes de cores -->
+
+<!-- Em HTML, uma cor pode ser especificada usando um nome de cor: black,red,blue,yellow...etc -->
+<!-- O HTML suporta 140 nomes de cores padrão. -->
+
+                                                               <!-- Cor de fundo -->
+
+<!-- Você pode definir a cor de fundo para elementos HTML: -->
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p> <hr>
+
+                                                               <!-- Cor do texto -->
+
+<!-- Você pode definir a cor do texto: -->
+
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p> <hr>
+
+                                                               <!-- Cor da borda -->
+
+<!-- Você pode definir a cor das bordas: -->
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1> <hr>
+
+                                                               <!-- Valores de cor -->
+
+<!-- Em HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA. -->
+<!-- O mesmo que o nome da cor "Tomato: -->
+
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1> <hr>
+
+<!-- O mesmo que o nome da cor "Tomate", mas 50% transparente: -->
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1> <hr>
+
+                                                               <!-- Valor RGB -->
+
+<!-- Em HTML, uma cor pode ser especificada como um valor RGB, usando esta fórmula: rgb ( vermelho, verde , azul ) -->
+<!-- Cada parâmetro (vermelho, verde e azul) define a intensidade da cor entre 0 e 255. -->
+<!-- Por exemplo, rgb (255, 0, 0) é exibido como vermelho, porque vermelho é definido como seu valor mais alto (255) e os outros são definidos como 0. -->
+<!-- Para exibir a cor preta, todos os parâmetros de cor devem ser definidos como 0, assim: rgb (0, 0, 0). -->
+<!-- Para exibir a cor branca, todos os parâmetros de cor devem ser configurados para 255, desta forma: rgb (255, 255, 255). -->
+<!-- Tons de cinza são freqüentemente definidos usando valores iguais para todas as 3 fontes de luz: rgb(60, 60, 60),rgb(120, 120, 120) -->
+
+                                                               <!-- Valor HEX -->
+
+<!-- Em HTML, uma cor pode ser especificada usando um valor hexadecimal no formulário: # rrggbb -->
+<!-- Onde rr (vermelho), gg (verde) e bb (azul) são valores hexadecimais entre 00 e ff (igual ao decimal 0-255). -->
+<!-- Por exemplo, # ff0000 é exibido como vermelho, porque vermelho é definido como seu valor mais alto (ff) e os outros são definidos para o valor mais baixo (00). EX: #ff0000,#0000ff,#3cb371 -->
+<!-- Tons de cinza são freqüentemente definidos usando valores iguais para todas as 3 fontes de luz: #3c3c3c,#787878,#b4b4b4 -->
+
+                                                               <!-- Valor de HSL -->
+
+<!-- Em HTML, uma cor pode ser especificada usando matiz, saturação e luminosidade (HSL) no formulário: hsl ( matiz , saturação , leveza ) -->
+<!-- Matiz é um grau na roda de cores de 0 a 360. 0 é vermelho, 120 é verde e 240 é azul. -->
+<!-- A saturação é um valor percentual, 0% significa um tom de cinza e 100% é a cor total. -->
+<!-- A leveza também é uma porcentagem, 0% é preto, 50% não é nem claro nem escuro, 100% é branco. -->
+<!-- EX: hsl(0, 100%, 50%),hsl(240, 100%, 50%),hsl(147, 50%, 47%) -->
+
+                                                               <!-- Saturação -->
+
+<!-- A saturação pode ser descrita como a intensidade de uma cor. -->
+<!-- 100% é cor pura, sem tons de cinza. -->
+<!-- 50% é 50% cinza, mas você ainda pode ver a cor. -->
+<!-- 0% é completamente cinza, você não pode mais ver a cor. -->
+<!-- EX: hsl(0, 100%, 50%),hsl(0, 80%, 50%),hsl(0, 60%, 50%) -->
+
+                                                               <!-- Leveza -->
+
+<!-- A leveza de uma cor pode ser descrita como a quantidade de luz que você quer dar a cor, onde 0% significa sem luz (preto), 50% significa 50% de luz (nem escura nem clara) 100% significa leveza total (branco). -->
+<!-- EX: hsl(0, 100%, 0%),hsl(0, 100%, 25%),hsl(0, 100%, 50%) -->
+<!-- Geralmente, os tons de cinza são definidos definindo a matiz e a saturação como 0 e ajustam a luminosidade de 0% a 100% para obter tons mais escuros / mais claros: hsl(0, 0%, 0%),hsl(0, 0%, 24%),hsl(0, 0%, 47%) -->
+
+                                                               <!-- Valor RGBA -->
+
+<!-- Os valores de cores RGBA são uma extensão dos valores de cores RGB com um canal alfa - que especifica a opacidade de uma cor. -->
+<!-- Um valor de cor RGBA é especificado com: rgba ( vermelho, verde , azul, alfa ) -->
+<!-- O parâmetro alpha é um número entre 0.0 (totalmente transparente) e 1.0 (não transparente): rgba(255, 99, 71, 0),rgba(255, 99, 71, 0.2),rgba(255, 99, 71, 0.4) -->
+
+                                                               <!-- Valor de HSLA -->
+
+<!-- Os valores de cores do HSLA são uma extensão dos valores de cores do HSL com um canal alfa - que especifica a opacidade de uma cor. -->
+<!-- Um valor de cor do HSLA é especificado com: hsla ( matiz, saturação , leveza, alfa ) -->
+<!-- O parâmetro alpha é um número entre 0.0 (totalmente transparente) e 1.0 (não transparente): hsla(9, 100%, 64%, 0),hsla(9, 100%, 64%, 0.2),hsla(9, 100%, 64%, 0.4) -->
+
+                                                              <!-- 
+                                                              ##############################
+                                                              ***Estilizando HTML com CSS***
+                                                              ##############################
+                                                               -->    
+
+<!-- CSS significa C ascending S tyle S heets.Em português Folhas de estilo em cascata -->
+<!-- CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias . -->
+<!-- CSS economiza muito trabalho . Pode controlar o layout de várias páginas da web de uma só vez. -->
+<!-- CSS pode ser adicionado aos elementos HTML de 3 maneiras:
+Inline - usando o atributo style em elementos HTML
+Interno - usando um <style>elemento na <head>seção
+Externo - usando um arquivo CSS externo
+ -->
+ <!-- A maneira mais comum de adicionar CSS é manter os estilos em arquivos CSS separados. No entanto, aqui usaremos o estilo interno e interno, porque isso é mais fácil de demonstrar e mais fácil para você mesmo tentar. -->
+
+                                                            <!-- CSS Inline -->
+
+<!-- Um CSS inline é usado para aplicar um estilo exclusivo a um único elemento HTML. -->
+<!-- Um CSS inline usa o atributo style de um elemento HTML. -->
+<!-- Este exemplo define a cor do texto do elemento <h1> para azul: -->
+    <h1 style="color:blue;">This is a Blue Heading</h1> <hr>
+
+                                                            <!-- CSS interno -->
+
+<!-- Um CSS interno é usado para definir um estilo para uma única página HTML. -->
+<!-- Um CSS interno é definido na seção <head> de uma página HTML, dentro de um elemento <style>:
+    <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+        </style>
+    </head>
+        <body>
+
+          <h1>This is a heading</h1>
+          <p>This is a paragraph.</p>
+
+        </body>
+  </html>  
+-->
+
+
+                                                          <!-- CSS externo -->
+
+<!-- Uma folha de estilos externa é usada para definir o estilo de muitas páginas HTML. -->
+<!-- Com uma folha de estilo externa, você pode alterar a aparência de um site inteiro, alterando um arquivo! -->
+<!-- Para usar uma folha de estilos externa, adicione um link a ela na seção <head> da página HTML:
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+      <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+      </body>
+  </html>  
+-->
+
+<!-- Uma folha de estilos externa pode ser escrita em qualquer editor de texto. O arquivo não deve conter nenhum código HTML e deve ser salvo com uma extensão .css -->
+<!-- Aqui está como o "styles.css" se parece:
+  body {
+    background-color: powderblue;
+  }
+    h1 {
+      color: blue;
+    }
+      p {
+        color: red;
+      }
+-->
+
+                                                                <!-- Fontes CSS -->
+
+<!-- A propriedade color CSS define a cor do texto a ser usada. -->
+<!-- A propriedade font-family CSS define a fonte a ser usada. -->
+<!-- A propriedade font-size  CSS define o tamanho do texto a ser usado. -->
+<!-- EX:
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        h1 {
+          color: blue;
+          font-family: verdana;
+          font-size: 300%;
+        }
+          p  {
+            color: red;
+            font-family: courier;
+            font-size: 160%;
+          }
+      </style>
+    </head>
+      <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+      </body>
+  </html>
+-->
+
+                                                        <!-- Borda CSS -->
+
+<!-- A propriedade border  CSS define uma borda em torno de um elemento HTML:
+p {
+  border: 1px solid powderblue;
+}
+-->
+
+                                                                <!-- Preenchimento de CSS -->
+
+<!-- A propriedade padding  CSS define um preenchimento (espaço) entre o texto e a borda:
+p {
+  border: 1px solid powderblue;
+  padding: 30px;
+}
+-->
+
+                                                              <!-- Margem CSS -->
+
+<!-- A propriedade margin CSS define uma margem (espaço) fora da borda:
+p {
+  border: 1px solid powderblue;
+  margin: 50px;
+}
+-->
+
+                                                              <!-- O atributo id -->
+
+<!-- Para definir um estilo específico para um elemento especial, adicione um idatributo ao elemento:
+<p id="p01">I am different</p>
+-->
+<!-- Em seguida, defina um estilo para o elemento com o ID específico:
+#p01 {
+  color: blue;
+}
+-->
+<!-- Nota: O id de um elemento deve ser único dentro de uma página, então o seletor de id é usado para selecionar um elemento único! -->
+
+                                                              <!-- A classe Atributo -->
+
+<!-- Para definir um estilo para tipos especiais de elementos, adicione um atributo class ao elemento:
+<p class="error">I am different</p>
+-->
+<!-- Em seguida, defina um estilo para os elementos com a classe específica:
+p.error {
+  color: red;
+}
+-->
+
+                                                              <!-- Referências Externas -->
+
+<!-- Folhas de estilo externas podem ser referenciadas com um URL completo ou com um caminho relativo à página da web atual. -->
+<!-- Este exemplo usa um URL completo para vincular a uma folha de estilos:
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+-->
+<!-- Este exemplo vincula a uma folha de estilos localizada na pasta html no site atual:
+<link rel="stylesheet" href="/html/styles.css">
+-->
+<!-- Este exemplo vincula a uma folha de estilos localizada na mesma pasta da página atual:
+<link rel="stylesheet" href="styles.css">
+-->
+
+                                                              <!-- Resumo do capítulo -->
+
+<!-- 
+Use o atributo style HTML para estilo inline.
+---------------------------------------------
+Use o elemento <style> HTML para definir CSS interno.
+-----------------------------------------------------
+Use o elemento <link> HTML para se referir a um arquivo CSS externo.
+--------------------------------------------------------------------
+Use o elemento <head> HTML para armazenar elementos <style> e <link>
+--------------------------------------------------------------------
+Use a propriedade color CSS para cores de texto.
+------------------------------------------------
+Use a propriedade font-family CSS para fontes de texto.
+-------------------------------------------------------
+Use a propriedade font-size CSS para tamanhos de texto.
+-------------------------------------------------------
+Use a propriedade border CSS para bordas.
+-----------------------------------------
+Use a propriedade padding CSS para o espaço dentro da borda.
+------------------------------------------------------------
+Use a propriedade margin CSS para o espaço fora da borda.
+---------------------------------------------------------
+-->
+
+                                                      <!-- 
+                                                      ################
+                                                      ***Links HTML***
+                                                      ################
+                                                        -->    
+
+                                               <!-- Links HTML - hiperlinks -->
+
+<!-- Links HTML são hiperlinks.
+Você pode clicar em um link e pular para outro documento.
+Quando você move o mouse sobre um link, a seta do mouse se transformará em uma pequena mão. -->
+<!-- Nota: Um link não precisa ser texto. Pode ser uma imagem ou qualquer outro elemento HTML. -->
+
+                                                <!-- Links HTML - Sintaxe -->
+
+<!-- Em HTML, os links são definidos com a tag <a>: <a href="url">link text</a> -->
+<!-- O hrefatributo especifica o endereço de destino ( https://www.w3schools.com/html/ ) do link. -->
+<!-- O texto do link é a parte visível (Visite nosso tutorial em HTML). -->
+<!-- Clicar no texto do link enviará você ao endereço especificado. -->
+<!-- Nota: Sem uma barra invertida no final dos endereços da subpasta, você pode gerar duas solicitações para o servidor. 
+Muitos servidores adicionam automaticamente uma barra ao final do endereço e criam uma nova solicitação. -->
+
+                                                    <!-- Links Locais -->
+
+<!-- O exemplo acima usou uma URL absoluta (um endereço da web completo). -->
+<!-- Um link local (link para o mesmo site) é especificado com um URL relativo (sem https: // www ....). -->
+<!-- Exempl0: <a href="html_images.asp">HTML Images</a> -->
+
+                                                  <!-- Cores do link HTML -->
+
+<!-- Por padrão, um link aparecerá assim (em todos os navegadores):
+Um link não visitado é sublinhado e azul
+Um link visitado está sublinhado e roxo
+Um link ativo está sublinhado e vermelho
+Você pode alterar as cores padrão, usando CSS:
+<style>
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+ -->
+<!-- Os links geralmente são denominados botões, usando CSS:
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+ -->
+
+                                                          <!-- Links HTML - o atributo de destino -->
+
+<!-- O targetatributo especifica onde abrir o documento vinculado.
+
+O targetatributo pode ter um dos seguintes valores:
+
+_blank - Abre o documento vinculado em uma nova janela ou guia
+_self - Abre o documento vinculado na mesma janela / guia quando foi clicado (esse é o padrão)
+_parent - Abre o documento vinculado no quadro pai
+_top - Abre o documento vinculado em todo o corpo da janela
+nome do quadro - abre o documento vinculado em um quadro nomeado
+Este exemplo abrirá o documento vinculado em uma nova janela / guia do navegador:
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+ -->
+<!-- Dica: se sua página da Web estiver bloqueada em um quadro, você poderá usá-la target="_top"para sair do quadro:
+<a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+-->
+
+                                                        <!-- Links HTML - imagem como link -->
+
+<!-- É comum usar imagens como links:
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+ -->                                                        
+<!-- Nota: border:0; é adicionado para evitar que o IE9 (e anterior) exiba uma borda ao redor da imagem (quando a imagem é um link). -->
+
+                                                              <!-- Títulos de links -->
+
+<!-- O titleatributo especifica informações extras sobre um elemento.
+ A informação é mais freqüentemente mostrada como um texto de dica de ferramenta quando o mouse se move sobre o elemento. EX:
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+-->
+
+                                                                  <!-- Links HTML - Crie um marcador -->
+
+<!-- Marcadores HTML são usados ​​para permitir que os leitores saltem para partes específicas de uma página da Web.
+
+Marcadores podem ser úteis se sua página for muito longa.
+
+Para criar um marcador, você deve primeiro criar o marcador e, em seguida, adicionar um link a ele.
+
+Quando o link é clicado, a página irá rolar para o local com o marcador.
+
+ -->                                                                  
+<!-- Exemplo:
+Primeiro, crie um marcador com o atributo id:
+<h2 id="C4">Chapter 4</h2>
+Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:
+<a href="#C4">Jump to Chapter 4</a>
+Ou adicione um link ao marcador ("Ir para o capítulo 4"), em outra página:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->
+
+                                                              <!-- Caminhos Externos -->
+<!-- As páginas externas podem ser referenciadas com um URL completo ou com um caminho relativo à página da web atual.
+
+Este exemplo usa um URL completo para vincular a uma página da web:
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+ -->                                                              
+<!-- Este exemplo vincula a uma página localizada na pasta html no site atual:
+<a href="/html/default.asp">HTML tutorial</a>
+Este exemplo vincula a uma página localizada na mesma pasta da página atual:
+<a href="default.asp">HTML tutorial</a>
+ -->
+<!-- Resumo do capítulo
+  
+Use o <a>elemento para definir um link
+Use o hrefatributo para definir o endereço do link
+Use o targetatributo para definir onde abrir o documento vinculado
+Use o <img>elemento (dentro de <a>) para usar uma imagem como um link
+Use o idatributo (id = " value ") para definir marcadores em uma página
+Use o hrefatributo (href = "# value ") para vincular ao marcador -->
+
+                                                     <!-- 
+                                                      ##################
+                                                      ***Imagens HTML***
+                                                      ##################
+                                                        -->    
+
+<!-- As imagens podem melhorar o design e a aparência de uma página da web.EX: 
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+-->
+                                              <!-- Sintaxe de Imagens HTML -->
+
+<!-- Em HTML, as imagens são definidas com a <img>tag. -->                                              
+<!-- A <img>tag está vazia, contém apenas atributos e não possui uma tag de fechamento. -->
+<!-- O atributo src especifica o URL (endereço da web) da imagem:
+<img src="url">
+-->
+
+                                                        <!-- O atributo alt -->
+
+<!-- O atributo alt fornece um texto alternativo para uma imagem, se o usuário, por algum motivo,
+ não puder visualizá-lo (devido à conexão lenta, a um erro no atributo src ou se o usuário usar um leitor de tela).
+O valor do atributo alt deve descrever a imagem:
+<img src="img_chania.jpg" alt="Flowers in Chania">
+-->                                                        
+<!-- Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do alt atributo:
+<img src="wrongname.gif" alt="Flowers in Chania">
+-->
+<!-- Nota: O altatributo é obrigatório. Uma página da web não valida corretamente sem ela. -->
+
+                                                  <!-- Tamanho da Imagem - Largura e Altura -->
+
+<!-- Você pode usar o styleatributo para especificar a largura e a altura de uma imagem:
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+-->                                                  
+<!-- Como alternativa, você pode usar os atributos widthe height:
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+Os atributos width e height sempre definem a largura e a altura da imagem em pixels.
+ -->
+ <!-- Nota: Sempre especifique a largura e a altura de uma imagem. 
+Se largura e altura não forem especificadas, a página poderá piscar enquanto a imagem é carregada.
+--> 
+
+                                                                  <!-- Largura e Altura ou Estilo? -->
+
+<!-- Os atributos width, height e style  são válidos em HTML5. 
+No entanto, sugerimos usar o styleatributo. Impede que as folhas de estilos alterem o tamanho das imagens:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img { 
+  width: 100%; 
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+-->                                                                  
+
+                                                            <!-- Imagens em outra pasta -->
+
+<!-- Se não for especificado, o navegador espera encontrar a imagem na mesma pasta que a página da web. -->                                                            
+<!-- No entanto, é comum armazenar imagens em uma subpasta. Você deve então incluir o nome da pasta no srcatributo:
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+ -->
+                                                      <!-- Imagens em outro servidor -->
+
+<!-- Alguns sites armazenam suas imagens em servidores de imagem.
+Na verdade, você pode acessar imagens de qualquer endereço da Web no mundo:
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+-->
+
+                                                          <!-- Imagens animadas -->                                                      
+
+<!-- HTML permite GIFs animados:
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+ -->
+
+                                                      <!-- Imagem como um link -->
+
+<!-- Para usar uma imagem como um link, coloque a <img>tag dentro da <a> tag:
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+ -->                                                      
+<!-- Nota: border:0; é adicionado para evitar que o IE9 (e anterior) exiba uma borda ao redor da imagem (quando a imagem é um link). -->
+
+                                                        <!-- Imagem flutuante -->
+
+<!-- Use a floatpropriedade CSS para deixar a imagem flutuar à direita ou à esquerda de um texto:
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+ -->                
+
+                                                        <!-- Mapas de imagem -->
+
+<!-- A <map>tag define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis.
+Na imagem abaixo, clique no computador, no telefone ou na xícara de café:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+ -->                                                        
+<!-- O nameatributo da <map>tag está associado ao <img>atributo usemap e cria um relacionamento entre a imagem e o mapa.
+O elemento <map> contém várias <area>tags, que definem as áreas clicáveis ​​no mapa de imagens.
+ -->
+
+                                                          <!-- Imagem de fundo -->
+
+<!-- Para adicionar uma imagem de fundo em um elemento HTML, use a propriedade CSS background-image:
+Para adicionar uma imagem de plano de fundo em uma página da Web, especifique a propriedade background-image no elemento BODY:
+<body style="background-image:url('clouds.jpg');">
+
+<h2>Background Image</h2>
+
+</body>
+ -->   
+
+                                                              <!-- O elemento <picture> -->                                                       
+
+<!-- O HTML5 introduziu o elemento <picture> para adicionar mais flexibilidade ao especificar recursos de imagem. -->                                                                
+<!-- O elemento <picture> contém vários elementos <source>, cada um referindo-se a diferentes origens de imagem.
+Desta forma, o navegador pode escolher a imagem que melhor se adapta à visão atual e / ou dispositivo.
+ -->
+<!-- Cada <source>elemento possui atributos que descrevem quando sua imagem é a mais adequada. -->
+<!-- O navegador usará o primeiro elemento <source> com valores de atributo correspondentes e ignorará os elementos <source> a seguir. -->
+<!-- Mostre uma imagem se a janela do navegador (viewport) tiver um mínimo de 650 pixels e outra imagem,
+se não for, mas maior que 465 pixels.
+ 
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+-->
+<!-- Nota: Sempre especifique um <img>elemento como o último elemento filho do elemento <picture>. 
+  O elemento <img> é usado por navegadores que não suportam o elemento <picture> ou se nenhuma das tags <source> corresponder.
+ -->
+
+                                                            <!-- Leitores de tela HTML -->
+
+<!-- Um leitor de tela é um programa de software que lê o código HTML, converte o texto e permite ao usuário "ouvir" o conteúdo. 
+Os leitores de tela são úteis para pessoas com deficiência visual ou com dificuldades de aprendizagem.
+ -->
+
+ <!-- Resumo do capítulo
+Use o <img>elemento HTML para definir uma imagem
+Use o srcatributo HTML para definir o URL da imagem
+Use o altatributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida
+Use o HTML widthe heightatributos para definir o tamanho da imagem
+Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (alternativamente)
+Use a floatpropriedade CSS para deixar a imagem flutuar
+Use o <map>elemento HTML para definir um mapa de imagem
+Use o <area>elemento HTML para definir as áreas clicáveis ​​no mapa de imagem
+Use o atributo do <img>elemento HTML usemappara apontar para um mapa de imagem
+Use o <picture>elemento HTML para mostrar imagens diferentes para diferentes dispositivos
+ -->
+ <!-- Nota: Carregar imagens leva tempo. Imagens grandes podem retardar sua página. Use as imagens com cuidado. -->
+
+                                                      <!-- 
+                                                      ################################
+                                                      ***Definindo uma Tabela HTML***
+                                                      #################################
+                                                        -->    
+
+<!-- Uma tabela HTML é definida com a tag <table>. -->
+<!-- Cada linha da tabela é definida com a tag <tr>. Um cabeçalho de tabela é definido com a tag <th>. 
+Por padrão, os títulos das tabelas estão em negrito e centralizados. Uma tabela de dados / célula é definida com a tag <td>.
+EX:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+-->
+<!-- Nota: Os elementos <td> são os contêineres de dados da tabela. 
+Eles podem conter todos os tipos de elementos HTML; texto, imagens, listas, outras tabelas, etc.
+ -->
+
+                                                      <!-- Tabela HTML - Adicionando uma Borda -->
+
+<!-- Se você não especificar uma borda para a tabela, ela será exibida sem bordas.
+Uma borda é definida usando a borderpropriedade CSS :
+
+table, th, td {
+  border: 1px solid black;
+}
+ -->               
+ <!-- Lembre-se de definir bordas para a tabela e as células da tabela. -->                                       
+
+                                                      <!-- Tabela HTML - Bordas Recolhidas -->
+
+<!-- Se você quiser que as bordas se colapsem em uma borda, adicione a border-collapse propriedade CSS :
+
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+-->  
+
+                                              <!-- Tabela HTML - Adicionando preenchimento de célula -->
+
+<!-- O preenchimento de célula especifica o espaço entre o conteúdo da célula e suas bordas.
+Se você não especificar um preenchimento, as células da tabela serão exibidas sem preenchimento.
+Para definir o preenchimento, use a paddingpropriedade CSS :
+
+th, td {
+  padding: 15px;
+}
+ -->                                              
+
+                                         <!-- Tabela HTML - alinhamentos alinhados à esquerda -->
+
+<!-- Por padrão, os títulos das tabelas estão em negrito e centralizados.
+Para alinhar à esquerda os títulos da tabela, use a text-alignpropriedade CSS :
+
+th {
+  text-align: left;
+}
+-->                                              
+
+                                            <!-- Tabela HTML - Adicionando Espaçamento de Borda -->
+
+<!-- Espaçamento de borda especifica o espaço entre as células.
+Para definir o espaçamento de borda para uma tabela, use a border-spacingpropriedade CSS :
+
+table {
+  border-spacing: 5px;
+}
+ -->                                            
+<!-- Nota: Se a tabela tiver bordas recolhidas, border-spacingnão terá efeito. -->
+
+                                          <!-- Tabela HTML - Células que abrangem muitas colunas -->
+
+<!-- Para fazer uma célula abranger mais de uma coluna, use o atributo colspan:
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+-->
+
+                                                <!-- Tabela HTML - Células que abrangem muitas linhas -->
+
+<!-- Para fazer uma célula abranger mais de uma linha, use o rowspanatributo:
+
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+ -->                                                
+
+                                              <!-- Tabela HTML - Adicionando uma legenda -->
+
+<!-- Para adicionar uma legenda a uma tabela, use a tag <caption>:
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+ -->                                              
+<!-- Nota: a tag <caption> deve ser inserida imediatamente após a tag <table>. -->
+
+                                                            <!-- Um estilo especial para uma tabela -->
+
+<!-- Para definir um estilo especial para uma tabela especial, adicione um id atributo à tabela:
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+ -->                                                            
+
+<!-- Agora você pode definir um estilo especial para esta tabela:
+
+table#t01 {
+  width: 100%; 
+  background-color: #f1f1c1;
+}
+-->
+<!-- E adicione mais estilos:
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#t01 th {
+  color: white;
+  background-color: black;
+}  
+-->
+
+<!-- Resumo do capítulo
+Use o <table>elemento HTML para definir uma tabela
+Use o <tr>elemento HTML para definir uma linha da tabela
+Use o <td>elemento HTML para definir os dados de uma tabela
+Use o <th>elemento HTML para definir um cabeçalho de tabela
+Use o <caption>elemento HTML para definir uma legenda de tabela
+Use a borderpropriedade CSS para definir uma borda
+Use a border-collapsepropriedade CSS para recolher as bordas das células
+Use a paddingpropriedade CSS para adicionar preenchimento às células
+Use a text-alignpropriedade CSS para alinhar o texto da célula
+Use a border-spacingpropriedade CSS para definir o espaçamento entre as células
+Use o colspanatributo para tornar uma célula com várias colunas
+Use o rowspanatributo para fazer uma célula estender muitas linhas
+Use o idatributo para definir exclusivamente uma tabela
+ -->
+
+                                                      <!-- 
+                                                      #############################
+                                                      ***Lista HTML não ordenada***
+                                                      #############################
+                                                        -->    
+
+<!-- Uma lista não ordenada começa com a tag <ul>. Cada item da lista começa com a tag. <li> -->
+<!-- Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+ -->
+
+                                    <!-- Lista HTML não ordenada - Escolher marcador de item de lista -->
+
+<!-- A list-style-typepropriedade CSS é usada para definir o estilo do marcador de item de lista:
+
+Exemplo - disco:
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - círculo:
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - Quadrado:
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - nenhum:
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+ -->
+
+                                                  <!-- Lista HTML ordenada -->
+
+<!-- Uma lista ordenada começa com a tag <ol>. Cada item da lista começa com a tag.  <li> -->
+<!-- Os itens da lista serão marcados com números por padrão:
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+ -->  
+
+                                          <!-- Lista HTML ordenada - O atributo de tipo -->
+
+<!-- O atributo type da tag define o tipo do marcador de item da lista: <ol> --> 
+
+<!-- Números:
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->
+<!-- Letras maiúsculas:
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->
+<!-- Letras minúsculas:
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->
+<!-- Números romanos em maiúsculas:
+
+  <ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->
+<!-- Números romanos em minúsculas:
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->
+
+                                                    <!-- Listas de Descrição HTML -->
+
+<!-- HTML também suporta listas de descrição.
+Uma lista de descrições é uma lista de termos, com uma descrição de cada termo.
+A tag <dl> define a lista de descrições, a tag define o termo (nome) e a tag descreve cada termo: <dt> <dd>
+EX:
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+ -->                   
+ 
+                                                      <!-- Listas de HTML aninhadas -->
+
+<!-- A lista pode ser aninhada (listas dentro de listas):
+
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+ -->                  
+ <!-- Nota: itens de lista podem conter nova lista e outros elementos HTML, como imagens e links, etc. -->
+ 
+                                                <!-- Contagem de lista de controle -->
+
+<!-- Por padrão, uma lista ordenada começará a contar a partir de 1. 
+Se você quiser começar a contar a partir de um número especificado, poderá usar o atributo start:
+ EX:
+
+ <ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-->                                                
+
+                                          <!-- Lista Horizontal com CSS -->
+
+<!-- Listas de HTML podem ser estilizadas de muitas maneiras diferentes com CSS.
+Uma maneira popular é estilizar uma lista horizontalmente, para criar um menu de navegação:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+ -->                                          
+
+ <!-- Resumo do capítulo
+Use o <ul>elemento HTML para definir uma lista não ordenada
+Use a list-style-typepropriedade CSS para definir o marcador de item de lista
+Use o <ol>elemento HTML para definir uma lista ordenada
+Use o typeatributo HTML para definir o tipo de numeração
+Use o <li>elemento HTML para definir um item da lista
+Use o <dl>elemento HTML para definir uma lista de descrição
+Use o <dt>elemento HTML para definir o termo de descrição
+Use o <dd>elemento HTML para descrever o termo em uma lista de descrições
+Listas podem ser aninhadas dentro de listas
+Itens de lista podem conter outros elementos HTML
+Use a propriedade CSS float:leftou display:inlinepara exibir uma lista horizontalmente -->
+
+                                                      <!-- 
+                                                      ###################################
+                                                      ***Bloco HTML e Elementos Inline***
+                                                      ###################################
+                                                        -->    
+
+<!-- Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento que é.
+ O valor de exibição padrão para a maioria dos elementos é block ou inline.
+-->
+
+                                                      <!-- Elementos no nível do bloco -->
+
+<!-- Um elemento de nível de bloco sempre inicia em uma nova linha e ocupa toda a largura disponível
+(estende-se para a esquerda e para a direita o máximo possível).
+-->                              
+<!-- O elemento <div> é um elemento de nível de bloco.
+
+<div>Hello</div>
+<div>World</div>
+-->   
+<!-- Elementos de nível de bloco em HTML:
+
+<address> <article> <aside> <blockquote> <canvas> <dd> <div>
+
+<dl> <dt> <fieldset> <figcaption> <figure> <footer> <form>
+
+<h1>-<h6> <header> <hr> <li> <main> <nav> <noscript>
+
+<ol> <p> <pre> <section> <table> <tfoot> <ul> <video>
+-->                     
+
+                                                            <!-- Elementos Inline -->
+
+<!-- Um elemento in-line não inicia em uma nova linha e ocupa apenas a largura necessária.
+Este é um elemento <span> embutido dentro de um parágrafo.
+EX:
+
+<span>Hello</span>
+<span>World</span>
+ -->                                                            
+<!-- Elementos inline em HTML:
+
+<a> <abbr> <acronym> <b> <bdo> <big> <br>
+
+<button> <cite> <code> <dfn> <em> <i> <img>
+
+<input> <kbd> <label> <map> <object> <output> <q>
+
+<samp> <script> <select> <small> <span> <strong> <sub>
+
+<sup> <textarea> <time> <tt> <var>
+-->
+
+                                                          <!-- O elemento <div> -->
+
+<!-- O elemento <div> é frequentemente usado como um contêiner para outros elementos HTML.
+O elemento <div> não tem exigido atributos, mas style, classe id são comuns.
+Quando usado em conjunto com CSS, o <div>elemento pode ser usado para estilizar blocos de conteúdo:
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+ -->
+
+                                                            <!-- O elemento <span> -->
+
+<!-- O elemento <span> é frequentemente usado como um contêiner para algum texto.
+O elemento <span> não tem exigido atributos, mas style, classe id são comuns.
+Quando usado em conjunto com CSS, o elemento <span> pode ser usado para estilizar partes do texto:
+
+<h1>My <span style="color:red">Important</span> Heading</h1>
+ -->
+
+                                                      <!-- 
+                                                      ############################
+                                                      ***O Atributo class HTML***
+                                                      ############################
+                                                        -->    
+
+                                                        <!-- Usando o Atributo class  -->
+
+<!-- O atributo class HTML é usado para definir estilos iguais para elementos com o mesmo nome de classe.
+Assim, todos os elementos HTML com o mesmo atributo class terão o mesmo formato e estilo.
+Aqui temos três elementos <div> que apontam para o mesmo nome de classe:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+} 
+</style>
+</head>
+<body>
+
+<div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+ -->                                                        
+
+                                            <!-- Usando o atributo de class em elementos in-line -->
+
+<!-- O atributo class HTML também pode ser usado em elementos in-line:
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+span.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+ -->
+
+<!-- Dica: O classatributo pode ser usado em qualquer elemento HTML.
+Nota: O nome da classe é sensível a maiúsculas e minúsculas!
+ -->
+
+                                    <!-- Selecione elementos com uma class específica -->
+
+<!-- Em CSS, para selecionar elementos com uma class específica, escreva um caractere de ponto (.), Seguido do nome da classe:
+Use CSS para estilizar todos os elementos com o nome de classe "city":
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+ -->
+
+                                                    <!-- Múltiplas Classes -->
+
+<!-- Elementos HTML podem ter mais de um nome de class, cada nome de class deve estar separado por um espaço.
+Elementos de estilo com o nome de classe "city", também elementos de estilo com o nome de classe "main":
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+No exemplo acima, o primeiro elemento <h2> pertence à classe "city" e à classe "main".
+-->
+
+                                        <!-- Tags diferentes podem compartilhar a mesma class -->
+
+<!-- Tags diferentes, como <h2>e <p>, podem ter o mesmo nome de classe e, assim, compartilhar o mesmo estilo:
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+ -->
+
+                                              <!-- Usando o Atributo class em JavaScript -->
+
+<!-- O nome da classe também pode ser usado pelo JavaScript para executar
+determinadas tarefas para elementos com o nome da classe especificado.
+O JavaScript pode acessar elementos com um nome de classe especificado usando o método getElementsByClassName():
+Quando um usuário clica em um botão, oculte todos os elementos com o nome da classe "city":
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+ -->
+
+                                                      <!-- 
+                                                      ########################
+                                                      ***HTML O atributo id***
+                                                      ########################
+                                                        -->    
+
+                                                    <!-- Usando o atributo id -->
+
+<!-- O atributo id especifica um ID exclusivo para um elemento HTML (o valor deve ser exclusivo no documento HTML).
+O valor id pode ser usado por CSS e JavaScript para executar determinadas
+tarefas para um elemento exclusivo com o valor de id especificado.
+Em CSS, para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido pelo id do elemento:
+Use CSS para estilizar um elemento com o id "myHeader":
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+
+<h1 id="myHeader">My Header</h1>
+ -->
+<!-- Dica: O atributo id pode ser usado em qualquer elemento HTML.
+Nota: O valor do ID é sensível a maiúsculas e minúsculas.
+Nota: O valor id deve conter pelo menos um caractere e não deve conter espaço em branco (espaços, tabulações, etc.). -->
+
+                                                    <!-- Diferença entre classe e ID -->
+
+<!-- Um elemento HTML só pode ter um único ID que pertença a esse único elemento,
+enquanto um nome de classe pode ser usado por vários elementos:
+
+  <style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+
+--><!-- A unique element -->
+<!--<h1 id="myHeader">My Cities</h1>-->
+
+<!-- Multiple similar elements -->
+<!--<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+-->
+
+                                                  <!-- Marcadores com ID e Links -->
+
+<!-- Marcadores HTML são usados ​​para permitir que os leitores saltem para partes específicas de uma página da Web.
+Marcadores podem ser úteis se sua página for muito longa.
+Para criar um marcador, você deve primeiro criar o marcador e, em seguida, adicionar um link a ele.
+Quando o link é clicado, a página irá rolar para o local com o marcador.
+
+Primeiro, crie um marcador com o idatributo:
+<h2 id="C4">Chapter 4</h2>
+
+Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:
+<a href="#C4">Jump to Chapter 4</a>
+
+Ou adicione um link ao marcador ("Ir para o capítulo 4"), em outra página:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->
+
+                                                <!-- Usando o atributo id em JavaScript -->
+
+<!--JavaScript pode acessar um elemento com um ID especificado usando o método getElementById():
+Use o atributo id para manipular texto com JavaScript:
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+ -->
+
+                                                      <!-- 
+                                                      ###################
+                                                      ***Iframes HTML***
+                                                      ###################
+                                                        -->    
+
+<!-- Um iframe é usado para exibir uma página da web em uma página da web. -->
+
+                                                    <!-- Sintaxe Iframe -->
+
+<!-- Um iframe HTML é definido com a tag <iframe>:
+
+<iframe src="URL"></iframe>
+
+O atributo src especifica o URL (endereço da web) da página do quadro in-line.
+ -->
+
+                                            <!-- Iframe - Definir altura e largura -->
+
+<!-- Use os atributos height e width para especificar o tamanho do iframe.
+Os valores de atributo são especificados em pixels por padrão, mas também podem estar em porcentagem (como "80%").
+EX:
+
+<iframe src="demo_iframe.htm" height="200px" width="300%"></iframe>
+ -->
+<!-- Ou você pode usar CSS para definir a altura e a largura do iframe:
+
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;"></iframe>
+ -->
+
+                                                <!-- Iframe - remover a borda -->
+
+<!-- Por padrão, um iframe tem uma borda ao redor dele.
+Para remover a borda, adicione o atributo style e use a propriedade border CSS :
+
+<iframe src="demo_iframe.htm" style="border:none;"></iframe>
+ -->
+<!-- Com o CSS, você também pode alterar o tamanho, o estilo e a cor da borda do iframe:
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+ -->
+
+                                                    <!-- Iframe - alvo de um link -->
+
+<!-- Um iframe pode ser usado como o quadro de destino para um link.
+O targetatributo do link deve referir-se ao nameatributo do iframe:
+
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+-->
+
+                                                      <!-- 
+                                                      #####################
+                                                      ***JavaScript HTML***
+                                                      #####################
+                                                        -->   
+
+<!-- O JavaScript torna as páginas HTML mais dinâmicas e interativas. -->
+
+                                                    <!-- A tag <script> HTML  -->
+
+<!-- A tag <script> é usada para definir um script do lado do cliente (JavaScript).
+O elemento <script> contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.
+Usos comuns para JavaScript são manipulação de imagem, validação de formulário e alterações dinâmicas de conteúdo.
+Para selecionar um elemento HTML, o JavaScript usa frequentemente o método document.getElementById().
+Este exemplo de JavaScript escreve "Hello JavaScript!" em um elemento HTML com id = "demo":
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+ -->
+
+                                                    <!-- Um gosto de JavaScript -->
+
+<!-- Aqui estão alguns exemplos do que o JavaScript pode fazer-->
+<!--JavaScript pode alterar o conteúdo HTML:
+
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+JavaScript pode mudar estilos de HTML:
+
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+
+JavaScript pode alterar atributos HTML:
+
+document.getElementById("image").src = "picture.gif";
+-->
+
+                                                <!-- A tag <noscript> HTML  -->
+
+<!-- A tag <noscript> é usada para fornecer um conteúdo alternativo para usuários que desativaram 
+scripts em seus navegadores ou possuem um navegador que não suporta scripts do lado do cliente:
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+ -->
+
+                                                      <!-- 
+                                                      ##############################
+                                                      ***Caminhos de arquivo HTML***
+                                                      ##############################
+                                                        -->   
+
+                                                    <!-- Caminhos de arquivo HTML -->
+
+<!-- Um caminho de arquivo descreve o local de um arquivo na estrutura de pastas de um site.
+Os caminhos de arquivo são usados ​​ao vincular a arquivos externos como:
+
+paginas web
+Imagens
+CSS
+JavaScripts
+ -->
+
+                                                  <!-- Caminhos de arquivos absolutos -->
+
+<!-- Um caminho de arquivo absoluto é o URL completo para um arquivo da Internet:
+
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+ -->
+
+                                                  <!-- Caminhos de arquivos relativos -->
+
+<!-- Um caminho de arquivo relativo aponta para um arquivo relativo à página atual.
+Neste exemplo, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na raiz da web atual:
+
+<img src="/images/picture.jpg" alt="Mountain">
+
+Neste exemplo, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na pasta atual:
+
+<img src="images/picture.jpg" alt="Mountain">
+
+Neste exemplo, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na pasta, um nível acima da pasta atual:
+
+<img src="../images/picture.jpg" alt="Mountain">
+-->
+
+                                                <!-- Melhor pratica -->
+
+<!-- 
+É uma prática recomendada usar caminhos de arquivo relativos (se possível).
+
+Ao usar caminhos de arquivo relativos, suas páginas da Web não serão vinculadas ao seu URL base atual. Todos os links funcionarão em
+seu próprio computador (localhost), bem como em seu domínio público atual e seus futuros domínios públicos.  -->
+
+                                                      <!-- 
+                                                      #####################
+                                                      ***Cabeçalhos HTML***
+                                                      #####################
+                                                        -->   
+
+                                                  <!-- O elemento <head> HTML -->
+
+<!-- O elemento <head> é um contêiner para metadados (dados sobre dados) e é colocado entre a tag <html> e a tag <body>.
+Metadados HTML são dados sobre o documento HTML. Metadados não são exibidos.
+Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos, links, scripts e outras informações meta.
+As seguintes tags descrevem metadados: <title>, <style>, <meta>, <link>, <script>, e <base>. -->
+
+                                                <!-- O elemento <title> HTML  -->
+
+<!-- O elemento <title> define o título do documento e é obrigatório em todos os documentos HTML / XHTML.
+
+O elemento <title>:
+
+define um título na guia do navegador
+fornece um título para a página quando ela é adicionada aos favoritos
+exibe um título para a página nos resultados do mecanismo de pesquisa
+Um documento HTML simples:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+</html>
+-->
+
+                                                    <!-- O elemento <style> HTML  -->
+
+<!-- O elemento <style> é usado para definir informações de estilo para uma única página HTML:
+
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+-->
+
+                                                    <!-- O elemento <link> HTML -->
+
+<!-- O <link>elemento é usado para vincular a folhas de estilo externas:
+
+<link rel="stylesheet" href="mystyle.css">
+-->
+
+                                                  <!-- O elemento <meta> HTML -->
+
+<!-- O elemento <meta> é usado para especificar qual conjunto de caracteres
+é usado, descrição da página, palavras-chave, autor e outros metadados.
+Os metadados são usados ​​pelos navegadores (como exibir conteúdo),
+pelos mecanismos de pesquisa (palavras-chave) e outros serviços da Web.
+Defina o conjunto de caracteres usado:
+
+<meta charset="UTF-8">
+
+Defina uma descrição da sua página da web:
+
+<meta name="description" content="Free Web tutorials">
+
+Defina palavras-chave para os mecanismos de pesquisa:
+
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+
+Defina o autor de uma página:
+
+<meta name="author" content="John Doe">
+
+Atualizar documento a cada 30 segundos:
+
+<meta http-equiv="refresh" content="30">
+
+Exemplo de tags <meta>:
+
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+-->
+
+                                                  <!-- Configurando o Viewport -->
+
+<!-- O HTML5 introduziu um método para permitir que os web designers assumissem o controle da viewport, por meio da tag <meta>.
+A janela de visualização é a área visível do usuário de uma página da web.
+Varia de acordo com o dispositivo e será menor em um celular do que em uma tela de computador.
+Você deve incluir o seguinte elemento <meta> de viewport em todas as suas páginas da Web:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Um elemento <meta> de viewport fornece instruções ao navegador sobre como controlar as dimensões e o dimensionamento da página.
+A largura = parte da largura do dispositivo define a largura da página para seguir a largura da
+tela do dispositivo (que varia dependendo do dispositivo).
+A escala inicial = 1,0 parte define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+-->
+
+                                                  <!-- O elemento <script> HTML -->
+
+<!-- O elemento <script> é usado para definir JavaScripts do lado do cliente.
+Este JavaScript escreve "Olá, JavaScript!" em um elemento HTML com id = "demo":
+
+<script>
+function myFunction {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+ -->
+
+                                                    <!-- O elemento <base> HTML -->
+
+<!-- O elemento <base> especifica o URL base e o destino base para todos os URLs relativos em uma página:
+
+<base href="https://www.w3schools.com/images/" target="_blank">
+ -->
+
+                                        <!-- Omitindo <html>, <head> e <body> -->
+
+<!--De acordo com o padrão HTML5; o <html>, o <body> e a tag <head> podem ser omitidos.
+O código a seguir será validado como HTML5:
+
+<!DOCTYPE html>
+<title>Page Title</title>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+-->
+
+<!-- Nota:
+A W3Schools não recomenda omitir as tags <html>e <body>. Omitir essas tags pode travar o software DOM ou XML
+e produzir erros em navegadores mais antigos (IE9).
+No entanto, omitir a <head>tag é uma prática comum há algum tempo.
+ -->
+
+                                                      <!-- 
+                                                      #####################
+                                                      ***Layouts de HTML***
+                                                      #####################
+                                                        -->   
+
+                                                <!-- Elementos de layout HTML -->
+
+<!-- Os sites geralmente exibem conteúdo em várias colunas (como uma revista ou jornal).
+
+O HTML5 oferece novos elementos semânticos que definem as diferentes partes de uma página da web:
+
+Elementos semânticos em HTML5	
+<header> - Define um cabeçalho para um documento ou uma seção
+<nav> - Define um contêiner para links de navegação
+<section> - Define uma seção em um documento
+<article> - Define um artigo autônomo independente
+<aside> - Define o conteúdo além do conteúdo (como uma barra lateral)
+<footer> - Define um rodapé para um documento ou uma seção
+<details> - Define detalhes adicionais
+<summary> - Define um título para o elemento <details>
+ -->
+
+                                                  <!-- Técnicas de Layout HTML -->
+
+<!-- Existem cinco maneiras diferentes de criar layouts de várias colunas. Cada maneira tem seus prós e contras:
+
+Tabelas HTML (não recomendado)
+Propriedade de flutuação CSS
+Flexbox CSS
+Estrutura CSS
+Grade CSS
+-->
+
+                                                  <!-- Qual deles escolher? -->
+
+                                                    <!-- Tabelas HTML -->
+
+<!-- O elemento <table> não foi projetado para ser uma ferramenta de layout! O objetivo do elemento <table> é exibir dados tabulares.
+Portanto, não use tabelas para o layout da sua página! Eles vão trazer uma confusão em seu código.
+E imagine como será difícil reformular seu site depois de alguns meses.
+Dica: NÃO use tabelas para o layout da sua página!-->
+
+                                                    <!-- Frameworks CSS -->
+
+<!-- Se você quiser criar seu layout rapidamente, você pode usar uma estrutura, como W3.CSS ou Bootstrap . -->
+
+                                                    <!-- Flutuadores CSS -->
+
+<!-- É comum fazer layouts da web inteiros usando a propriedade float CSS.
+Float é fácil de aprender - você só precisa lembrar como funcionam as propriedades float e clear.
+Desvantagens: Os elementos flutuantes estão vinculados ao fluxo de documentos, o que pode prejudicar a flexibilidade.
+Saiba mais sobre float no nosso capítulo CSS Float and Clear .
+ -->
+
+                                                        <!-- Flexbox CSS -->
+
+<!-- Flexbox é um novo modo de layout em CSS3.
+O uso do flexbox garante que os elementos se comportem de maneira previsível quando o layout da página deve acomodar diferentes tamanhos de tela e diferentes dispositivos de exibição. Desvantagens: Não funciona no IE10 e anterior.
+Saiba mais sobre o flexbox no nosso capítulo CSS Flexbox . -->
+
+                                                <!-- Visualização da grade CSS -->
+
+<!-- O CSS Grid Layout Module oferece um sistema de layout baseado em grade, com linhas e colunas,
+facilitando o design de páginas da web sem a necessidade de usar floats e posicionamento.
+Desvantagens: Não funciona no IE nem no Edge 15 e anteriores. -->
+
+                                                      <!-- 
+                                                      ###################################
+                                                      ***Web design responsivo em HTML***
+                                                      ###################################
+                                                        -->   
+
+                                                <!-- O que é design web responsivo? -->
+
+<!-- O Responsive Web Design é sobre o uso de HTML e CSS para redimensionar, ocultar, encolher ou ampliar
+automaticamente um website para torná-lo bonito em todos os dispositivos (desktops, tablets e telefones).
+
+Nota: Uma página da web deve ficar bem em qualquer dispositivo ! -->
+
+                                                  <!-- Configurando o Viewport -->
+
+<!-- Ao criar páginas da Web responsivas, adicione o seguinte elemento <meta> em todas as suas páginas da Web:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Isso definirá a janela de visualização de sua página, que fornecerá instruções
+ao navegador sobre como controlar as dimensões e o dimensionamento da página.-->
+
+                                                  <!-- Imagens responsivas -->
+
+<!-- Imagens responsivas são imagens que se ajustam bem a qualquer tamanho de navegador. -->
+
+                                                <!-- Usando a propriedade width -->
+
+<!-- Se a widthpropriedade CSS estiver definida como 100%, a imagem será responsiva e aumentará e diminuirá a escala:
+
+<img src="img_girl.jpg" style="width:100%;">
+
+Observe que no exemplo acima, a imagem pode ser ampliada para ser maior que seu tamanho original.
+Uma solução melhor, em muitos casos, será usar a max-widthpropriedade.
+-->
+
+                                              <!-- Usando a propriedade max-width -->
+
+<!-- Se a max-widthpropriedade estiver configurada para 100%, a imagem diminuirá, se necessário,
+mas nunca aumentará para ser maior que seu tamanho original:
+
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+ -->
+
+                                  <!-- Mostrar imagens diferentes dependendo da largura do navegador -->
+
+<!-- O elemento <picture> HTML permite definir imagens diferentes para diferentes tamanhos de janelas do navegador.
+Redimensione a janela do navegador para ver como a imagem abaixo muda dependendo da largura:
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+-->
+
+                                                  <!-- Tamanho do texto responsivp -->
+
+<!-- O tamanho do texto pode ser definido com uma unidade "vw", o que significa a "largura da janela de visualização".
+Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:
+
+<h1 style="font-size:10vw">Hello World</h1>
+
+Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. 
+Se a janela de visualização tiver 50 cm de largura, 1 vw será de 0,5 cm.
+-->
+
+                                                      <!-- Consultas de mídia -->
+
+<!-- Além de redimensionar texto e imagens, também é comum usar consultas de mídia em páginas da Web responsivas.
+Com as consultas de mídia, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+Exemplo: redimensione a janela do navegador para ver se os três elementos div abaixo 
+serão exibidos horizontalmente em telas grandes e empilhados verticalmente em telas pequenas: 
+
+<style>
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+-->
+
+                                        <!-- Página Web Responsiva - Exemplo Completo -->
+
+<!-- Uma página da Web responsiva deve ter boa aparência em grandes telas de área de trabalho e pequenos telefones celulares. -->
+
+                                          <!-- Web Design Responsivo - Frameworks -->
+
+<!-- Existem muitos frameworks CSS que oferecem design responsivo.
+Eles são gratuitos e fáceis de usar. -->
+
+                                                      <!-- Usando o W3.CSS -->
+
+<!-- 
+Uma ótima maneira de criar um design responsivo é usar uma folha de estilo responsiva, como W3.CSS
+O W3.CSS facilita o desenvolvimento de sites que pareçam agradáveis ​​em qualquer tamanho; área de trabalho, laptop, tablet ou telefone: 
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-green">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+
+</body>
+</html>
+-->
+
+                                                          <!-- Bootstrap -->
+
+<!-- Outro framework popular é o Bootstrap, ele usa HTML, CSS e jQuery para criar páginas da Web responsivas.
+EX:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      ...
+    </div>
+    <div class="col-sm-4">
+      ...
+    </div>
+    <div class="col-sm-4">
+    ...
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+-->
+
+                                              <!-- 
+                                              ############################################
+                                              ***Elementos de código de computador HTML***
+                                              ############################################
+                                                -->   
+
+                                                          <!-- Código de Computador
+
+                                                          <code>
+                                                          x = 5;<br>
+                                                          y = 6;<br>
+                                                          z = x + y;
+                                                          </code>
+                                                          -->
+
+                                                <!-- HTML <kbd> para entrada de teclado -->
+
+<!-- O <kbd>elemento HTML representa a entrada do usuário, como entrada de teclado ou comandos de voz.
+O texto cercado por <kbd>tags é normalmente exibido na fonte monoespaçada padrão do navegador:
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+Resultado:
+
+Save the document by pressing Ctrl + S
+ -->
+
+                                            <!-- HTML <samp> para saída do programa -->
+
+<!-- 
+O elemento <samp> HTML representa a saída de um programa ou sistema de computação.
+O texto cercado por tags <samp> é normalmente exibido na fonte monoespaçada padrão do navegador:
+
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+Resultado:
+
+If you input wrong value, the program will return Error!
+-->
+
+                                        <!-- HTML <code> para código de computador -->
+
+<!-- O elemento <code> HTML define um fragmento de código de computador.
+O texto cercado por tags <code> é normalmente exibido na fonte monoespaçada padrão do navegador: 
+  
+Exemplo:
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+
+Resultado:
+
+x = 5; y = 6; z = x + y;
+
+Observe que o elemento <code> não preserva espaço em branco adicional e quebras de linha.
+  
+Para corrigir isso, você pode colocar o elemento <code> dentro de um elemento <pre>:
+
+Exemplo:
+
+<pre>
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+
+Resultado:
+
+ x = 5;
+y = 6;
+z = x + y;
+-->
+
+                                            <!-- HTML <var> para variáveis -->
+
+<!-- O elemento <var> HTML define uma variável.
+A variável poderia ser uma variável em uma expressão matemática ou uma variável no contexto de programação:
+
+Exemplo:
+
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+
+Resultado:
+
+Einstein wrote: E = mc2.
+ -->
+
+                                              <!-- 
+                                              ############################################
+                                              ***Elementos de código de computador HTML***
+                                              ############################################
+                                                -->   
+
+                                                        <!-- Entidades HTML -->
+
+<!-- Os caracteres reservados no HTML devem ser substituídos por entidades de caracteres.
+Caracteres que não estão presentes no teclado também podem ser substituídos por entidades. -->
+
+                                                      <!-- Entidades HTML -->
+
+<!-- Alguns caracteres são reservados em HTML.
+Se você usar os sinais menor que (<) ou maior que (>) em seu texto, o navegador poderá misturá-los com tags.
+Entidades de caracteres são usadas para exibir caracteres reservados em HTML.
+Uma entidade de personagem é assim:
+
+&entity_name;
+OR
+
+&#entity_number;
+-->
+
+<!-- Para exibir um sinal menor que (<), devemos escrever: & lt; ou & # 60;
+
+Vantagem de usar um nome de entidade: um nome de entidade é fácil de lembrar. 
+Desvantagem de usar um nome de entidade:
+Os navegadores podem não suportar todos os nomes de entidades, mas o suporte para números é bom.
+-->
+
+                                                      <!-- Espaço inquebrável -->
+
+<!--Uma entidade de caractere comum usada em HTML é o espaço sem quebra: & nbsp;
+Um espaço sem quebra é um espaço que não entrará em uma nova linha.
+Duas palavras separadas por um espaço não separável ficarão juntas (não entrem em uma nova linha).
+Isso é útil quando quebrar as palavras pode ser perturbador.
+
+Exemplos:
+
+§ 10
+10 km / h
+22h
+
+Outro uso comum do espaço não separável é impedir que os navegadores truncem espaços em páginas HTML.
+Se você escrever 10 espaços em seu texto, o navegador removerá 9 deles.
+Para adicionar espaços reais ao seu texto, você pode usar o & nbsp; entidade de personagem.
+
+O hífen sem quebra ( & # 8209; ) permite que você use um hífen (-) que não irá quebrar.
+Nota: Os nomes de entidades fazem distinção entre maiúsculas e minúsculas.-->
+
+                                                  <!-- Combinando Marcas Diacríticas -->
+
+<!-- Uma marca diacrítica é um "glifo" adicionado a uma letra.
+Algumas marcas diacríticas, como grave (̀) e aguda (́) são chamadas de acentos.
+Marcas diacríticas podem aparecer acima e abaixo de uma letra, dentro de uma letra e entre duas letras.
+Marcas diacríticas podem ser usadas em combinação com caracteres alfanuméricos para produzir
+um caractere que não esteja presente no conjunto de caracteres (codificação) usado na página.
+aqui estão alguns exemplos:
+
+Mark	Character	Construct	Result
+ ̀	      a	      a&#768;	    à
+ ́	      a	      a&#769;	    á
+^	       a	     a&#770;	   â
+ ̃	      a	      a&#771;   	ã
+-->
+
+                                              <!-- 
+                                              ################################################
+                                              ***Codificação HTML (Conjuntos de Caracteres)***
+                                              ################################################
+                                                -->   
+
+<!-- Para exibir uma página HTML corretamente, um navegador da Web deve saber
+qual conjunto de caracteres (codificação de caracteres) deve ser usado. -->
+
+                                            <!-- O que é codificação de caracteres? -->
+
+<!-- ASCII foi o primeiro padrão de codificação de caracteres (também chamado de conjunto de caracteres). 
+O ASCII definiu 128 caracteres alfanuméricos diferentes que podem ser usados ​​na Internet:
+números (0-9), letras inglesas (AZ) e alguns caracteres especiais como! $ + - () @ <>.
+ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. 
+Esse conjunto de caracteres também suportava 256 códigos de caracteres diferentes.
+ANSI (Windows-1252) foi o conjunto de caracteres original do Windows. ANSI é idêntico ao ISO-8859-1, exceto que o ANSI tem 32 caracteres extras.
+Como o ANSI e o ISO-8859-1 eram tão limitados, o HTML 4 também suportava o UTF-8. 
+
+UTF-8 (Unicode) abrange quase todos os personagens e símbolos do mundo.
+
+A codificação de caracteres padrão para HTML5 é UTF-8.-->
+
+                                                <!-- O atributo charset HTML -->
+
+<!-- Para exibir uma página HTML corretamente, um navegador da Web deve conhecer o conjunto de caracteres usado na página.
+Isso é especificado na tag <meta>:
+
+Para HTML4:
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+
+Para HTML5:
+
+<meta charset="UTF-8">
+
+Se um navegador detectar ISO-8859-1 em uma página da Web, o padrão será ANSI.-->
+
+                                                <!-- O conjunto de caracteres ASCII -->
+
+<!-- O ASCII usa os valores de 0 a 31 (e 127) para caracteres de controle.
+O ASCII usa os valores de 32 a 126 para letras, dígitos e símbolos.
+ASCII não usa os valores de 128 a 255. -->
+
+                                        <!-- O conjunto de caracteres ANSI (Windows-1252) -->
+
+<!-- ANSI é idêntico ao ASCII para os valores de 0 a 127.
+ANSI tem um conjunto de caracteres proprietários para os valores de 128 a 159.
+ANSI é idêntico ao UTF-8 para os valores de 160 a 255. -->
+
+                                            <!-- O conjunto de caracteres ISO-8859-1 -->
+
+<!-- 8859-1 é idêntico ao ASCII para os valores de 0 a 127.
+8859-1 não usa os valores de 128 a 159.
+8859-1 é idêntico ao UTF-8 para os valores de 160 a 255. -->
+
+                                            <!-- O conjunto de caracteres UTF-8 -->
+
+<!-- O UTF-8 é idêntico ao ASCII para os valores de 0 a 127.
+O UTF-8 não usa os valores de 128 a 159. 
+O UTF-8 é idêntico ao ANSI e ao 8859-1 para os valores de 160 a 255.
+O UTF-8 continua a partir do valor 256 com mais de 10 000 caracteres diferentes. -->
+
+                                                <!-- A regra CSS @charset -->
+
+<!-- Você pode usar a @charsetregra CSS para especificar a codificação de caracteres usada em uma folha de estilos:
+
+Exemplo:
+
+Defina a codificação da folha de estilo para Unicode UTF-8:
+
+@charset "UTF-8";
+-->
+
+                                              <!-- 
+                                              #################################################
+                                              ***Localizadores uniformes de recursos em HTML***
+                                              #################################################
+                                                -->   
+
+<!-- Um URL é outra palavra para um endereço da web.
+Um URL pode ser composto de palavras (w3schools.com) ou um endereço IP (192.68.20.50).
+A maioria das pessoas insere o nome quando navega, porque os nomes são mais fáceis de lembrar do que os números. -->
+
+                                          <!-- URL - Localizador Uniforme de Recursos -->
+
+<!-- Navegadores da Web solicitam páginas de servidores da Web usando um URL.
+Um Uniform Resource Locator (URL) é usado para endereçar um documento (ou outros dados) na web.
+Um endereço da Web como https://www.w3schools.com/html/default.asp segue estas regras de sintaxe:
+
+scheme://prefix.domain:port/path/filename
+
+Explicação:
+
+scheme - define o tipo de serviço de Internet (o mais comum é http ou https )
+prefix - define um prefixo de domínio (o padrão para http é www )
+domain - define o nome do domínio da Internet (como w3schools.com)
+port - define o número da porta no host (o padrão para http é 80 )
+path - define um caminho no servidor (se omitido: o diretório raiz do site)
+filename - define o nome de um documento ou recurso
+-->
+
+                                                  <!-- Esquemas de URL comuns -->
+
+<!-- A tabela abaixo lista alguns esquemas comuns:
+
+
+Scheme	              Shortfor	                              Usedfor
+
+http	        HyperText Transfer Protocol	            Common web pages. Not encrypted
+https	        Secure HyperText Transfer Protocol	    Secure web pages. Encrypted
+ftp	          File Transfer Protocol	                Downloading or uploading files
+file	 	                                              A file on your computer
+-->
+
+                                                    <!-- Codificação de URL -->
+
+<!-- As URLs só podem ser enviadas pela Internet usando o conjunto de caracteres ASCII.
+Se um URL contiver caracteres fora do conjunto ASCII, o URL deverá ser convertido.
+A codificação de URL converte caracteres não ASCII em um formato que pode ser transmitido pela Internet.
+A codificação de URL substitui caracteres não-ASCII por um "%" seguido por dígitos hexadecimais.
+URLs não podem conter espaços. A codificação de URL normalmente substitui um espaço por um sinal de mais (+) ou% 20. -->
+
+                                            <!-- Exemplos de codificação ASCII -->
+
+<!-- Seu navegador codificará a entrada, de acordo com o conjunto de caracteres usado em sua página.
+O conjunto de caracteres padrão em HTML5 é UTF-8.
+
+
+Character	  From Windows-1252   From UTF-8
+
+€	              %80	              %E2%82%AC
+£	              %A3	              %C2%A3
+©	              %A9	              %C2%A9
+®	              %AE	              %C2%AE
+À	              %C0	              %C3%80
+Á	              %C1	              %C3%81
+Â	              %C2	              %C3%82
+Ã	              %C3	              %C3%83
+Ä	              %C4	              %C3%84
+Å	              %C5	              %C3%85
+-->
+
+                                                            <!-- 
+                                                            ##################
+                                                            ***HTML e XHTML***
+                                                            ##################
+                                                              -->   
+
+<!-- XHTML é HTML escrito como XML. -->
+
+                                                          <!-- O que é o XHTML? -->
+
+<!-- XHTML está para eXtensible Hyper Text Markup Language
+XHTML é quase idêntico ao HTML
+XHTML é mais rigoroso que HTML
+XHTML é HTML definido como um aplicativo XML
+XHTML é suportado por todos os principais navegadores -->
+
+                                                        <!-- Por que XHTML? -->
+
+<!-- Muitas páginas na internet contêm HTML "ruim".
+Este código HTML funciona bem na maioria dos navegadores (mesmo que não siga as regras HTML) 
+
+<html>
+<head>
+  <title>This is bad HTML</title>
+
+<body>
+  <h1>Bad HTML
+  <p>This is a paragraph
+</body>
+-->
+
+<!-- O mercado de hoje consiste em diferentes tecnologias de navegadores.
+Alguns navegadores são executados em computadores e alguns navegadores são executados em
+telefones celulares ou outros dispositivos pequenos. Dispositivos menores geralmente não têm
+recursos ou poder para interpretar marcações "ruins".
+XML é uma linguagem de marcação em que os documentos devem ser marcados corretamente (serem "bem formados").
+O XHTML foi desenvolvido combinando os pontos fortes de HTML e XML.
+XHTML é HTML redesenhado como XML. -->
+
+                                              <!-- As diferenças mais importantes do HTML -->
+
+<!-- Estrutura do documento:
+
+XHTML DOCTYPE é obrigatório
+O atributo xmlns em <html> é obrigatório
+<html>, <head>, <title> e <body> são obrigatórios
+-->
+
+                                                      <!-- Elementos XHTML -->
+
+<!-- 
+Elementos XHTML devem estar corretamente aninhados
+Elementos XHTML devem estar sempre fechados
+Os elementos XHTML devem estar em minúsculas
+Documentos XHTML devem ter um elemento raiz -->
+
+                                                      <!-- Atributos XHTML -->
+
+<!-- Os nomes dos atributos devem estar em minúsculas
+Os valores dos atributos devem ser citados
+A minimização de atributos é proibida -->
+
+                                              <!-- <! DOCTYPE ....> é obrigatório -->
+
+<!-- Um documento XHTML deve ter uma declaração XHTML DOCTYPE.
+Uma lista completa de todos os Doctipos XHTML é encontrada em nossa Referência de tags HTML.
+Os elementos <html>, <head>, <title> e <body> também devem estar presentes,
+e o atributo xmlns em <html> deve especificar o namespace xml para o documento.
+Este exemplo mostra um documento XHTML com um mínimo de tags obrigatórias:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Title of document</title>
+</head>
+
+<body>
+  some content 
+</body>
+
+</html>
+-->
+
+                                          <!-- Elementos XHTML devem ser adequadamente aninhados -->
+
+<!-- Em HTML, alguns elementos podem ser aninhados de forma inadequada entre si, assim:
+
+<b><i>This text is bold and italic</b></i>
+
+Em XHTML, todos os elementos devem estar adequadamente aninhados entre si, assim:
+
+<b><i>This text is bold and italic</i></b>
+ -->
+
+                                          <!-- Elementos XHTML devem estar sempre fechados -->
+
+<!-- Isto está errado:
+
+<p>This is a paragraph
+<p>This is another paragraph
+
+Isto está certo:
+
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+-->
+
+                                            <!-- Elementos vazios também devem ser fechados -->
+
+<!-- 
+Isto está errado:
+
+A break: <br>
+A horizontal rule: <hr>
+An image: <img src="happy.gif" alt="Happy face">
+
+
+Isto está certo:
+
+A break: <br />
+A horizontal rule: <hr />
+An image: <img src="happy.gif" alt="Happy face" />
+-->
+
+                                              <!-- Elementos XHTML devem estar em minúsculas -->
+
+<!-- 
+Isto está errado:
+
+<BODY>
+<P>This is a paragraph</P>
+</BODY>
+
+Isto está certo:
+
+<body>
+<p>This is a paragraph</p>
+</body>
+-->
+
+                                        <!-- Nomes de atributos XHTML devem estar em minúsculas -->
+
+<!-- Isto está errado:
+
+<table WIDTH="100%">
+  
+Isto está certo:
+
+<table width="100%">
+-->
+
+                                              <!-- Valores de atributos devem ser citados -->
+
+<!-- Isto está errado:
+
+<table width=100%>
+  
+Isto está certo:
+
+<table width="100%">
+-->
+
+                                            <!-- Minimização de Atributos é Proibida -->
+
+<!-- Errado:
+
+<input type="checkbox" name="vehicle" value="car" checked />
+
+Corrigir:
+
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+
+Errado:
+
+<input type="text" name="lastname" disabled />
+
+Corrigir:
+
+<input type="text" name="lastname" disabled="disabled" />
+-->
+
+                                            <!-- Como converter de HTML para XHTML -->
+
+<!-- Adicione um XHTML <! DOCTYPE> à primeira linha de cada página
+Adicione um atributo xmlns ao elemento html de cada página
+Alterar todos os nomes de elementos para minúsculas
+Feche todos os elementos vazios
+Alterar todos os nomes de atributos para minúsculas
+Cite todos os valores de atributo -->
+
+                                                            <!-- 
+                                                            #######################
+                                                            ***O elemento <form>***
+                                                            #######################
+                                                              -->   
+
+                                                          <!-- O elemento <form> -->
+
+<!-- O elemento <form> HTML define um formulário que é usado para coletar a entrada do usuário:
+
+<form>
+.
+form elements
+.
+</form>
+
+Um formulário HTML contém elementos de formulário .
+Os elementos de formulário são tipos diferentes de elementos de entrada,
+como campos de texto, caixas de seleção, botões de opção, botões de envio e muito mais. -->
+
+                                                          <!-- O elemento <input> -->
+
+<!-- O elemento <input> é o elemento de formulário mais importante.
+O elemento <input> pode ser exibido de várias maneiras, dependendo do atributo type .
+aqui estão alguns exemplos:
+
+Tipo	                                          Descrição
+<input type = "text">	        Define um campo de entrada de texto de uma linha
+<input type = "radio">	      Define um botão de opção (para selecionar uma das várias opções)
+<input type = "submit">	      Define um botão de envio (para enviar o formulário)
+ -->
+
+                                                          <!-- Entrada de texto -->
+
+<!-- <input type="text">define um campo de entrada de uma linha para entrada de texto :
+
+Exemplo:
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+Nota: O formulário em si não é visível. Observe também que a largura padrão de um campo de texto é de 20 caracteres. -->
+
+                                                        <!-- Entrada de botão de rádio -->
+
+<!-- <input type="radio">define um botão de opção.
+Os botões de opção permitem que um usuário selecione UMA de um número limitado de opções:
+
+Exemplo:
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+-->
+
+                                                            <!-- O botão submit -->
+
+<!-- 
+<input type="submit"> define um botão para enviar os dados do formulário para um manipulador de formulários.
+O manipulador de formulários geralmente é uma página do servidor com um script para processar dados de entrada.
+O manipulador de formulários é especificado no atributo de ação do formulário:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+-->
+
+                                                        <!-- O atributo action -->
+
+<!-- O atributo action define a ação a ser executada quando o formulário é enviado.
+Normalmente, os dados do formulário são enviados para uma página da Web no servidor quando o usuário clica no botão de envio.
+No exemplo acima, os dados do formulário são enviados para uma página no servidor chamada "/action_page.php".
+Esta página contém um script do lado do servidor que manipula os dados do formulário:
+
+<form action="/action_page.php">
+
+Se o atributo action for omitido, a ação será definida para a página atual.
+-->
+
+                                                      <!-- O atributo target -->
+
+<!-- O atributo target especifica se o resultado enviado será aberto em uma nova guia do navegador, em um quadro ou na janela atual.
+O valor padrão é " _self", o que significa que o formulário será enviado na janela atual.
+Para tornar o resultado do formulário aberto em uma nova guia do navegador, use o valor " _blank":
+
+Exemplo:
+
+<form action="/action_page.php" target="_blank">
+
+Outros valores legais são " _parent", " _top" ou um nome que representa o nome de um iframe. -->
+
+                                                        <!-- O atributo do method -->
+
+<!-- O atributo method especifica o método HTTP ( GET ou POST ) a ser usado ao enviar os dados do formulário:
+
+<form action="/action_page.php" method="get">
+
+  OU
+
+<form action="/action_page.php" method="post">
+-->
+
+                                                      <!-- Quando usar o GET? -->
+
+<!-- 
+O método padrão ao enviar dados de formulário é GET.
+No entanto, quando o GET é usado, os dados do formulário apresentado ficarão visíveis no campo de endereço da página :
+
+/action_page.php?firstname=Mickey&lastname=Mouse
+
+Notas sobre GET:
+
+Anexa dados de formulário ao URL em pares nome / valor
+O tamanho de um URL é limitado (cerca de 3000 caracteres)
+Nunca use o GET para enviar dados confidenciais! (será visível no URL)
+Útil para envios de formulários em que um usuário deseja marcar o resultado
+GET é melhor para dados não seguros, como strings de consulta no Google
+-->
+
+                                                    <!-- Quando usar o POST? -->
+
+<!-- 
+Sempre use POST se os dados do formulário contiverem informações confidenciais ou pessoais. 
+O método POST não exibe os dados do formulário enviado no campo de endereço da página.
+Notas sobre o POST:
+O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.
+Os envios de formulários com o POST não podem ser marcados. -->
+
+                                                      <!-- O atributo name -->
+
+<!-- Cada campo de entrada deve ter um nameatributo a ser enviado.
+Se o atributo name for omitido, os dados desse campo de entrada não serão enviados.
+Este exemplo só enviará o campo de entrada "Sobrenome":
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+-->
+
+                                        <!-- Agrupando dados de formulário com <fieldset> -->
+
+<!-- O elemento <fieldset> é usado para agrupar dados relacionados em um formulário.
+O elemento <legend> define uma legenda para o elemento <fieldset>. 
+
+Exemplo:
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+-->
+
+
+                                                      <!-- 
+                                                      ##################################
+                                                      ***Elementos de Formulário HTML***
+                                                      ##################################
+                                                        -->   
+
+                                                        <!-- O elemento <input> -->
+
+<!-- O elemento de formulário mais importante é o elemento <input>.
+O elemento <input> pode ser exibido de várias maneiras, dependendo do type atributo.
+
+Exemplo:
+
+<input name="firstname" type="text">
+
+Se o typeatributo for omitido, o campo de entrada receberá o tipo padrão: "text".-->
+
+                                                        <!-- O elemento <select> -->
+
+<!-- O elemento <select> define uma lista suspensa :
+
+Exemplo
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+-->
+
+<!-- Os elementos <option> definem uma opção que pode ser selecionada.
+Por padrão, o primeiro item da lista suspensa é selecionado.
+Para definir uma opção pré-selecionada, adicione o atributo selected à opção:
+
+Exemplo:
+
+<option value="fiat" selected>Fiat</option>
+-->
+
+                                                  <!-- Valores Visíveis -->
+
+<!--Use o atributo size para especificar o número de valores visíveis:
+
+Exemplo:
+
+<select name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>  
+-->
+
+                                              <!-- Permitir várias seleções -->
+
+<!-- Use o atributo multiple para permitir que o usuário selecione mais de um valor:
+
+Exemplo:
+
+<select name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+-->
+
+                                              <!-- O elemento <textarea> -->
+
+<!-- O elemento <textarea> define um campo de entrada de várias linhas ( uma área de texto ):
+
+Exemplo:
+
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+O rowsatributo especifica o número visível de linhas em uma área de texto.
+O colsatributo especifica a largura visível de uma área de texto.
+-->
+
+<!-- Você também pode definir o tamanho da área de texto usando CSS:
+
+<textarea name="message" style="width:200px; height:600px;">
+The cat was playing in the garden.
+</textarea>
+-->
+
+                                                <!-- O elemento <button> -->
+
+<!-- O <button>elemento define um botão clicável :
+
+Exemplo
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+-->
+
+<!-- Nota: Sempre especifique o atributo type para o elemento button.
+Navegadores diferentes podem usar tipos padrão diferentes para o elemento de botão.
+ -->
+
+                                            <!-- Elementos do formulário HTML5 -->
+
+<!-- O HTML5 adicionou os seguintes elementos de formulário:
+
+<datalist>
+<output>
+-->
+
+<!-- 
+Nota: Os navegadores não exibem elementos desconhecidos.
+Novos elementos que não são suportados em navegadores mais antigos não "destruirão" sua página da web. -->
+
+                                                <!-- Elemento HTML5 <datalist> -->
+
+<!-- 
+O elemento <datalist> especifica uma lista de opções predefinidas para um elemento <input>.
+Os usuários verão uma lista suspensa das opções predefinidas conforme eles inserem dados.
+O atributo list do elemento <input> deve referir-se ao atributo id do elemento <datalist>.
+  
+Exemplo:
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+</form>
+-->
+
+                                                    <!-- Elemento HTML5 <output> -->
+
+<!-- O <output>elemento representa o resultado de um cálculo (como um executado por um script).
+
+Exemplo:
+
+Execute um cálculo e mostre o resultado em um <output>elemento:
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+-->
+
+                                                      <!-- 
+                                                      ######################
+                                                      ***HTML Input Types***
+                                                      ######################
+                                                        -->   
+
+<!-- Aqui estão os diferentes tipos de entrada que você pode usar em HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+-->
+
+                                                    <!-- Input Type Text -->
+
+<!-- <input type="text"> define um campo de entrada de texto de uma linha
+
+Exemplo:
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+-->
+
+                                                  <!-- Input Type Password -->
+
+<!-- <input type="password"> define um campo de senha
+
+Exemplo:
+
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+Os caracteres em um campo de senha são mascarados (mostrados como asteriscos ou círculos).-->
+
+                                                    <!-- Input Type Submit -->
+
+<!-- 
+<input type="submit"> define um botão para enviar dados de formulário para um manipulador de formulários .
+O manipulador de formulários geralmente é uma página do servidor com um script para processar dados de entrada.
+O manipulador de formulários é especificado no atributo action  do formulário
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+Se você omitir o atributo de valor do botão de envio, o botão receberá um texto padrão
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit">
+</form>
+-->
+
+                                                      <!-- Input Type Reset -->
+
+<!-- <input type="reset"> define um botão de redefinição que redefinirá todos os valores de formulário para seus valores padrão
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+Se você alterar os valores de entrada e clicar no botão "Redefinir", os dados do formulário serão redefinidos para os valores padrão.-->
+
+                                                          <!-- Input Type Radio -->
+
+<!-- <input type="radio"> define um botão de opção .
+Os botões de opção permitem que um usuário selecione APENAS UM de um número limitado de opções
+
+Exemplo:
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+ -->
+
+                                                          <!-- Input Type Checkbox -->
+
+<!-- <input type="checkbox"> define uma caixa de seleção .
+As caixas de seleção permitem que um usuário selecione opções ZERO ou MORE de um número limitado de opções.
+
+Exemplo:
+
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+ -->
+
+                                                        <!-- Input Type Button -->
+
+<!-- <input type="button"> define um botão
+
+Exemplo:
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+-->
+
+                                                  <!-- HTML5 Input Types -->
+
+<!-- O HTML5 adicionou vários novos tipos de entrada:
+
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+Novos tipos de entrada que não são suportados por navegadores da Web mais antigos se comportarão como <input type="text">.-->
+
+                                                          <!-- Input Type Color -->
+
+<!-- O <input type="color"> é usado para campos de entrada que devem conter uma cor.
+Dependendo do suporte ao navegador, um seletor de cores pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+-->
+
+                                                          <!-- Input Type Date -->
+
+<!-- 
+O <input type="date"> é usado para campos de entrada que devem conter uma data.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday:
+  <input type="date" name="bday">
+</form>
+-->
+
+<!-- Você também pode usar os atributos min e max para adicionar restrições às datas
+
+Exemplo:
+
+<form>
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+</form>
+-->
+
+                                                    <!-- Input Type Datetime-local -->
+
+<!-- O <input type="datetime-local"> especifica um campo de entrada de data e hora, sem fuso horário.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+</form>
+-->
+
+                                                        <!-- Input Type Email -->
+
+<!-- O <input type="email"> é usado para campos de entrada que devem conter um endereço de e-mail.
+Dependendo do suporte ao navegador, o endereço de e-mail pode ser validado automaticamente quando enviado.
+Alguns smartphones reconhecem o tipo de e-mail e adicionam ".com" ao teclado para corresponder à entrada de e-mail.
+
+Exemplo:
+
+<form>
+  E-mail:
+  <input type="email" name="email">
+</form>
+-->
+
+                                                        <!-- Input Type File -->
+
+<!-- O <input type="file"> define um campo de seleção de arquivos e um botão "Browse" para uploads de arquivos.
+
+Exemplo:
+
+<form>
+  Select a file: <input type="file" name="myFile">
+</form>
+-->
+
+                                                        <!-- Input Type Month -->
+
+<!-- 
+O <input type="month"> permite ao usuário selecionar um mês e ano.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+</form>
+-->
+
+                                                        <!-- Input Type Number -->
+
+<!-- 
+O <input type="number"> define um campo de entrada numérico .
+Você também pode definir restrições sobre quais números são aceitos.
+O exemplo a seguir exibe um campo de entrada numérico, no qual você pode inserir um valor de 1 a 5
+
+Exemplo:
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+</form>
+-->
+
+                                                    <!-- Input Restrictions -->
+
+<!-- Aqui está uma lista de algumas restrições comuns de entrada:
+
+Atributo	                         Descrição
+
+disabled	          Especifica que um campo de entrada deve ser desativado
+max	                Especifica o valor máximo para um campo de entrada
+maxlength	          Especifica o número máximo de caracteres para um campo de entrada
+min	                Especifica o valor mínimo para um campo de entrada
+pattern	            Especifica uma expressão regular para verificar o valor de entrada
+readonly	          Especifica que um campo de entrada é somente leitura (não pode ser alterado)
+required	          Especifica que um campo de entrada é obrigatório (deve ser preenchido)
+size	              Especifica a largura (em caracteres) de um campo de entrada
+step	              Especifica os intervalos numéricos legais para um campo de entrada
+value	              Especifica o valor padrão para um campo de entrada
+-->
+
+<!-- O exemplo a seguir exibe um campo de entrada numérico,
+no qual você pode inserir um valor de 0 a 100, em etapas de 10. O valor padrão é 30:
+
+<form>
+  Quantity:
+  <input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+-->
+
+                                                        <!-- Input Type Range -->
+
+<!-- O <input type="range"> define um controle para inserir um número cujo valor exato não é importante (como um controle deslizante). 
+Intervalo padrão é de 0 a 100. No entanto, você pode definir restrições sobre o que
+os números são aceitos com os atributos min, max e step:
+
+Exemplo:
+
+<form>
+  <input type="range" name="points" min="0" max="10">
+</form>
+-->
+
+                                                      <!-- Input Type Search -->
+
+<!-- O <input type="search">é usado para campos de pesquisa (um campo de pesquisa se comporta como um campo de texto regular).
+
+Exemplo:
+
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+-->
+
+                                                        <!-- Input Type Tel -->
+
+<!-- O <input type="tel">é usado para campos de entrada que devem conter um número de telefone.
+
+Exemplo:
+
+<form>
+  Telephone:
+  <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+-->
+
+                                                        <!-- Input Type Time -->
+
+<!-- O <input type="time"> permite ao usuário selecionar um horário (sem fuso horário).
+Dependendo do suporte ao navegador, um seletor de tempo pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select a time:
+  <input type="time" name="usr_time">
+</form>
+-->
+
+                                                        <!-- Input Type Url -->
+
+<!-- 
+O <input type="url"> é usado para campos de entrada que devem conter um endereço de URL.
+Dependendo do suporte ao navegador, o campo url pode ser validado automaticamente quando enviado.
+Alguns smartphones reconhecem o tipo de URL e adicionam ".com" ao teclado para corresponder à entrada do URL.
+
+Exemplo:
+
+<form>
+  Add your homepage:
+  <input type="url" name="homepage">
+</form>
+-->
+
+                                                        <!-- Input Type Week -->
+
+<!-- 
+O <input type="week"> permite ao usuário selecionar uma semana e ano.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select a week:
+  <input type="week" name="week_year">
+</form>
+-->
+
+                                                      <!-- 
+                                                      ###########################
+                                                      ***HTML Atributos Input***
+                                                      ###########################
+                                                        -->   
+
+                                                      <!-- O Atributo value -->
+
+<!-- O atributo value especifica o valor inicial de um campo de entrada.
+
+Exemplo:
+
+<form action="">
+  First name:<br>
+  <input type="text" name="firstname" value="John">
+</form>
+-->
+
+                                                      <!-- O atributo readonly -->
+
+<!-- O atributo readonly especifica que o campo de entrada é somente leitura (não pode ser alterado).
+
+Exemplo:
+
+<form action="">
+  First name:<br>
+  <input type="text" name="firstname" value="John" readonly>
+</form>
+-->
+
+                                                      <!-- O atributo disabled -->
+
+<!-- 
+O atributo disabled especifica que o campo de entrada está desativado.
+Um campo de entrada desativado é inutilizável e não clicável, e seu valor não será enviado ao enviar o formulário.
+
+Exemplo:
+
+<form action="">
+  First name:<br>
+  <input type="text" name="firstname" value="John" disabled>
+</form>
+-->
+
+                                                        <!-- O atributo size -->
+
+<!-- O atributo size especifica o tamanho (em caracteres) para o campo de entrada.
+
+Exemplo:
+
+<form action="">
+  First name:<br>
+  <input type="text" name="firstname" value="John" size="40">
+</form>
+-->
+
+                                                        <!-- O atributo maxlength -->
+
+<!-- O atributo maxlength especifica o tamanho máximo permitido para o campo de entrada.
+
+Exemplo:
+
+<form action="">
+  First name:<br>
+  <input type="text" name="firstname" maxlength="10">
+</form>
+
+Com um maxlengthatributo, o campo de entrada não aceitará mais do que o número permitido de caracteres.
+O maxlengthatributo não fornece nenhum feedback. Se você quiser alertar o usuário, você deve escrever o código JavaScript.
+Nota: As restrições de entrada não são infalíveis e o JavaScript fornece muitas maneiras de adicionar entradas ilegais.
+Para restringir a entrada com segurança, ela deve ser verificada pelo receptor (o servidor) também! -->
+
+                                                          <!-- Atributos HTML5 -->
+
+<!-- O HTML5 adicionou os seguintes atributos para <input>:
+
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step
+
+e os seguintes atributos para <form>:
+
+autocomplete
+novalidate
+-->
+
+                                                          <!-- O atributo autocomplete -->
+
+<!-- O atributo autocomplete especifica se um formulário ou campo de entrada deve ter o preenchimento automático ativado ou desativado.
+Quando o preenchimento automático está ativado, o navegador completa automaticamente
+os valores de entrada com base nos valores que o usuário inseriu anteriormente.
+Dica: é possível ter preenchimento automático "on" para o formulário e "off" para campos de entrada específicos ou vice-versa.
+O atributo autocomplete funciona com <form> e os seguintes tipos <input>:
+texto, pesquisa, url, tel, email, senha, datepickers, intervalo e cor.
+
+Exemplo:
+
+Um formulário HTML com autocomplete ativado (e desativado para um campo de entrada)
+
+<form action="/action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+
+Dica: em alguns navegadores, talvez seja necessário ativar a função de preenchimento automático para que isso funcione.
+-->
+
+                                                          <!-- O atributo novalidate -->
+
+<!-- O atributo novalidate é um atributo <form>.
+Quando presente, o novalidate especifica que os dados do formulário não devem ser validados quando enviados.
+
+Exemplo:
+
+Indica que o formulário não deve ser validado no envio
+
+<form action="/action_page.php" novalidate>
+  E-mail: <input type="email" name="user_email">
+  <input type="submit">
+</form>
+-->
+
+                                                            <!-- O atributo autofocus -->
+
+<!-- O atributo autofocus especifica que o campo de entrada deve obter automaticamente o foco quando a página é carregada.
+
+Exemplo:
+
+Deixe o campo de entrada "First name" obter automaticamente o foco quando a página for carregada
+
+First name:<input type="text" name="fname" autofocus>
+-->
+
+                                                              <!-- O Atributo form -->
+
+<!-- 
+O atributo form especifica um ou mais formulários a que um elemento <input> pertence.
+Dica: para se referir a mais de um formulário, use uma lista separada por espaço de IDs de formulário
+
+Exemplo:
+
+Um campo de entrada localizado fora do formulário HTML (mas ainda faz parte do formulário)
+
+<form action="/action_page.php" id="form1">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+-->
+
+                                                            <!-- O atributo de formaction -->
+
+<!-- 
+O atributo formaction especifica o URL de um arquivo que processará o controle de entrada quando o formulário for enviado.
+O atributo formaction substitui o atributo action do elemento <form>.
+O atributo formaction é usado com type="submit"e type="image".
+
+Exemplo:
+
+Um formulário HTML com dois botões de envio, com ações diferentes
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="/action_page2.php"
+  value="Submit as admin">
+</form>
+-->
+
+                                                            <!-- O atributo formenctype -->
+
+<!-- 
+O atributo formenctype especifica como os dados do formulário devem ser 
+codificados quando submetidos (somente para formulários com método = "post").
+O atributo formenctype substitui o atributo enctype do elemento <form>.
+O atributo formenctype é usado com type="submit"e type="image".
+
+Exemplo:
+
+Enviar dados de formulário codificados por padrão (o primeiro botão de envio) e codificados
+como "dados de várias partes / formulário" (o segundo botão de envio)
+
+<form action="/action_page_binary.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+-->
+
+                                                              <!-- O atributo formmethod -->
+
+<!-- O atributo formmethod define o método HTTP para enviar dados de formulário para o URL de ação.
+O atributo formmethod substitui o atributo de método do elemento <form>.
+O atributo formmethod pode ser usado com type="submit"e type="image".
+
+Exemplo:
+
+O segundo botão de envio substitui o método HTTP do formulário
+
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+-->
+
+                                                        <!-- O atributo formnovalidate -->
+
+<!-- O atributo formnovalidate substitui o atributo novalidate do elemento <form>.
+O atributo formnovalidate pode ser usado com type="submit".
+
+Exemplo:
+
+Um formulário com dois botões de envio (com e sem validação)
+
+<form action="/action_page.php">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>  
+-->
+
+                                                            <!-- O atributo formtarget -->
+
+<!-- O atributo formtarget especifica um nome ou uma palavra-chave que indica onde exibir a resposta recebida após o envio do formulário.
+O atributo formtarget substitui o atributo de destino do elemento <form>.
+O atributo formtarget pode ser usado com type="submit"e type="image".
+
+Exemplo:
+
+Um formulário com dois botões de envio, com diferentes janelas de destino
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank"
+  value="Submit to a new window">
+</form>
+-->
+
+                                                        <!-- Atributos height e width -->
+
+<!-- Os atributos height e width especificam a altura e a largura de um elemento <input type="image">.
+
+Sempre especifique o tamanho das imagens. Se o navegador não souber o tamanho, a página piscará enquanto as imagens forem carregadas.
+
+Exemplo:
+
+Defina uma imagem como o botão de envio, com atributos de altura e largura
+
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+-->
+
+                                                                <!-- O Atributo list  -->
+
+<!-- O atributo list refere-se a um elemento <datalist> que contém opções predefinidas para um elemento <input>.
+
+Exemplo:
+
+Um elemento <input> com valores predefinidos em um <datalist>
+
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+-->
+
+                                                    <!-- Os atributos min e max -->
+
+<!-- Os atributos min e max especificam os valores mínimo e máximo para um elemento <input>.
+Os atributos min e max funcionam com os seguintes tipos de entrada: number, range, date, datetime-local, month, time and week.
+
+Exemplo:
+
+Elementos <input> com valores mínimo e máximo
+
+Enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+Quantity (between 1 and 5):
+<input type="number" name="quantity" min="1" max="5">
+-->
+
+                                                    <!-- O atributo multiple -->
+
+<!-- O atributo multiple especifica que o usuário tem permissão para inserir mais de um valor no elemento <input>.
+O atributo multiple funciona com os seguintes tipos de entrada: email e arquivo.
+
+Exemplo:
+
+Um campo de upload de arquivo que aceita vários valores
+
+Select images: <input type="file" name="img" multiple>
+-->
+
+                                                  <!-- O atributo pattern -->
+
+<!-- O atributo pattern especifica uma expressão regular na qual o valor do elemento <input> é verificado.
+O atributo pattern funciona com os seguintes tipos de entrada:  text, search, url, tel, email, and password.
+Dica: use o atributo de título global para descrever o padrão para ajudar o usuário.
+
+Exemplo:
+
+Um campo de entrada que pode conter apenas três letras (sem números ou caracteres especiais)
+
+Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+-->
+
+                                          <!-- O atributo placeholder -->
+
+<!-- O atributo placeholder especifica uma dica que descreve o valor esperado de um
+campo de entrada (um valor de amostra ou uma breve descrição do formato).
+A dica é exibida no campo de entrada antes que o usuário insira um valor.
+O atributo placeholder funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, email e senha.
+
+Exemplo:
+
+Um campo de entrada com um texto de espaço reservado
+
+<input type="text" name="fname" placeholder="First name">
+-->
+
+                                            <!-- O atributo required -->
+
+<!-- O atributo required especifica que um campo de entrada deve ser preenchido antes de enviar o formulário.
+O atributo required funciona com os seguintes tipos de entrada:
+text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+Exemplo:
+
+Um campo de entrada obrigatório
+
+Username: <input type="text" name="usrname" required>
+-->
+
+                                              <!-- A Atributo step -->
+
+<!-- O atributo step especifica os intervalos numéricos legais para um elemento <input>.
+
+Exemplo: se step = "3", os números legais podem ser -3, 0, 3, 6, etc.
+
+Dica: o atributo step pode ser usado junto com os atributos max e min para criar um intervalo de valores legais.
+
+O atributo step funciona com os seguintes tipos de entrada: number, range, date, datetime-local, month, time and week.
+
+Exemplo:
+
+Um campo de entrada com intervalos numéricos legais especificados
+
+<input type="number" name="points" step="3">
+-->
+
+                                                      <!-- 
+                                                      ##################
+                                                      ***HTML5 Canvas***
+                                                      ##################
+                                                        -->   
+
+<!-- O <canvas>elemento HTML é usado para desenhar gráficos em uma página da web. -->
+
+                                                <!-- O que é o HTML Canvas? -->
+
+<!-- O elemento <canvas> HTML é usado para desenhar gráficos, on the fly, via JavaScript.
+O elemento <canvas> é apenas um contêiner para gráficos. Você deve usar JavaScript para desenhar os gráficos.
+O Canvas tem vários métodos para desenhar caminhos, caixas, círculos, texto e adição de imagens.
+ -->
+
+                                                <!-- Exemplos de telas -->
+
+<!-- Uma tela é uma área retangular em uma página HTML. Por padrão, uma tela não tem borda nem conteúdo.
+A marcação é assim:
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+-->
+
+<!-- Nota: Sempre especifique um atributo id  (a ser referido em um script) e um width e um atributo height para definir
+o tamanho da tela. Para adicionar uma borda, use o atributo style. 
+
+Exemplo:
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+-->
+
+<!-- Desenhe uma linha
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+-->
+
+<!-- Desenhar um círculo
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+-->
+
+<!-- Desenhe um texto
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50);
+-->
+
+<!-- Texto do curso
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 10, 50);
+-->
+
+<!-- Desenhar Gradiente Linear
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+-->
+
+<!-- Desenhar Gradiente Circular
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+-->
+
+<!-- Desenhar Imagem
+
+Exemplo:
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
+-->
+
+                                                      <!-- 
+                                                      ##################
+                                                      ***SVG em HTML5***
+                                                      ##################
+                                                        -->
+
+                                                    <!-- O que é SVG? -->
+
+<!-- SVG significa Scalable Vector Graphics
+O SVG é usado para definir gráficos para a Web
+SVG é uma recomendação do W3C -->
+
+                                                <!-- O elemento HTML <svg> -->
+
+<!-- O elemento <svg> HTML é um contêiner para gráficos SVG.
+O SVG possui vários métodos para desenhar caminhos, caixas, círculos, texto e imagens gráficas.
+ -->
+
+<!-- Círculo SVG
+
+Exemplo:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+</body>
+</html>
+-->
+
+<!-- Retângulo SVG
+
+Exemplo:
+
+<svg width="400" height="100">
+  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+-->
+
+<!-- Retângulo arredondado SVG
+
+Exemplo:
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+-->
+
+<!-- Estrela SVG 
+
+Exemplo:
+
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+-->
+
+<!-- Logotipo SVG
+
+Exemplo:
+
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+-->
+
+                                          <!-- Diferenças entre o SVG e o Canvas-->
+
+<!-- SVG é uma linguagem para descrever gráficos 2D em XML.
+Canvas desenha gráficos 2D, na mosca (com um JavaScript).
+O SVG é baseado em XML, o que significa que todos os elementos estão disponíveis no DOM do SVG.
+Você pode anexar manipuladores de eventos JavaScript para um elemento.
+Em SVG, cada forma desenhada é lembrada como um objeto. Se os atributos de um objeto SVG forem alterados,
+o navegador poderá renderizar novamente a forma automaticamente.
+A tela é renderizada pixel a pixel. Na tela, quando o gráfico é desenhado, ele é esquecido pelo navegador.
+Se a sua posição deve ser alterada, toda a cena precisa ser redesenhada,
+incluindo quaisquer objetos que possam ter sido cobertos pelo gráfico. -->
+
+                                                <!-- Comparação de Canvas e SVG -->
+
+<!-- A tabela abaixo mostra algumas diferenças importantes entre o Canvas e o SVG:
+
+Canvas	                                                                SVG
+
+Resolução dependente                                                Resolução independente
+Não há suporte para manipuladores de eventos                        Suporte para manipuladores de eventos
+Capacidades de renderização de texto insatisfatórias                Mais adequado para aplicativos com grandes áreas de renderização (Google Maps)
+Você pode salvar a imagem resultante como .png ou .jpg              Renderização lenta se complexa (qualquer coisa que use muito o DOM será lenta)
+Adequado para jogos intensivos em gráficos                          Não é adequado para aplicativos de jogos
+-->
+
+                                                      <!-- 
+                                                      ########################
+                                                      ***Multimídia em HTML***
+                                                      ########################
+                                                        -->
+
+                                                    <!-- O que é multimídia? -->
+
+<!-- Multimídia vem em muitos formatos diferentes. Pode ser quase tudo que você pode ouvir ou ver.
+Exemplos: imagens, músicas, sons, vídeos, registros, filmes, animações e muito mais.
+As páginas da Web geralmente contêm elementos multimídia de diferentes tipos e formatos.
+Neste capítulo, você aprenderá sobre os diferentes formatos de multimídia. -->
+
+                                                    <!-- Suporte de Navegador -->
+
+<!-- Os primeiros navegadores da Web tinham suporte apenas para texto, limitado a uma única fonte em uma única cor.
+Mais tarde vieram navegadores com suporte para cores e fontes e imagens!
+Áudio, vídeo e animação foram tratados de forma diferente pelos principais navegadores. Formatos diferentes têm
+sido suportados e alguns formatos exigem que programas extras de ajuda (plug-ins) funcionem.
+Espero que isso se torne história. A multimídia em HTML5 promete um futuro mais fácil para multimídia. -->
+
+                                                    <!-- Formatos Multimídia -->
+
+<!-- Elementos multimídia (como áudio ou vídeo) são armazenados em arquivos de mídia.
+A maneira mais comum de descobrir o tipo de um arquivo é observar a extensão do arquivo.
+Os arquivos multimídia têm formatos e extensões diferentes, como: .swf, .wav, .mp3, .mp4, .mpg, .wmv e .avi. -->
+
+                                                  <!-- Formatos de Vídeo Comuns -->
+
+<!-- MP4 é o novo e futuro formato de vídeo na Internet. 
+O MP4 é recomendado pelo YouTube. 
+MP4 é suportado por Flash Players. 
+MP4 é suportado pelo HTML5.
+
+Formato         Arquivo             Descrição
+
+MPEG            .mpg.mpeg         MPEG. Desenvolvido pelo Moving Pictures Expert Group. 
+                                  O primeiro formato de vídeo popular na web.
+                                  Utilizado para ser suportado por todos os navegadores,
+                                  mas não é suportado em HTML5 (consulte MP4).
+                                  
+AVI	            .avi	            AVI (Audio Video Interleave). Desenvolvido pela Microsoft.
+                                  Comumente usado em câmeras de vídeo e hardware de TV.
+                                  Joga bem em computadores Windows, mas não em navegadores da web.
+
+WMV	            .wmv	            WMV (Windows Media Video). Desenvolvido pela Microsoft.
+                                  Comumente usado em câmeras de vídeo e hardware de TV.
+                                  Joga bem em computadores Windows, mas não em navegadores da web.
+
+
+QuickTime	      .mov	             Tempo rápido. Desenvolvido pela Apple. Comumente usado em câmeras de vídeo e hardware de TV.
+                                   Joga bem em computadores Apple, mas não em navegadores da web. (Veja MP4)
+
+RealVideo       .rm.ram	           RealVideo. Desenvolvido pela Real Media para permitir streaming de vídeo com baixas larguras de banda.
+                                   Ele ainda é usado para vídeo on-line e TV na Internet, mas não é reproduzido em navegadores da web.
+
+Flash           .swf.flv           Instantâneo. Desenvolvido pela Macromedia.
+                                   Frequentemente requer um componente extra (plug-in) para reproduzir em navegadores da web.
+
+Ogg             .ogg	            Theora Ogg. Desenvolvido pela Fundação Xiph.Org. Suportado por HTML5. 
+
+WebM	          .webm	            WebM. Desenvolvido pelos gigantes da web, Mozilla, Opera, Adobe e Google. Suportado por HTML5.
+
+MPEG-4 ou MP4   .mp4	            MP4. Desenvolvido pelo Moving Pictures Expert Group. Baseado no QuickTime.
+                                  Comumente usado em câmeras de vídeo e hardware de TV.
+                                  Suportado por todos os navegadores HTML5. Recomendado pelo YouTube.
+
+Apenas vídeos MP4, WebM e Ogg são suportados pelo padrão HTML5. -->
+
+                                                        <!-- Formatos de áudio -->
+
+<!-- MP3 é o formato mais recente para música gravada comprimida. O termo MP3 se tornou sinônimo de música digital.
+Se o seu site é sobre música gravada, o MP3 é a escolha.
+
+Formato            Arquivo           Descrição
+
+MIDI              .mid.midi	          MIDI (Interface Digital para Instrumentos Musicais).
+                                      Formato principal para todos os dispositivos de música eletrônica, 
+                                      como sintetizadores e placas de som para PC. Arquivos MIDI não contêm som,
+                                      mas notas digitais que podem ser tocadas por eletrônicos.
+                                      Joga bem em todos os computadores e hardware de música, mas não em navegadores da web.
+
+RealAudio	        .rm.ram	            RealAudio. Desenvolvido pela Real Media para permitir streaming de áudio com baixas
+                                      larguras de banda. Não reproduz em navegadores da web.
+
+WMA	              .wma	              WMA (Windows Media Audio). Desenvolvido pela Microsoft. Comumente usado em players de música.
+                                      Joga bem em computadores Windows, mas não em navegadores da web. 
+
+AAC	              .aac	              AAC (Advanced Audio Coding). Desenvolvido pela Apple como o formato padrão para o iTunes.
+                                      Joga bem em computadores Apple, mas não em navegadores da web.
+  
+
+WAV	              .wav	              WAV Desenvolvido pela IBM e Microsoft. Reproduz bem em sistemas operacionais Windows,
+                                      Macintosh e Linux. Suportado por HTML5.   
+
+Ogg               .ogg	              Ogg. Desenvolvido pela Fundação Xiph.Org. Suportado por HTML5.
+    
+MP3	              .mp3	              Arquivos MP3 são realmente a parte de som dos arquivos MPEG.
+                                      O MP3 é o formato mais popular para players de música.
+                                      Combina boa compactação (arquivos pequenos) com alta qualidade. Suportado por todos os navegadores.
+
+MP4               .mp4	              MP4 é um formato de vídeo, mas também pode ser usado para áudio.
+                                      Vídeo MP4 é o próximo formato de vídeo na internet.
+                                      Isso leva ao suporte automático para áudio MP4 em todos os navegadores.  
+
+Apenas áudio MP3, WAV e Ogg são suportados pelo padrão HTML5. -->
+
+                                                      <!-- 
+                                                      #################################
+                                                      ***Reproduzindo vídeos em HTML***
+                                                      #################################
+                                                        -->
+
+<!-- Antes do HTML5, um vídeo só podia ser reproduzido em um navegador com um plug-in (como flash).
+O elemento <video> HTML5 especifica uma maneira padrão de incorporar um vídeo em uma página da web. -->
+
+                                                    <!-- O elemento <video> HTML -->
+
+<!-- Para mostrar um vídeo em HTML, use o elemento <video>
+
+Exemplo:
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> -->
+
+                                                      <!-- Como funciona? -->
+
+<!-- O atributo controls adiciona controles de vídeo, como reproduzir, pausar e volume.
+É uma boa ideia incluir sempre atributos width e height.
+Se a altura e a largura não estiverem definidas, a página poderá piscar enquanto o vídeo for carregado.
+O elemento <source> permite que você especifique arquivos de vídeo alternativos que o navegador
+pode escolher. O navegador usará o primeiro formato reconhecido.
+O texto entre as tags <video> e </video> será exibido apenas em navegadores que não suportam o elemento <video>. -->
+
+                                                  <!-- HTML <video> Autoplay -->
+
+<!-- Para iniciar um vídeo, use automaticamente o atributo autoplay
+
+Exemplo:
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+
+O atributo de reprodução automática não funciona em dispositivos móveis como o iPad e o iPhone. -->
+
+                                            <!-- Vídeo em HTML - Suporte ao Navegador -->
+
+<!-- No HTML5, existem 3 formatos de vídeo suportados: MP4, WebM e Ogg.
+
+O suporte do navegador para os diferentes formatos é:
+
+Browser	            MP4	                WebM	  Ogg
+Internet Explorer	  YES	                 NO	    NO
+Chrome	            YES	                 YES	  YES
+Firefox	            YES	                 YES	  YES
+Safari	            YES	                 NO	    NO
+Opera	              YES (from Opera 25)	 YES	  YES
+-->
+
+                                                  <!-- Vídeo em HTML - Tipos de mídia -->
+
+<!-- 
+Formato de Arquivo	        Tipo de Mídia
+MP4	                         video/mp4
+WebM	                       video/webm
+Ogg	                         video/ogg 
+-->
+
+                                                <!-- Vídeo HTML - Métodos, Propriedades e Eventos -->
+
+<!-- HTML5 define métodos DOM, propriedades e eventos para o <video>elemento.
+Isso permite que você carregue, reproduza e pause vídeos, além de definir a duração e o volume.
+Há também eventos DOM que podem notificá-lo quando um vídeo começa a ser reproduzido, é pausado etc. -->
+
+                                                      <!-- 
+                                                      #################
+                                                      ***HTML5 Audio***
+                                                      #################
+                                                        -->
+
+                                                    <!-- Áudio na Web -->
+
+<!-- Antes do HTML5, os arquivos de áudio só podiam ser reproduzidos em um navegador com um plug-in (como flash).
+O elemento <audio> HTML5 especifica uma maneira padrão de incorporar áudio em uma página da web. -->
+
+                                                <!-- O elemento <audio> HTML -->
+
+<!-- Para reproduzir um arquivo de áudio em HTML, use o elemento <audio>
+
+Exemplo:
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+ -->
+
+                                              <!-- HTML Audio - Como funciona -->
+
+<!-- O atributo controls adiciona controles de áudio, como reproduzir, pausar e volume.
+O elemento <source> permite que você especifique arquivos de áudio alternativos que o navegador pode escolher.
+O navegador usará o primeiro formato reconhecido.
+O texto entre as tags <audio> e </audio> será exibido apenas em navegadores que não suportam o elemento <audio>. -->
+
+                                          <!-- Áudio HTML - Suporte ao Navegador -->
+
+<!-- No HTML5, há três formatos de áudio compatíveis: MP3, WAV e OGG.
+O suporte do navegador para os diferentes formatos é: 
+
+
+Browser	                  MP3   	WAV   	OGG
+Internet Explorer       	YES	    NO	    NO
+Chrome	                  YES	    YES	    YES
+Firefox	                  YES	    YES	    YES
+Safari	                  YES	    YES	    NO
+Opera	                    YES	    YES	    YES
+-->
+
+                                              <!-- HTML Audio - Tipos de Mídia -->
+
+<!-- 
+Formato de Arquivo	      Tipo de Mídia
+MP3	                      audio/mpeg
+OGG	                      audio/ogg
+WAV	                      audio/wav 
+-->
+
+                                      <!-- Áudio em HTML - Métodos, propriedades e eventos -->
+
+<!-- HTML5 define métodos DOM, propriedades e eventos para o elemento <audio>.
+Isso permite carregar, reproduzir e pausar áudios, bem como definir duração e volume.
+Há também eventos DOM que podem notificá-lo quando um áudio começa a ser reproduzido, é pausado etc.
+Para uma referência completa do DOM, acesse nossa Referência de DOM de áudio / vídeo em HTML5 . -->
+
+                                                      <!-- 
+                                                      ###################
+                                                      ***Plug-ins HTML***
+                                                      ###################
+                                                        -->
+
+<!-- O objetivo de um plug-in é estender a funcionalidade de um navegador da web. -->
+
+                                              <!-- Ajuda em HTML (plug-ins) -->
+
+<!-- Aplicativos auxiliares (plug-ins) são programas de computador que ampliam a funcionalidade padrão de um navegador da web.
+Exemplos de plug-ins conhecidos são os applets Java.
+Os plug-ins podem ser adicionados a páginas da web com a tag <object> ou a tag <embed>. 
+Os plug-ins podem ser usados ​​para muitos propósitos: exibir mapas, verificar vírus, verificar seu ID de banco etc. 
+
+Para exibir vídeo e áudio: use as tags <video> e <audio>.
+-->
+
+                                                <!-- O elemento <object> -->
+
+<!-- O elemento <object> é suportado por todos os navegadores.
+O elemento <object> define um objeto incorporado em um documento HTML.
+Ele é usado para incorporar plug-ins (como applets Java, leitores de PDF, Flash Players) em páginas da web. 
+
+Exemplo:
+
+<object width="400" height="50" data="bookmark.swf"></object>
+-->
+
+<!-- O elemento <object> também pode ser usado para incluir HTML em HTML
+
+Exemplo:
+
+<object width="100%" height="500px" data="snippet.html"></object>
+
+Ou imagens se você gosta:
+
+<object data="audi.jpeg"></object>
+-->
+
+                                                  <!-- O elemento <embed> -->
+
+<!-- O elemento <embed> é suportado em todos os principais navegadores.
+O elemento <embed> também define um objeto incorporado em um documento HTML.
+Os navegadores da Web suportam o elemento <embed> por um longo tempo. No entanto, não faz parte da especificação HTML antes do HTML5.
+
+Exemplo:
+
+<embed width="400" height="50" src="bookmark.swf">
+
+Observe que o elemento <embed> não possui uma tag de fechamento. Não pode conter texto alternativo.-->
+
+<!-- O elemento <embed> também pode ser usado para incluir HTML em HTML
+
+Exemplo:
+
+<embed width="100%" height="500px" src="snippet.html">
+
+Ou imagens se você gosta:
+
+<embed src="audi.jpeg">
+-->
+
+                                                      <!-- 
+                                                      ###############################
+                                                      ***Vídeos do YouTube em HTML***
+                                                      ###############################
+                                                        -->
+
+<!-- A maneira mais fácil de reproduzir vídeos em HTML é usar o YouTube. -->
+
+                                                  <!-- Lutando com formatos de vídeo? -->
+
+<!-- Anteriormente neste tutorial, você viu que talvez tenha que converter seus vídeos em
+diferentes formatos para reproduzi-los em todos os navegadores.
+Converter vídeos em diferentes formatos pode ser difícil e demorado.
+Uma solução mais fácil é permitir que o YouTube reproduza os vídeos na sua página da web. -->
+
+                                                      <!-- ID do vídeo do YouTube -->
+
+<!-- O YouTube exibirá um ID (como tgbNymZ7vqY) ao salvar (ou reproduzir) um vídeo.
+Você pode usar esse id e consultar seu vídeo no código HTML. -->
+
+                                            <!-- Reproduzindo um vídeo do YouTube em HTML -->
+
+<!-- Para reproduzir seu vídeo em uma página da Web, faça o seguinte:
+
+Envie o vídeo para o YouTube
+Anote o ID do vídeo
+Defina um elemento <iframe> na sua página da web
+Deixe o atributo src apontar para o URL do vídeo
+Use os atributos width e height para especificar a dimensão do player
+Adicione outros parâmetros ao URL (veja abaixo)
+
+Exemplo - Usando o iFrame (recomendado):
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+-->
+
+                                                        <!-- Autoplay do YouTube -->
+
+<!-- Você pode fazer com que seu vídeo comece a ser reproduzido automaticamente quando um usuário visitar
+essa página adicionando um parâmetro simples ao seu URL do YouTube.
+Nota: tenha em atenção ao decidir reproduzir automaticamente os seus vídeos.
+Iniciar um vídeo automaticamente pode incomodar o visitante e acabar causando mais mal do que bem.
+Valor 0 (padrão): o vídeo não será reproduzido automaticamente quando o player for carregado.
+Valor 1: O vídeo será reproduzido automaticamente quando o player for carregado.
+
+YouTube - reprodução automática:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+</iframe>
+-->
+
+                                                        <!-- Playlist do YouTube -->
+
+<!-- Uma lista separada por vírgulas de vídeos para reproduzir (além do URL original). -->
+
+                                                          <!-- Loop do YouTube -->
+
+<!-- Valor 0 (padrão): o vídeo será reproduzido apenas uma vez.
+
+Valor 1: o vídeo fará um loop (para sempre).
+
+YouTube - Loop:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+-->
+
+                                                        <!-- Controles do YouTube -->
+
+<!-- Valor 0: os controles do Player não são exibidos.
+Valor 1 (padrão): exibição dos controles do player.
+
+YouTube - controles:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+ -->
+
+                                                <!-- YouTube - usando <object> ou <embed> -->
+
+<!-- Nota: YouTube <object> e <embed> foi preterido a partir de janeiro de 2015.
+Você deve migrar seus vídeos para usar <iframe> em vez disso. -->
+  
+<!-- Exemplo - Usando <object> (descontinuado):
+
+<object width="420" height="315"
+data="https://www.youtube.com/embed/tgbNymZ7vqY">
+</object>
+
+Exemplo - Usando <embed> (descontinuado):
+  
+<embed width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+-->
+
+
+                                                      <!-- 
+                                                      #############################
+                                                      ***Geolocalização em HTML5***
+                                                      #############################
+                                                        -->
+
+<!-- A HTML Geolocation API é usada para localizar a posição de um usuário. -->
+
+                                                  <!-- Localize a posição do usuário -->
+
+<!-- A HTML Geolocation API é usada para obter a posição geográfica de um usuário.
+Como isso pode comprometer a privacidade, a posição não estará disponível, a menos que o usuário a aprove.
+
+Nota: A geolocalização é mais precisa para dispositivos com GPS, como smartphone.
+Nota: A partir do Chrome 50, a API de geolocalização só funcionará em contextos seguros, como HTTPS.
+Se o seu site estiver hospedado em uma origem não segura (como HTTP),
+as solicitações para obter a localização dos usuários não funcionarão mais. -->
+
+                                                    <!-- Usando a Geolocalização HTML -->
+
+<!-- O método getCurrentPosition() é usado para retornar a posição do usuário.
+O exemplo abaixo retorna a latitude e longitude da posição do usuário:
+
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
+
+Exemplo explicado:
+
+Verificar se há suporte a geolocalização
+Se suportado, execute o método getCurrentPosition (). Se não, exiba uma mensagem para o usuário
+Se o método getCurrentPosition () for bem-sucedido, ele retornará um objeto de coordenadas para
+a função especificada no parâmetro (showPosition)
+A função showPosition () produz a latitude e a longitude
+O exemplo acima é um script de localização geográfica muito básico, sem manipulação de erros. -->
+
+                                              <!-- Manipulando Erros e Rejeições -->
+
+<!-- O segundo parâmetro do getCurrentPosition()método é usado para manipular erros.
+Ele especifica uma função para executar se falhar ao obter a localização do usuário:
+
+Exemplo:
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+-->
+
+                                          <!-- Exibindo o resultado em um mapa -->
+
+<!-- Para exibir o resultado em um mapa, você precisa de acesso a um serviço de mapas, como o Google Maps.
+No exemplo abaixo, a latitude e a longitude retornadas são usadas para mostrar
+o local em um mapa do Google (usando uma imagem estática):
+
+Exemplo:
+
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_:KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+-->
+
+                                        <!-- Informações específicas do local -->
+
+<!-- Esta página demonstrou como mostrar a posição de um usuário em um mapa.
+
+A geolocalização também é muito útil para informações específicas de local, como:
+
+Informações locais atualizadas
+Mostrando pontos de interesse perto do usuário
+Navegação curva a curva (GPS)
+-->
+
+                                  <!-- O método getCurrentPosition () - retornar dados -->
+
+<!-- O método getCurrentPosition() retorna um objeto em sucesso.
+As propriedades de latitude, longitude e precisão são sempre retornadas. As outras propriedades são retornadas se disponíveis:
+
+Propriedade               Retorna
+
+coords.latitude	          A latitude como um número decimal (sempre retornado)
+coords.longitude	        A longitude como um número decimal (sempre retornado)
+coords.accuracy	          A precisão da posição (sempre retornada)
+coords.altitude	          A altitude em metros acima do nível médio do mar (retornado se disponível)
+coords.altitudeAccuracy	  A precisão da altitude da posição (retornada se disponível)
+coords.heading	          O título em graus no sentido horário a partir do norte (retornado se disponível)
+coords.speed	            A velocidade em metros por segundo (retornada se disponível)
+timestamp	                A data / hora da resposta (retornada, se disponível)
+-->
+
+                                <!-- Objeto de geolocalização - outros métodos interessantes -->
+
+<!-- O objeto Geolocation também tem outros métodos interessantes:
+watchPosition() - Retorna a posição atual do usuário e continua a retornar 
+a posição atualizada à medida que o usuário se move (como o GPS em um carro).
+clearWatch()- Pára o watchPosition()método.
+O exemplo abaixo mostra o watchPosition()método. Você precisa de um dispositivo GPS preciso para testar isso (como smartphone):
+
+Exemplo:
+
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
+-->
+
+                                                      <!-- 
+                                                      #############################
+                                                      ***HTML5 arrastar e soltar***
+                                                      #############################
+                                                        -->
+
+<!-- Arrastar e soltar é um recurso muito comum. É quando você "pega" um objeto e o arrasta para um local diferente.
+Em HTML5, arrastar e soltar é parte do padrão: qualquer elemento pode ser arrastável. -->
+
+                                              <!-- Exemplo de arrastar e soltar HTML -->
+
+<!-- O exemplo abaixo é um exemplo simples de arrastar e soltar:
+
+Exemplo:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+</html>
+ -->
+
+                                                  <!-- Faça um Elemento Draggable -->
+
+<!-- Primeiro de tudo: para tornar um elemento arrastável, defina o draggableatributo como true:
+
+<img draggable="true">
+-->
+
+                                            <!-- O que arrastar - ondragstart e setData () -->
+
+<!-- Em seguida, especifique o que deve acontecer quando o elemento for arrastado.
+No exemplo acima, o ondragstartatributo chama uma função, drag (event), que especifica quais dados serão arrastados.
+O dataTransfer.setData()método define o tipo de dados e o valor dos dados arrastados:
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+Nesse caso, o tipo de dados é "text" e o valor é o id do elemento arrastável ("drag1").-->
+
+                                                  <!-- Onde cair - ondragover -->
+
+<!-- O evento ondragover  especifica onde os dados arrastados podem ser descartados.
+Por padrão, dados / elementos não podem ser descartados em outros elementos.
+Para permitir uma queda, devemos evitar a manipulação padrão do elemento.
+Isso é feito chamando o método event.preventDefault() para o event ondragover:
+
+event.preventDefault()
+ -->
+
+                                                    <!-- Faça o drop-ondrop -->
+
+<!-- Quando os dados arrastados são descartados, ocorre um evento de soltar.
+No exemplo acima, o atributo ondrop chama uma função drop (event):
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+Código explicado:
+
+Chame preventDefault () para impedir o tratamento padrão do navegador dos dados (o padrão é aberto como link ao ser solto)
+Obtenha os dados arrastados com o método dataTransfer.getData ().
+Este método retornará todos os dados que foram configurados para o mesmo tipo no método setData ()
+Os dados arrastados são o id do elemento arrastado ("drag1")
+Anexar o elemento arrastado no elemento drop
+-->
+
+
+                                                      <!-- 
+                                                      ###################################
+                                                      ***Armazenamento na Web em HTML5***
+                                                      ###################################
+                                                        -->
+
+<!-- Armazenamento web em HTML; melhor que cookies. -->
+
+                                                    <!-- O que é armazenamento Web HTML? -->
+
+<!-- Com o armazenamento na Web, os aplicativos da Web podem armazenar dados localmente no navegador do usuário.
+Antes do HTML5, os dados de aplicativos precisavam ser armazenados em cookies, incluídos em todas as solicitações do servidor.
+O armazenamento na Web é mais seguro e grandes quantidades de dados podem ser armazenadas localmente, sem afetar o desempenho do site.
+Ao contrário dos cookies, o limite de armazenamento é muito maior (pelo menos 5MB)
+e as informações nunca são transferidas para o servidor.
+O armazenamento da Web é por origem (por domínio e protocolo).
+Todas as páginas, de uma origem, podem armazenar e acessar os mesmos dados. -->
+
+                                                  <!-- Objetos de armazenamento da Web em HTML -->
+
+<!-- O armazenamento da web em HTML fornece dois objetos para armazenar dados no cliente:
+window.localStorage - armazena dados sem data de validade
+window.sessionStorage - armazena dados para uma sessão (os dados são perdidos quando a guia do navegador é fechada)
+Antes de usar o armazenamento na Web, verifique o suporte ao navegador para localStorage e sessionStorage:
+
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+}
+-->
+
+                                                        <!-- O objeto localStorage -->
+
+<!-- O objeto localStorage armazena os dados sem data de expiração.
+Os dados não serão excluídos quando o navegador for fechado e estarão disponíveis no próximo dia, semana ou ano. 
+
+Exemplo:
+
+// Store
+localStorage.setItem("lastname", "Smith");
+
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+Exemplo explicado:
+Crie um par de nome / valor localStorage com nome = "lastname" e valor = "Smith"
+Recupere o valor de "lastname" e insira-o no elemento com id = "result"
+
+O exemplo acima também pode ser escrito assim:
+
+// Store
+localStorage.lastname = "Smith";
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.lastname;
+
+A sintaxe para remover o item localStorage "lastname" é a seguinte:
+
+localStorage.removeItem("lastname");
+
+Nota: Os pares nome / valor são sempre armazenados como strings. Lembre-se de convertê-los para outro formato quando necessário!
+
+O exemplo a seguir conta o número de vezes que um usuário clicou em um botão.
+Nesse código, a string de valor é convertida em um número para poder aumentar o contador:
+
+Exemplo:
+
+if (localStorage.clickcount) {
+  localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+  localStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+localStorage.clickcount + " time(s).";
+-->
+
+                                                    <!-- O objeto sessionStorage -->
+
+<!-- O objeto sessionStorage é igual ao objeto localStorage, exceto pelo fato de armazenar os dados para apenas uma sessão.
+Os dados são excluídos quando o usuário fecha a guia específica do navegador.
+O exemplo a seguir conta o número de vezes que um usuário clicou em um botão, na sessão atual:
+
+Exemplo:
+
+if (sessionStorage.clickcount) {
+  sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+  sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+sessionStorage.clickcount + " time(s) in this session.";
+-->
+
+
+                                                      <!-- 
+                                                      ################################
+                                                      ***Trabalhadores da Web HTML5***
+                                                      ################################
+                                                        -->
+
+<!-- Um trabalhador da Web é um JavaScript executado em segundo plano, sem afetar o desempenho da página. -->
+
+                                                <!-- O que é um trabalhador da Web? -->
+
+<!-- Ao executar scripts em uma página HTML, a página não responde até que o script seja concluído.
+Um trabalhador da Web é um JavaScript que é executado em segundo plano, 
+independentemente de outros scripts, sem afetar o desempenho da página.
+Você pode continuar fazendo o que quiser: clicando, selecionando itens, etc., enquanto o web worker é executado em segundo plano. -->
+
+                                            <!-- Verificar o suporte ao trabalhador da Web -->
+
+<!-- Antes de criar um trabalhador da Web, verifique se o navegador do usuário o suporta:
+
+if (typeof(Worker) !== "undefined") {
+  // Yes! Web worker support!
+  // Some code.....
+} else {
+  // Sorry! No Web Worker support..
+}
+-->
+
+                                            <!-- Crie um arquivo de trabalhador da Web -->
+
+<!-- Agora, vamos criar nosso web worker em um JavaScript externo.
+Aqui, criamos um script que conta. O script é armazenado no arquivo "demo_workers.js":
+
+var i = 0;
+
+function timedCount() {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
+
+A parte importante do código acima é o postMessage()método - que é usado para postar uma mensagem de volta à página HTML.
+Nota: Normalmente, os web workers não são usados ​​para scripts simples, mas para tarefas mais intensivas da CPU.
+-->
+
+                                        <!-- Criar um Objeto de Trabalhador da Web -->
+
+<!-- Agora que temos o arquivo do web worker, precisamos chamá-lo de uma página HTML.
+As linhas a seguir verificam se o trabalhador já existe, se não - ele 
+cria um novo objeto de trabalhador da Web e executa o código em "demo_workers.js":
+
+if (typeof(w) == "undefined") {
+  w = new Worker("demo_workers.js");
+}
+
+Então podemos enviar e receber mensagens do trabalhador da web.
+Adicione um ouvinte de evento "onmessage" ao web worker.
+
+w.onmessage = function(event){
+  document.getElementById("result").innerHTML = event.data;
+};
+
+Quando o web worker envia uma mensagem, o código dentro do ouvinte de evento é executado.
+Os dados do trabalhador da Web são armazenados em event.data.
+-->
+
+                                            <!-- Encerrar um trabalhador da Web -->
+
+<!-- Quando um objeto de trabalho da Web é criado, ele continuará a
+escutar mensagens (mesmo depois que o script externo for concluído) até que seja finalizado.
+Para finalizar um trabalhador da Web e liberar recursos de navegador / computador, use o método terminate():
+
+w.terminate();
+-->
+
+                                          <!-- Reutilizar o trabalhador da Web -->
+
+<!-- Se você definir a variável worker como indefinida, depois de terminada, você poderá reutilizar o código:
+
+w = undefined;
+-->
+
+                                    <!-- Código de Exemplo de Trabalhador Web Completo -->
+
+<!-- Já vimos o código Worker no arquivo .js. Abaixo está o código para a página HTML:
+
+Exemplo:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>
+-->
+
+                                        <!-- Trabalhadores da Web e o DOM -->
+
+<!-- Como os web workers estão em arquivos externos, eles não têm acesso aos seguintes objetos JavaScript:
+
+O objeto da janela
+O objeto do documento
+O objeto pai
+-->
+
+
+                                                      <!-- 
+                                                      ##########################################
+                                                      ***Eventos enviados pelo servidor HTML5***
+                                                      ##########################################
+                                                        -->
+
+<!-- Eventos enviados pelo servidor permitem que uma página da Web obtenha atualizações de um servidor. -->
+
+                                            <!-- Eventos enviados pelo servidor - Mensagens unidirecionais -->
+
+<!-- Um evento enviado pelo servidor é quando uma página da Web recebe automaticamente atualizações de um servidor.
+Isso também era possível antes, mas a página da Web teria que perguntar se alguma atualização estava disponível. 
+Com eventos enviados pelo servidor, as atualizações vêm automaticamente.
+Exemplos: atualizações do Facebook / Twitter, atualizações de preços de ações, feeds de notícias, resultados esportivos, etc. -->
+
+                                            <!-- Receber notificações de eventos enviados pelo servidor -->
+
+<!-- O objeto EventSource é usado para receber notificações de eventos enviados pelo servidor:
+
+Exemplo:
+
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+  document.getElementById("result").innerHTML += event.data + "<br>";
+};
+
+Exemplo explicado:
+
+Crie um novo objeto EventSource e especifique o URL da página que envia as atualizações (neste exemplo, "demo_sse.php")
+Cada vez que uma atualização é recebida, o evento onmessage ocorre
+Quando ocorre um evento onmessage, coloque os dados recebidos no elemento com id = "result" 
+-->
+
+                                          <!-- Verificar o suporte a eventos enviados pelo servidor -->
+
+<!-- No exemplo acima, havia algumas linhas extras de código para verificar o suporte do navegador para eventos enviados pelo servidor:
+
+if(typeof(EventSource) !== "undefined") {
+  // Yes! Server-sent events support!
+  // Some code.....
+} else {
+  // Sorry! No server-sent events support..
+}
+-->
+
+                                                <!-- Exemplo de código do lado do servidor -->
+
+<!-- Para o exemplo acima funcionar, você precisa de um servidor capaz de enviar atualizações de dados (como PHP ou ASP).
+A sintaxe do fluxo de eventos do lado do servidor é simples. Defina o cabeçalho "Content-Type" para "text / event-stream".
+Agora você pode começar a enviar fluxos de eventos.
+
+Código em PHP (demo_sse.php):
+
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('r');
+echo "data: The server time is: {$time}\n\n";
+flush();
+?>
+ 
+Código em ASP (VB) (demo_sse.asp):
+
+<%
+Response.ContentType = "text/event-stream"
+Response.Expires = -1
+Response.Write("data: The server time is: " & now())
+Response.Flush()
+%>
+
+Código explicado:
+
+Definir o cabeçalho "Content-Type" para "text / event-stream"
+Especifique que a página não deve armazenar em cache
+Saída dos dados para enviar ( sempre comece com "data:")
+Descarregue os dados de saída de volta para a página da web -->
+
+                                                        <!-- O objeto EventSource -->
+
+<!-- Nos exemplos acima, usamos o evento onmessage para receber mensagens. Mas outros eventos também estão disponíveis:
+
+Eventos      Descrição
+
+onopen        Quando uma conexão com o servidor é aberta
+onmessage	    Quando uma mensagem é recebida
+onerror	      Quando ocorre um erro
+-->
+
+      </body>
+
+  </html>

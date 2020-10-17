@@ -1,0 +1,88 @@
+                                                      <!-- 
+                                                      ##########################################
+                                                      ***Eventos enviados pelo servidor HTML5***
+                                                      ##########################################
+                                                        -->
+
+<!-- Eventos enviados pelo servidor permitem que uma página da Web obtenha atualizações de um servidor. -->
+
+                                            <!-- Eventos enviados pelo servidor - Mensagens unidirecionais -->
+
+<!-- Um evento enviado pelo servidor é quando uma página da Web recebe automaticamente atualizações de um servidor.
+Isso também era possível antes, mas a página da Web teria que perguntar se alguma atualização estava disponível. 
+Com eventos enviados pelo servidor, as atualizações vêm automaticamente.
+Exemplos: atualizações do Facebook / Twitter, atualizações de preços de ações, feeds de notícias, resultados esportivos, etc. -->
+
+                                            <!-- Receber notificações de eventos enviados pelo servidor -->
+
+<!-- O objeto EventSource é usado para receber notificações de eventos enviados pelo servidor:
+
+Exemplo:
+
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+  document.getElementById("result").innerHTML += event.data + "<br>";
+};
+
+Exemplo explicado:
+
+Crie um novo objeto EventSource e especifique o URL da página que envia as atualizações (neste exemplo, "demo_sse.php")
+Cada vez que uma atualização é recebida, o evento onmessage ocorre
+Quando ocorre um evento onmessage, coloque os dados recebidos no elemento com id = "result" 
+-->
+
+                                          <!-- Verificar o suporte a eventos enviados pelo servidor -->
+
+<!-- No exemplo acima, havia algumas linhas extras de código para verificar o suporte do navegador para eventos enviados pelo servidor:
+
+if(typeof(EventSource) !== "undefined") {
+  // Yes! Server-sent events support!
+  // Some code.....
+} else {
+  // Sorry! No server-sent events support..
+}
+-->
+
+                                                <!-- Exemplo de código do lado do servidor -->
+
+<!-- Para o exemplo acima funcionar, você precisa de um servidor capaz de enviar atualizações de dados (como PHP ou ASP).
+A sintaxe do fluxo de eventos do lado do servidor é simples. Defina o cabeçalho "Content-Type" para "text / event-stream".
+Agora você pode começar a enviar fluxos de eventos.
+
+Código em PHP (demo_sse.php):
+
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('r');
+echo "data: The server time is: {$time}\n\n";
+flush();
+?>
+ 
+Código em ASP (VB) (demo_sse.asp):
+
+<%
+Response.ContentType = "text/event-stream"
+Response.Expires = -1
+Response.Write("data: The server time is: " & now())
+Response.Flush()
+%>
+
+Código explicado:
+
+Definir o cabeçalho "Content-Type" para "text / event-stream"
+Especifique que a página não deve armazenar em cache
+Saída dos dados para enviar ( sempre comece com "data:")
+Descarregue os dados de saída de volta para a página da web -->
+
+                                                        <!-- O objeto EventSource -->
+
+<!-- Nos exemplos acima, usamos o evento onmessage para receber mensagens. Mas outros eventos também estão disponíveis:
+
+Eventos      Descrição
+
+onopen        Quando uma conexão com o servidor é aberta
+onmessage	    Quando uma mensagem é recebida
+onerror	      Quando ocorre um erro
+-->

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>tarefa</title>
+    </head>
+        <body>
+            <h1 style="font-family: Arial;" align="center">Formulário de pesquisa eleitoral</h1><hr>
+                <h2 style="font-family: Arial;">Dados Pessoias</h2>
+                <form>
+                    Nome:<br>
+                    <input type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Seu nome aqui!"
+                    maxlength="10"
+                    required
+                    autofocus
+                    autocomplete="on"><br><br>
+                    Sobrenome:<br>
+                    <input type="text" 
+                    name="sobrenome" 
+                    id="sobrenome"
+                    placeholder="Seu nome aqui!"
+                    maxlength="10"
+                    required
+                    autofocus
+                    autocomplete="on"><br><br>
+                        <label for="idade">Idade:</label>
+                            <input type="number"
+                            id="idade"
+                            min="0"
+                            max="100"><br><br>
+                                <label for="nascimento">Data de nascimento:</label>
+                                    <input type="date"
+                                    name="nascimento"
+                                    id="nascimento"
+                                    value="2019-06-12"><br><br>
+                                        <label for="sexo">Sexo:</label>
+                                        <label>
+                                            <input type="radio"
+                                             name="sexo" 
+                                             id="masculino" checked>Masculino
+                                        </label>
+                                        <label>
+                                            <input type="radio"
+                                            name="sexo"
+                                            id="feminino">Feminino
+                                        </label>
+                                        <label>
+                                            <input type="radio"
+                                            name="sexo"
+                                            id="outros">Outros
+                                        </label><br><br>
+                                            <label for="cidade">Cidade:</label>
+                                                <select name="cidade" id="cidade">
+                                                    <option disabled selected>Selecione...</option>
+                                                    <option value="natal">Natal</option>
+                                                    <option value="portoalegre">Porto Alegre</option>
+                                                    <option value="recife">Recife</option>
+                                                    <option value="guarulhos">São Paulo</option>
+                                                </select><br><br><hr>
+                                                    <h2 style="font-family: Arial;">Área de votação</h2>
+                                                        <label for="voteLider">Vote para líder:</label>
+                                                        <label>
+                                                            <input type="radio"
+                                                            name="voteLider"
+                                                            id="zeze">Zeze
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio"
+                                                            name="voteLider"
+                                                            id="Fernando">Fernando
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio"
+                                                            name="voteLider"
+                                                            id="Renata">Renata
+                                                        </label><br><br>
+                                                            <label for="voteViceLider">Vote para vice-líder:</label>
+                                                            <label>
+                                                                <input type="radio"
+                                                                name="voteViceLider"
+                                                                id="zeze">Zeze
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio"
+                                                                name="voteViceLider"
+                                                                id="Fernando">Fernando
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio"
+                                                                name="voteViceLider"
+                                                                id="Renata">Renata
+                                                            </label><br><br>
+                                                            <button type="submit">Votar</button>
+                </form>
+        </body>
+</html>

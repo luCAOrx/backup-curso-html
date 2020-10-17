@@ -1,0 +1,131 @@
+                                                      <!-- 
+                                                      ################################
+                                                      ***Trabalhadores da Web HTML5***
+                                                      ################################
+                                                        -->
+
+<!-- Um trabalhador da Web é um JavaScript executado em segundo plano, sem afetar o desempenho da página. -->
+
+                                                <!-- O que é um trabalhador da Web? -->
+
+<!-- Ao executar scripts em uma página HTML, a página não responde até que o script seja concluído.
+Um trabalhador da Web é um JavaScript que é executado em segundo plano, 
+independentemente de outros scripts, sem afetar o desempenho da página.
+Você pode continuar fazendo o que quiser: clicando, selecionando itens, etc., enquanto o web worker é executado em segundo plano. -->
+
+                                            <!-- Verificar o suporte ao trabalhador da Web -->
+
+<!-- Antes de criar um trabalhador da Web, verifique se o navegador do usuário o suporta:
+
+if (typeof(Worker) !== "undefined") {
+  // Yes! Web worker support!
+  // Some code.....
+} else {
+  // Sorry! No Web Worker support..
+}
+-->
+
+                                            <!-- Crie um arquivo de trabalhador da Web -->
+
+<!-- Agora, vamos criar nosso web worker em um JavaScript externo.
+Aqui, criamos um script que conta. O script é armazenado no arquivo "demo_workers.js":
+
+var i = 0;
+
+function timedCount() {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
+
+A parte importante do código acima é o postMessage()método - que é usado para postar uma mensagem de volta à página HTML.
+Nota: Normalmente, os web workers não são usados ​​para scripts simples, mas para tarefas mais intensivas da CPU.
+-->
+
+                                        <!-- Criar um Objeto de Trabalhador da Web -->
+
+<!-- Agora que temos o arquivo do web worker, precisamos chamá-lo de uma página HTML.
+As linhas a seguir verificam se o trabalhador já existe, se não - ele 
+cria um novo objeto de trabalhador da Web e executa o código em "demo_workers.js":
+
+if (typeof(w) == "undefined") {
+  w = new Worker("demo_workers.js");
+}
+
+Então podemos enviar e receber mensagens do trabalhador da web.
+Adicione um ouvinte de evento "onmessage" ao web worker.
+
+w.onmessage = function(event){
+  document.getElementById("result").innerHTML = event.data;
+};
+
+Quando o web worker envia uma mensagem, o código dentro do ouvinte de evento é executado.
+Os dados do trabalhador da Web são armazenados em event.data.
+-->
+
+                                            <!-- Encerrar um trabalhador da Web -->
+
+<!-- Quando um objeto de trabalho da Web é criado, ele continuará a
+escutar mensagens (mesmo depois que o script externo for concluído) até que seja finalizado.
+Para finalizar um trabalhador da Web e liberar recursos de navegador / computador, use o método terminate():
+
+w.terminate();
+-->
+
+                                          <!-- Reutilizar o trabalhador da Web -->
+
+<!-- Se você definir a variável worker como indefinida, depois de terminada, você poderá reutilizar o código:
+
+w = undefined;
+-->
+
+                                    <!-- Código de Exemplo de Trabalhador Web Completo -->
+
+<!-- Já vimos o código Worker no arquivo .js. Abaixo está o código para a página HTML:
+
+Exemplo:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>
+-->
+
+                                        <!-- Trabalhadores da Web e o DOM -->
+
+<!-- Como os web workers estão em arquivos externos, eles não têm acesso aos seguintes objetos JavaScript:
+
+O objeto da janela
+O objeto do documento
+O objeto pai
+-->

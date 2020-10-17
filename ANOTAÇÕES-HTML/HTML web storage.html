@@ -1,0 +1,92 @@
+                                                      <!-- 
+                                                      ###################################
+                                                      ***Armazenamento na Web em HTML5***
+                                                      ###################################
+                                                        -->
+
+<!-- Armazenamento web em HTML; melhor que cookies. -->
+
+                                                    <!-- O que é armazenamento Web HTML? -->
+
+<!-- Com o armazenamento na Web, os aplicativos da Web podem armazenar dados localmente no navegador do usuário.
+Antes do HTML5, os dados de aplicativos precisavam ser armazenados em cookies, incluídos em todas as solicitações do servidor.
+O armazenamento na Web é mais seguro e grandes quantidades de dados podem ser armazenadas localmente, sem afetar o desempenho do site.
+Ao contrário dos cookies, o limite de armazenamento é muito maior (pelo menos 5MB)
+e as informações nunca são transferidas para o servidor.
+O armazenamento da Web é por origem (por domínio e protocolo).
+Todas as páginas, de uma origem, podem armazenar e acessar os mesmos dados. -->
+
+                                                  <!-- Objetos de armazenamento da Web em HTML -->
+
+<!-- O armazenamento da web em HTML fornece dois objetos para armazenar dados no cliente:
+window.localStorage - armazena dados sem data de validade
+window.sessionStorage - armazena dados para uma sessão (os dados são perdidos quando a guia do navegador é fechada)
+Antes de usar o armazenamento na Web, verifique o suporte ao navegador para localStorage e sessionStorage:
+
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+}
+-->
+
+                                                        <!-- O objeto localStorage -->
+
+<!-- O objeto localStorage armazena os dados sem data de expiração.
+Os dados não serão excluídos quando o navegador for fechado e estarão disponíveis no próximo dia, semana ou ano. 
+
+Exemplo:
+
+// Store
+localStorage.setItem("lastname", "Smith");
+
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+Exemplo explicado:
+Crie um par de nome / valor localStorage com nome = "lastname" e valor = "Smith"
+Recupere o valor de "lastname" e insira-o no elemento com id = "result"
+
+O exemplo acima também pode ser escrito assim:
+
+// Store
+localStorage.lastname = "Smith";
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.lastname;
+
+A sintaxe para remover o item localStorage "lastname" é a seguinte:
+
+localStorage.removeItem("lastname");
+
+Nota: Os pares nome / valor são sempre armazenados como strings. Lembre-se de convertê-los para outro formato quando necessário!
+
+O exemplo a seguir conta o número de vezes que um usuário clicou em um botão.
+Nesse código, a string de valor é convertida em um número para poder aumentar o contador:
+
+Exemplo:
+
+if (localStorage.clickcount) {
+  localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+  localStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+localStorage.clickcount + " time(s).";
+-->
+
+                                                    <!-- O objeto sessionStorage -->
+
+<!-- O objeto sessionStorage é igual ao objeto localStorage, exceto pelo fato de armazenar os dados para apenas uma sessão.
+Os dados são excluídos quando o usuário fecha a guia específica do navegador.
+O exemplo a seguir conta o número de vezes que um usuário clicou em um botão, na sessão atual:
+
+Exemplo:
+
+if (sessionStorage.clickcount) {
+  sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+  sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+sessionStorage.clickcount + " time(s) in this session.";
+-->

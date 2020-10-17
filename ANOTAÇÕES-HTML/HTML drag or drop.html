@@ -1,0 +1,92 @@
+                                                      <!-- 
+                                                      #############################
+                                                      ***HTML5 arrastar e soltar***
+                                                      #############################
+                                                        -->
+
+<!-- Arrastar e soltar é um recurso muito comum. É quando você "pega" um objeto e o arrasta para um local diferente.
+Em HTML5, arrastar e soltar é parte do padrão: qualquer elemento pode ser arrastável. -->
+
+                                              <!-- Exemplo de arrastar e soltar HTML -->
+
+<!-- O exemplo abaixo é um exemplo simples de arrastar e soltar:
+
+Exemplo:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+</html>
+ -->
+
+                                                  <!-- Faça um Elemento Draggable -->
+
+<!-- Primeiro de tudo: para tornar um elemento arrastável, defina o draggableatributo como true:
+
+<img draggable="true">
+-->
+
+                                            <!-- O que arrastar - ondragstart e setData () -->
+
+<!-- Em seguida, especifique o que deve acontecer quando o elemento for arrastado.
+No exemplo acima, o ondragstartatributo chama uma função, drag (event), que especifica quais dados serão arrastados.
+O dataTransfer.setData()método define o tipo de dados e o valor dos dados arrastados:
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+Nesse caso, o tipo de dados é "text" e o valor é o id do elemento arrastável ("drag1").-->
+
+                                                  <!-- Onde cair - ondragover -->
+
+<!-- O evento ondragover  especifica onde os dados arrastados podem ser descartados.
+Por padrão, dados / elementos não podem ser descartados em outros elementos.
+Para permitir uma queda, devemos evitar a manipulação padrão do elemento.
+Isso é feito chamando o método event.preventDefault() para o event ondragover:
+
+event.preventDefault()
+ -->
+
+                                                    <!-- Faça o drop-ondrop -->
+
+<!-- Quando os dados arrastados são descartados, ocorre um evento de soltar.
+No exemplo acima, o atributo ondrop chama uma função drop (event):
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+Código explicado:
+
+Chame preventDefault () para impedir o tratamento padrão do navegador dos dados (o padrão é aberto como link ao ser solto)
+Obtenha os dados arrastados com o método dataTransfer.getData ().
+Este método retornará todos os dados que foram configurados para o mesmo tipo no método setData ()
+Os dados arrastados são o id do elemento arrastado ("drag1")
+Anexar o elemento arrastado no elemento drop
+-->

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>exemplo1</title>
+    </head>
+        <body>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text"
+                 id="nome"
+                 name="nome"
+                 placeholder="Seu nome aqui!"
+                 maxlength="10"
+                 required
+                 autofocus
+                 autocomplete="on">
+                 <br><br>
+
+                    <label>Senha:</label>
+                    <input type="password"
+                    placeholder="Sua senha aqui!" 
+                    maxlength="10"
+                    required>
+                    <br><br>
+
+                        <label for="idade">Idade:</label>
+                        <input type="number" 
+                        name="idade" 
+                        id="idade" 
+                        min="0"
+                        max="100"
+                        step="10">
+                        <br><br>
+
+                            <label for="nota">Nota:</label>
+                            <input type="range"
+                            name="nota"
+                            id="nota"
+                            value="2"
+                            min="0"
+                            max="5">
+                            <br><br>
+
+                                <label for="nascimento">Data de Nascimento:</label>
+                                <input type="date"
+                                name="nascimento"
+                                id="nascimento"
+                                value="2019-06-10">
+                                <br><br>
+
+                                <label>Sexo:</label>
+                                <label>
+                                    <input type="radio"
+                                    name="sexo"
+                                    id="masculino">Masculino
+                                </label>
+                                    <label>
+                                        <input type="radio"
+                                        name="sexo"
+                                        id="feminino" checked>Feminino
+                                    </label>
+                                        <label>
+                                            <input type="radio"
+                                            name="sexo"
+                                            id="Outros">Outros
+                                        </label>
+                                        <br><br>
+                                        
+                                        <label>Hobby:</label>
+                                            <label>
+                                                <input type="checkbox"
+                                                name="cinema"
+                                                id="cinema" checked>Cinema
+                                            </label>
+                                                <label>
+                                                    <input type="checkbox"
+                                                    name="futebol"
+                                                    id="futebol">Futebol
+                                                </label>
+                                                <br><br>
+
+                                                    <label for="cidade">Cidade:</label>
+                                                    <select name="cidade" id="cidade">
+                                                        <option disabled selected>Selecione...</option>
+                                                        <option value="ntl">Natal</option>
+                                                        <option value="poa">Porto Alegre</option>
+                                                        <option value="rec">Recife</option>
+                                                        <option value="gru">São Paulo</option>
+                                                    </select>
+                                                    <br><br>
+
+                                                        <label for="sugestao">Sugestão:</label>
+                                                        <br>
+                                                        <textarea name="sugestao"
+                                                         id="sugestao"
+                                                         cols="30"
+                                                         rows="5"
+                                                         maxlength="400"
+                                                         placeholder="Sua sugestão aqui..."></textarea>
+                                                         <br><br>
+
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </body>
+</html>

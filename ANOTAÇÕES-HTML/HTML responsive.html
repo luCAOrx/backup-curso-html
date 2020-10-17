@@ -1,0 +1,185 @@
+                                                      <!-- 
+                                                      ###################################
+                                                      ***Web design responsivo em HTML***
+                                                      ###################################
+                                                        -->   
+
+                                                <!-- O que é design web responsivo? -->
+
+<!-- O Responsive Web Design é sobre o uso de HTML e CSS para redimensionar, ocultar, encolher ou ampliar
+automaticamente um website para torná-lo bonito em todos os dispositivos (desktops, tablets e telefones).
+
+Nota: Uma página da web deve ficar bem em qualquer dispositivo ! -->
+
+                                                  <!-- Configurando o Viewport -->
+
+<!-- Ao criar páginas da Web responsivas, adicione o seguinte elemento <meta> em todas as suas páginas da Web:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Isso definirá a janela de visualização de sua página, que fornecerá instruções
+ao navegador sobre como controlar as dimensões e o dimensionamento da página.-->
+
+                                                  <!-- Imagens responsivas -->
+
+<!-- Imagens responsivas são imagens que se ajustam bem a qualquer tamanho de navegador. -->
+
+                                                <!-- Usando a propriedade width -->
+
+<!-- Se a widthpropriedade CSS estiver definida como 100%, a imagem será responsiva e aumentará e diminuirá a escala:
+
+<img src="img_girl.jpg" style="width:100%;">
+
+Observe que no exemplo acima, a imagem pode ser ampliada para ser maior que seu tamanho original.
+Uma solução melhor, em muitos casos, será usar a max-widthpropriedade.
+-->
+
+                                              <!-- Usando a propriedade max-width -->
+
+<!-- Se a max-widthpropriedade estiver configurada para 100%, a imagem diminuirá, se necessário,
+mas nunca aumentará para ser maior que seu tamanho original:
+
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+ -->
+
+                                  <!-- Mostrar imagens diferentes dependendo da largura do navegador -->
+
+<!-- O elemento <picture> HTML permite definir imagens diferentes para diferentes tamanhos de janelas do navegador.
+Redimensione a janela do navegador para ver como a imagem abaixo muda dependendo da largura:
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+-->
+
+                                                  <!-- Tamanho do texto responsivp -->
+
+<!-- O tamanho do texto pode ser definido com uma unidade "vw", o que significa a "largura da janela de visualização".
+Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador:
+
+<h1 style="font-size:10vw">Hello World</h1>
+
+Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. 
+Se a janela de visualização tiver 50 cm de largura, 1 vw será de 0,5 cm.
+-->
+
+                                                      <!-- Consultas de mídia -->
+
+<!-- Além de redimensionar texto e imagens, também é comum usar consultas de mídia em páginas da Web responsivas.
+Com as consultas de mídia, você pode definir estilos completamente diferentes para diferentes tamanhos de navegador.
+Exemplo: redimensione a janela do navegador para ver se os três elementos div abaixo 
+serão exibidos horizontalmente em telas grandes e empilhados verticalmente em telas pequenas: 
+
+<style>
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+-->
+
+                                        <!-- Página Web Responsiva - Exemplo Completo -->
+
+<!-- Uma página da Web responsiva deve ter boa aparência em grandes telas de área de trabalho e pequenos telefones celulares. -->
+
+                                          <!-- Web Design Responsivo - Frameworks -->
+
+<!-- Existem muitos frameworks CSS que oferecem design responsivo.
+Eles são gratuitos e fáceis de usar. -->
+
+                                                      <!-- Usando o W3.CSS -->
+
+<!-- 
+Uma ótima maneira de criar um design responsivo é usar uma folha de estilo responsiva, como W3.CSS
+O W3.CSS facilita o desenvolvimento de sites que pareçam agradáveis ​​em qualquer tamanho; área de trabalho, laptop, tablet ou telefone: 
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-green">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+
+</body>
+</html>
+-->
+
+                                                          <!-- Bootstrap -->
+
+<!-- Outro framework popular é o Bootstrap, ele usa HTML, CSS e jQuery para criar páginas da Web responsivas.
+EX:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      ...
+    </div>
+    <div class="col-sm-4">
+      ...
+    </div>
+    <div class="col-sm-4">
+    ...
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+-->

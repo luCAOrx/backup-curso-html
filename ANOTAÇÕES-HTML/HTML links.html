@@ -1,0 +1,151 @@
+                                        <!-- 
+                                        ################
+                                        ***Links HTML***
+                                        ################
+                                        -->    
+
+                                <!-- Links HTML - hiperlinks -->
+
+<!-- Links HTML são hiperlinks.
+Você pode clicar em um link e pular para outro documento.
+Quando você move o mouse sobre um link, a seta do mouse se transformará em uma pequena mão. -->
+<!-- Nota: Um link não precisa ser texto. Pode ser uma imagem ou qualquer outro elemento HTML. -->
+
+                                <!-- Links HTML - Sintaxe -->
+
+<!-- Em HTML, os links são definidos com a tag <a>: <a href="url">link text</a> -->
+<!-- O hrefatributo especifica o endereço de destino ( https://www.w3schools.com/html/ ) do link. -->
+<!-- O texto do link é a parte visível (Visite nosso tutorial em HTML). -->
+<!-- Clicar no texto do link enviará você ao endereço especificado. -->
+<!-- Nota: Sem uma barra invertida no final dos endereços da subpasta, você pode gerar duas solicitações para o servidor. 
+Muitos servidores adicionam automaticamente uma barra ao final do endereço e criam uma nova solicitação. -->
+
+                                    <!-- Links Locais -->
+
+<!-- O exemplo acima usou uma URL absoluta (um endereço da web completo). -->
+<!-- Um link local (link para o mesmo site) é especificado com um URL relativo (sem https: // www ....). -->
+<!-- Exempl0: <a href="html_images.asp">HTML Images</a> -->
+
+                                    <!-- Cores do link HTML -->
+
+<!-- Por padrão, um link aparecerá assim (em todos os navegadores):
+Um link não visitado é sublinhado e azul
+Um link visitado está sublinhado e roxo
+Um link ativo está sublinhado e vermelho
+Você pode alterar as cores padrão, usando CSS:
+<style>
+a:link {
+color: green; 
+background-color: transparent; 
+text-decoration: none;
+}
+
+a:visited {
+color: pink;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+</style>
+-->
+<!-- Os links geralmente são denominados botões, usando CSS:
+<style>
+a:link, a:visited {
+background-color: #f44336;
+color: white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover, a:active {
+background-color: red;
+}
+</style>
+-->
+
+                                            <!-- Links HTML - o atributo de destino -->
+
+<!-- O targetatributo especifica onde abrir o documento vinculado.
+
+O targetatributo pode ter um dos seguintes valores:
+
+_blank - Abre o documento vinculado em uma nova janela ou guia
+_self - Abre o documento vinculado na mesma janela / guia quando foi clicado (esse é o padrão)
+_parent - Abre o documento vinculado no quadro pai
+_top - Abre o documento vinculado em todo o corpo da janela
+nome do quadro - abre o documento vinculado em um quadro nomeado
+Este exemplo abrirá o documento vinculado em uma nova janela / guia do navegador:
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+-->
+<!-- Dica: se sua página da Web estiver bloqueada em um quadro, você poderá usá-la target="_top"para sair do quadro:
+<a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+-->
+
+                                        <!-- Links HTML - imagem como link -->
+
+<!-- É comum usar imagens como links:
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+-->                                                        
+<!-- Nota: border:0; é adicionado para evitar que o IE9 (e anterior) exiba uma borda ao redor da imagem (quando a imagem é um link). -->
+
+                                                <!-- Títulos de links -->
+
+<!-- O titleatributo especifica informações extras sobre um elemento.
+A informação é mais freqüentemente mostrada como um texto de dica de ferramenta quando o mouse se move sobre o elemento. EX:
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+-->
+
+                                                    <!-- Links HTML - Crie um marcador -->
+
+<!-- Marcadores HTML são usados ​​para permitir que os leitores saltem para partes específicas de uma página da Web.
+
+Marcadores podem ser úteis se sua página for muito longa.
+
+Para criar um marcador, você deve primeiro criar o marcador e, em seguida, adicionar um link a ele.
+
+Quando o link é clicado, a página irá rolar para o local com o marcador.
+
+-->                                                                  
+<!-- Exemplo:
+Primeiro, crie um marcador com o atributo id:
+<h2 id="C4">Chapter 4</h2>
+Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:
+<a href="#C4">Jump to Chapter 4</a>
+Ou adicione um link ao marcador ("Ir para o capítulo 4"), em outra página:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->
+
+                                                <!-- Caminhos Externos -->
+<!-- As páginas externas podem ser referenciadas com um URL completo ou com um caminho relativo à página da web atual.
+
+Este exemplo usa um URL completo para vincular a uma página da web:
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+-->                                                              
+<!-- Este exemplo vincula a uma página localizada na pasta html no site atual:
+<a href="/html/default.asp">HTML tutorial</a>
+Este exemplo vincula a uma página localizada na mesma pasta da página atual:
+<a href="default.asp">HTML tutorial</a>
+-->
+<!-- Resumo do capítulo
+
+Use o <a>elemento para definir um link
+Use o hrefatributo para definir o endereço do link
+Use o targetatributo para definir onde abrir o documento vinculado
+Use o <img>elemento (dentro de <a>) para usar uma imagem como um link
+Use o idatributo (id = " value ") para definir marcadores em uma página
+Use o hrefatributo (href = "# value ") para vincular ao marcador -->

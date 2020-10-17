@@ -1,0 +1,93 @@
+                                                      <!-- 
+                                                      ########################
+                                                      ***HTML O atributo id***
+                                                      ########################
+                                                        -->    
+
+                                                    <!-- Usando o atributo id -->
+
+<!-- O atributo id especifica um ID exclusivo para um elemento HTML (o valor deve ser exclusivo no documento HTML).
+O valor id pode ser usado por CSS e JavaScript para executar determinadas
+tarefas para um elemento exclusivo com o valor de id especificado.
+Em CSS, para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido pelo id do elemento:
+Use CSS para estilizar um elemento com o id "myHeader":
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+
+<h1 id="myHeader">My Header</h1>
+ -->
+<!-- Dica: O atributo id pode ser usado em qualquer elemento HTML.
+Nota: O valor do ID é sensível a maiúsculas e minúsculas.
+Nota: O valor id deve conter pelo menos um caractere e não deve conter espaço em branco (espaços, tabulações, etc.). -->
+
+                                                    <!-- Diferença entre classe e ID -->
+
+<!-- Um elemento HTML só pode ter um único ID que pertença a esse único elemento,
+enquanto um nome de classe pode ser usado por vários elementos:
+
+  <style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+
+--><!-- A unique element -->
+<!--<h1 id="myHeader">My Cities</h1>-->
+
+<!-- Multiple similar elements -->
+<!--<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+-->
+
+                                                  <!-- Marcadores com ID e Links -->
+
+<!-- Marcadores HTML são usados ​​para permitir que os leitores saltem para partes específicas de uma página da Web.
+Marcadores podem ser úteis se sua página for muito longa.
+Para criar um marcador, você deve primeiro criar o marcador e, em seguida, adicionar um link a ele.
+Quando o link é clicado, a página irá rolar para o local com o marcador.
+
+Primeiro, crie um marcador com o idatributo:
+<h2 id="C4">Chapter 4</h2>
+
+Em seguida, adicione um link ao marcador ("Ir para o capítulo 4"), na mesma página:
+<a href="#C4">Jump to Chapter 4</a>
+
+Ou adicione um link ao marcador ("Ir para o capítulo 4"), em outra página:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->
+
+                                                <!-- Usando o atributo id em JavaScript -->
+
+<!--JavaScript pode acessar um elemento com um ID especificado usando o método getElementById():
+Use o atributo id para manipular texto com JavaScript:
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+ -->

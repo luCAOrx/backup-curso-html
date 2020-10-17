@@ -1,0 +1,131 @@
+                                                      <!-- 
+                                                      ############################
+                                                      ***O Atributo class HTML***
+                                                      ############################
+                                                        -->    
+
+                                                        <!-- Usando o Atributo class  -->
+
+<!-- O atributo class HTML é usado para definir estilos iguais para elementos com o mesmo nome de classe.
+Assim, todos os elementos HTML com o mesmo atributo class terão o mesmo formato e estilo.
+Aqui temos três elementos <div> que apontam para o mesmo nome de classe:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+} 
+</style>
+</head>
+<body>
+
+<div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+ -->                                                        
+
+                                            <!-- Usando o atributo de class em elementos in-line -->
+
+<!-- O atributo class HTML também pode ser usado em elementos in-line:
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+span.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+ -->
+
+<!-- Dica: O classatributo pode ser usado em qualquer elemento HTML.
+Nota: O nome da classe é sensível a maiúsculas e minúsculas!
+ -->
+
+                                    <!-- Selecione elementos com uma class específica -->
+
+<!-- Em CSS, para selecionar elementos com uma class específica, escreva um caractere de ponto (.), Seguido do nome da classe:
+Use CSS para estilizar todos os elementos com o nome de classe "city":
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+ -->
+
+                                                    <!-- Múltiplas Classes -->
+
+<!-- Elementos HTML podem ter mais de um nome de class, cada nome de class deve estar separado por um espaço.
+Elementos de estilo com o nome de classe "city", também elementos de estilo com o nome de classe "main":
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+No exemplo acima, o primeiro elemento <h2> pertence à classe "city" e à classe "main".
+-->
+
+                                        <!-- Tags diferentes podem compartilhar a mesma class -->
+
+<!-- Tags diferentes, como <h2>e <p>, podem ter o mesmo nome de classe e, assim, compartilhar o mesmo estilo:
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+ -->
+
+                                              <!-- Usando o Atributo class em JavaScript -->
+
+<!-- O nome da classe também pode ser usado pelo JavaScript para executar
+determinadas tarefas para elementos com o nome da classe especificado.
+O JavaScript pode acessar elementos com um nome de classe especificado usando o método getElementsByClassName():
+Quando um usuário clica em um botão, oculte todos os elementos com o nome da classe "city":
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+ -->

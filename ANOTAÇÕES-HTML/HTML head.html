@@ -1,0 +1,141 @@
+                                                      <!-- 
+                                                      #####################
+                                                      ***Cabeçalhos HTML***
+                                                      #####################
+                                                        -->   
+
+                                                  <!-- O elemento <head> HTML -->
+
+<!-- O elemento <head> é um contêiner para metadados (dados sobre dados) e é colocado entre a tag <html> e a tag <body>.
+Metadados HTML são dados sobre o documento HTML. Metadados não são exibidos.
+Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos, links, scripts e outras informações meta.
+As seguintes tags descrevem metadados: <title>, <style>, <meta>, <link>, <script>, e <base>. -->
+
+                                                <!-- O elemento <title> HTML  -->
+
+<!-- O elemento <title> define o título do documento e é obrigatório em todos os documentos HTML / XHTML.
+
+O elemento <title>:
+
+define um título na guia do navegador
+fornece um título para a página quando ela é adicionada aos favoritos
+exibe um título para a página nos resultados do mecanismo de pesquisa
+Um documento HTML simples:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+</html>
+-->
+
+                                                    <!-- O elemento <style> HTML  -->
+
+<!-- O elemento <style> é usado para definir informações de estilo para uma única página HTML:
+
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+-->
+
+                                                    <!-- O elemento <link> HTML -->
+
+<!-- O <link>elemento é usado para vincular a folhas de estilo externas:
+
+<link rel="stylesheet" href="mystyle.css">
+-->
+
+                                                  <!-- O elemento <meta> HTML -->
+
+<!-- O elemento <meta> é usado para especificar qual conjunto de caracteres
+é usado, descrição da página, palavras-chave, autor e outros metadados.
+Os metadados são usados ​​pelos navegadores (como exibir conteúdo),
+pelos mecanismos de pesquisa (palavras-chave) e outros serviços da Web.
+Defina o conjunto de caracteres usado:
+
+<meta charset="UTF-8">
+
+Defina uma descrição da sua página da web:
+
+<meta name="description" content="Free Web tutorials">
+
+Defina palavras-chave para os mecanismos de pesquisa:
+
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+
+Defina o autor de uma página:
+
+<meta name="author" content="John Doe">
+
+Atualizar documento a cada 30 segundos:
+
+<meta http-equiv="refresh" content="30">
+
+Exemplo de tags <meta>:
+
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+-->
+
+                                                  <!-- Configurando o Viewport -->
+
+<!-- O HTML5 introduziu um método para permitir que os web designers assumissem o controle da viewport, por meio da tag <meta>.
+A janela de visualização é a área visível do usuário de uma página da web.
+Varia de acordo com o dispositivo e será menor em um celular do que em uma tela de computador.
+Você deve incluir o seguinte elemento <meta> de viewport em todas as suas páginas da Web:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Um elemento <meta> de viewport fornece instruções ao navegador sobre como controlar as dimensões e o dimensionamento da página.
+A largura = parte da largura do dispositivo define a largura da página para seguir a largura da
+tela do dispositivo (que varia dependendo do dispositivo).
+A escala inicial = 1,0 parte define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+-->
+
+                                                  <!-- O elemento <script> HTML -->
+
+<!-- O elemento <script> é usado para definir JavaScripts do lado do cliente.
+Este JavaScript escreve "Olá, JavaScript!" em um elemento HTML com id = "demo":
+
+<script>
+function myFunction {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+ -->
+
+                                                    <!-- O elemento <base> HTML -->
+
+<!-- O elemento <base> especifica o URL base e o destino base para todos os URLs relativos em uma página:
+
+<base href="https://www.w3schools.com/images/" target="_blank">
+ -->
+
+                                        <!-- Omitindo <html>, <head> e <body> -->
+
+<!--De acordo com o padrão HTML5; o <html>, o <body> e a tag <head> podem ser omitidos.
+O código a seguir será validado como HTML5:
+
+<!DOCTYPE html>
+<title>Page Title</title>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+-->
+
+<!-- Nota:
+A W3Schools não recomenda omitir as tags <html>e <body>. Omitir essas tags pode travar o software DOM ou XML
+e produzir erros em navegadores mais antigos (IE9).
+No entanto, omitir a <head>tag é uma prática comum há algum tempo.
+ -->

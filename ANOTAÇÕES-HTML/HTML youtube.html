@@ -1,0 +1,99 @@
+                                                      <!-- 
+                                                      ###############################
+                                                      ***Vídeos do YouTube em HTML***
+                                                      ###############################
+                                                        -->
+
+<!-- A maneira mais fácil de reproduzir vídeos em HTML é usar o YouTube. -->
+
+                                                  <!-- Lutando com formatos de vídeo? -->
+
+<!-- Anteriormente neste tutorial, você viu que talvez tenha que converter seus vídeos em
+diferentes formatos para reproduzi-los em todos os navegadores.
+Converter vídeos em diferentes formatos pode ser difícil e demorado.
+Uma solução mais fácil é permitir que o YouTube reproduza os vídeos na sua página da web. -->
+
+                                                      <!-- ID do vídeo do YouTube -->
+
+<!-- O YouTube exibirá um ID (como tgbNymZ7vqY) ao salvar (ou reproduzir) um vídeo.
+Você pode usar esse id e consultar seu vídeo no código HTML. -->
+
+                                            <!-- Reproduzindo um vídeo do YouTube em HTML -->
+
+<!-- Para reproduzir seu vídeo em uma página da Web, faça o seguinte:
+
+Envie o vídeo para o YouTube
+Anote o ID do vídeo
+Defina um elemento <iframe> na sua página da web
+Deixe o atributo src apontar para o URL do vídeo
+Use os atributos width e height para especificar a dimensão do player
+Adicione outros parâmetros ao URL (veja abaixo)
+
+Exemplo - Usando o iFrame (recomendado):
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+-->
+
+                                                        <!-- Autoplay do YouTube -->
+
+<!-- Você pode fazer com que seu vídeo comece a ser reproduzido automaticamente quando um usuário visitar
+essa página adicionando um parâmetro simples ao seu URL do YouTube.
+Nota: tenha em atenção ao decidir reproduzir automaticamente os seus vídeos.
+Iniciar um vídeo automaticamente pode incomodar o visitante e acabar causando mais mal do que bem.
+Valor 0 (padrão): o vídeo não será reproduzido automaticamente quando o player for carregado.
+Valor 1: O vídeo será reproduzido automaticamente quando o player for carregado.
+
+YouTube - reprodução automática:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+</iframe>
+-->
+
+                                                        <!-- Playlist do YouTube -->
+
+<!-- Uma lista separada por vírgulas de vídeos para reproduzir (além do URL original). -->
+
+                                                          <!-- Loop do YouTube -->
+
+<!-- Valor 0 (padrão): o vídeo será reproduzido apenas uma vez.
+
+Valor 1: o vídeo fará um loop (para sempre).
+
+YouTube - Loop:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+-->
+
+                                                        <!-- Controles do YouTube -->
+
+<!-- Valor 0: os controles do Player não são exibidos.
+Valor 1 (padrão): exibição dos controles do player.
+
+YouTube - controles:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+ -->
+
+                                                <!-- YouTube - usando <object> ou <embed> -->
+
+<!-- Nota: YouTube <object> e <embed> foi preterido a partir de janeiro de 2015.
+Você deve migrar seus vídeos para usar <iframe> em vez disso. -->
+  
+<!-- Exemplo - Usando <object> (descontinuado):
+
+<object width="420" height="315"
+data="https://www.youtube.com/embed/tgbNymZ7vqY">
+</object>
+
+Exemplo - Usando <embed> (descontinuado):
+  
+<embed width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+-->

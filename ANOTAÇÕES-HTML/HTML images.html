@@ -1,0 +1,169 @@
+                                <!-- 
+                                ##################
+                                ***Imagens HTML***
+                                ##################
+                                -->    
+
+<!-- As imagens podem melhorar o design e a aparência de uma página da web.EX: 
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+-->
+                        <!-- Sintaxe de Imagens HTML -->
+
+<!-- Em HTML, as imagens são definidas com a <img>tag. -->                                              
+<!-- A <img>tag está vazia, contém apenas atributos e não possui uma tag de fechamento. -->
+<!-- O atributo src especifica o URL (endereço da web) da imagem:
+<img src="url">
+-->
+
+                                <!-- O atributo alt -->
+
+<!-- O atributo alt fornece um texto alternativo para uma imagem, se o usuário, por algum motivo,
+não puder visualizá-lo (devido à conexão lenta, a um erro no atributo src ou se o usuário usar um leitor de tela).
+O valor do atributo alt deve descrever a imagem:
+<img src="img_chania.jpg" alt="Flowers in Chania">
+-->                                                        
+<!-- Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do alt atributo:
+<img src="wrongname.gif" alt="Flowers in Chania">
+-->
+<!-- Nota: O altatributo é obrigatório. Uma página da web não valida corretamente sem ela. -->
+
+                            <!-- Tamanho da Imagem - Largura e Altura -->
+
+<!-- Você pode usar o styleatributo para especificar a largura e a altura de uma imagem:
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+-->                                                  
+<!-- Como alternativa, você pode usar os atributos widthe height:
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+Os atributos width e height sempre definem a largura e a altura da imagem em pixels.
+-->
+<!-- Nota: Sempre especifique a largura e a altura de uma imagem. 
+Se largura e altura não forem especificadas, a página poderá piscar enquanto a imagem é carregada.
+--> 
+
+                                            <!-- Largura e Altura ou Estilo? -->
+
+<!-- Os atributos width, height e style  são válidos em HTML5. 
+No entanto, sugerimos usar o styleatributo. Impede que as folhas de estilos alterem o tamanho das imagens:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img { 
+width: 100%; 
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+-->                                                                  
+
+                                    <!-- Imagens em outra pasta -->
+
+<!-- Se não for especificado, o navegador espera encontrar a imagem na mesma pasta que a página da web. -->                                                            
+<!-- No entanto, é comum armazenar imagens em uma subpasta. Você deve então incluir o nome da pasta no srcatributo:
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+-->
+                                <!-- Imagens em outro servidor -->
+
+<!-- Alguns sites armazenam suas imagens em servidores de imagem.
+Na verdade, você pode acessar imagens de qualquer endereço da Web no mundo:
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+-->
+
+                                    <!-- Imagens animadas -->                                                      
+
+<!-- HTML permite GIFs animados:
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+-->
+
+                                <!-- Imagem como um link -->
+
+<!-- Para usar uma imagem como um link, coloque a <img>tag dentro da <a> tag:
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+-->                                                      
+<!-- Nota: border:0; é adicionado para evitar que o IE9 (e anterior) exiba uma borda ao redor da imagem (quando a imagem é um link). -->
+
+                                <!-- Imagem flutuante -->
+
+<!-- Use a floatpropriedade CSS para deixar a imagem flutuar à direita ou à esquerda de um texto:
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+-->                
+
+                                <!-- Mapas de imagem -->
+
+<!-- A <map>tag define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis.
+Na imagem abaixo, clique no computador, no telefone ou na xícara de café:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+-->                                                        
+<!-- O nameatributo da <map>tag está associado ao <img>atributo usemap e cria um relacionamento entre a imagem e o mapa.
+O elemento <map> contém várias <area>tags, que definem as áreas clicáveis ​​no mapa de imagens.
+-->
+
+                                    <!-- Imagem de fundo -->
+
+<!-- Para adicionar uma imagem de fundo em um elemento HTML, use a propriedade CSS background-image:
+Para adicionar uma imagem de plano de fundo em uma página da Web, especifique a propriedade background-image no elemento BODY:
+<body style="background-image:url('clouds.jpg');">
+
+<h2>Background Image</h2>
+
+</body>
+-->   
+
+                                        <!-- O elemento <picture> -->                                                       
+
+<!-- O HTML5 introduziu o elemento <picture> para adicionar mais flexibilidade ao especificar recursos de imagem. -->                                                                
+<!-- O elemento <picture> contém vários elementos <source>, cada um referindo-se a diferentes origens de imagem.
+Desta forma, o navegador pode escolher a imagem que melhor se adapta à visão atual e / ou dispositivo.
+-->
+<!-- Cada <source>elemento possui atributos que descrevem quando sua imagem é a mais adequada. -->
+<!-- O navegador usará o primeiro elemento <source> com valores de atributo correspondentes e ignorará os elementos <source> a seguir. -->
+<!-- Mostre uma imagem se a janela do navegador (viewport) tiver um mínimo de 650 pixels e outra imagem,
+se não for, mas maior que 465 pixels.
+
+<picture>
+<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+-->
+<!-- Nota: Sempre especifique um <img>elemento como o último elemento filho do elemento <picture>. 
+O elemento <img> é usado por navegadores que não suportam o elemento <picture> ou se nenhuma das tags <source> corresponder.
+-->
+
+                                    <!-- Leitores de tela HTML -->
+
+<!-- Um leitor de tela é um programa de software que lê o código HTML, converte o texto e permite ao usuário "ouvir" o conteúdo. 
+Os leitores de tela são úteis para pessoas com deficiência visual ou com dificuldades de aprendizagem.
+-->
+
+<!-- Resumo do capítulo
+Use o <img>elemento HTML para definir uma imagem
+Use o srcatributo HTML para definir o URL da imagem
+Use o altatributo HTML para definir um texto alternativo para uma imagem, se ela não puder ser exibida
+Use o HTML widthe heightatributos para definir o tamanho da imagem
+Use o CSS widthe as heightpropriedades para definir o tamanho da imagem (alternativamente)
+Use a floatpropriedade CSS para deixar a imagem flutuar
+Use o <map>elemento HTML para definir um mapa de imagem
+Use o <area>elemento HTML para definir as áreas clicáveis ​​no mapa de imagem
+Use o atributo do <img>elemento HTML usemappara apontar para um mapa de imagem
+Use o <picture>elemento HTML para mostrar imagens diferentes para diferentes dispositivos
+-->
+<!-- Nota: Carregar imagens leva tempo. Imagens grandes podem retardar sua página. Use as imagens com cuidado. -->

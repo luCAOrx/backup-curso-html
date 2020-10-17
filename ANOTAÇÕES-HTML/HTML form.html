@@ -1,0 +1,171 @@
+                                                            <!-- 
+                                                            #######################
+                                                            ***O elemento <form>***
+                                                            #######################
+                                                              -->   
+
+                                                          <!-- O elemento <form> -->
+
+<!-- O elemento <form> HTML define um formulário que é usado para coletar a entrada do usuário:
+
+<form>
+.
+form elements
+.
+</form>
+
+Um formulário HTML contém elementos de formulário .
+Os elementos de formulário são tipos diferentes de elementos de entrada,
+como campos de texto, caixas de seleção, botões de opção, botões de envio e muito mais. -->
+
+                                                          <!-- O elemento <input> -->
+
+<!-- O elemento <input> é o elemento de formulário mais importante.
+O elemento <input> pode ser exibido de várias maneiras, dependendo do atributo type .
+aqui estão alguns exemplos:
+
+Tipo	                                          Descrição
+<input type = "text">	        Define um campo de entrada de texto de uma linha
+<input type = "radio">	      Define um botão de opção (para selecionar uma das várias opções)
+<input type = "submit">	      Define um botão de envio (para enviar o formulário)
+ -->
+
+                                                          <!-- Entrada de texto -->
+
+<!-- <input type="text">define um campo de entrada de uma linha para entrada de texto :
+
+Exemplo:
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
+Nota: O formulário em si não é visível. Observe também que a largura padrão de um campo de texto é de 20 caracteres. -->
+
+                                                        <!-- Entrada de botão de rádio -->
+
+<!-- <input type="radio">define um botão de opção.
+Os botões de opção permitem que um usuário selecione UMA de um número limitado de opções:
+
+Exemplo:
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+-->
+
+                                                            <!-- O botão submit -->
+
+<!-- 
+<input type="submit"> define um botão para enviar os dados do formulário para um manipulador de formulários.
+O manipulador de formulários geralmente é uma página do servidor com um script para processar dados de entrada.
+O manipulador de formulários é especificado no atributo de ação do formulário:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+-->
+
+                                                        <!-- O atributo action -->
+
+<!-- O atributo action define a ação a ser executada quando o formulário é enviado.
+Normalmente, os dados do formulário são enviados para uma página da Web no servidor quando o usuário clica no botão de envio.
+No exemplo acima, os dados do formulário são enviados para uma página no servidor chamada "/action_page.php".
+Esta página contém um script do lado do servidor que manipula os dados do formulário:
+
+<form action="/action_page.php">
+
+Se o atributo action for omitido, a ação será definida para a página atual.
+-->
+
+                                                      <!-- O atributo target -->
+
+<!-- O atributo target especifica se o resultado enviado será aberto em uma nova guia do navegador, em um quadro ou na janela atual.
+O valor padrão é " _self", o que significa que o formulário será enviado na janela atual.
+Para tornar o resultado do formulário aberto em uma nova guia do navegador, use o valor " _blank":
+
+Exemplo:
+
+<form action="/action_page.php" target="_blank">
+
+Outros valores legais são " _parent", " _top" ou um nome que representa o nome de um iframe. -->
+
+                                                        <!-- O atributo do method -->
+
+<!-- O atributo method especifica o método HTTP ( GET ou POST ) a ser usado ao enviar os dados do formulário:
+
+<form action="/action_page.php" method="get">
+
+  OU
+
+<form action="/action_page.php" method="post">
+-->
+
+                                                      <!-- Quando usar o GET? -->
+
+<!-- 
+O método padrão ao enviar dados de formulário é GET.
+No entanto, quando o GET é usado, os dados do formulário apresentado ficarão visíveis no campo de endereço da página :
+
+/action_page.php?firstname=Mickey&lastname=Mouse
+
+Notas sobre GET:
+
+Anexa dados de formulário ao URL em pares nome / valor
+O tamanho de um URL é limitado (cerca de 3000 caracteres)
+Nunca use o GET para enviar dados confidenciais! (será visível no URL)
+Útil para envios de formulários em que um usuário deseja marcar o resultado
+GET é melhor para dados não seguros, como strings de consulta no Google
+-->
+
+                                                    <!-- Quando usar o POST? -->
+
+<!-- 
+Sempre use POST se os dados do formulário contiverem informações confidenciais ou pessoais. 
+O método POST não exibe os dados do formulário enviado no campo de endereço da página.
+Notas sobre o POST:
+O POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.
+Os envios de formulários com o POST não podem ser marcados. -->
+
+                                                      <!-- O atributo name -->
+
+<!-- Cada campo de entrada deve ter um nameatributo a ser enviado.
+Se o atributo name for omitido, os dados desse campo de entrada não serão enviados.
+Este exemplo só enviará o campo de entrada "Sobrenome":
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+-->
+
+                                        <!-- Agrupando dados de formulário com <fieldset> -->
+
+<!-- O elemento <fieldset> é usado para agrupar dados relacionados em um formulário.
+O elemento <legend> define uma legenda para o elemento <fieldset>. 
+
+Exemplo:
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+-->

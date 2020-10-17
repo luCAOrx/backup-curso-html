@@ -1,0 +1,72 @@
+                                                      <!-- 
+                                                      #################################
+                                                      ***Reproduzindo vídeos em HTML***
+                                                      #################################
+                                                        -->
+
+<!-- Antes do HTML5, um vídeo só podia ser reproduzido em um navegador com um plug-in (como flash).
+O elemento <video> HTML5 especifica uma maneira padrão de incorporar um vídeo em uma página da web. -->
+
+                                                    <!-- O elemento <video> HTML -->
+
+<!-- Para mostrar um vídeo em HTML, use o elemento <video>
+
+Exemplo:
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> -->
+
+                                                      <!-- Como funciona? -->
+
+<!-- O atributo controls adiciona controles de vídeo, como reproduzir, pausar e volume.
+É uma boa ideia incluir sempre atributos width e height.
+Se a altura e a largura não estiverem definidas, a página poderá piscar enquanto o vídeo for carregado.
+O elemento <source> permite que você especifique arquivos de vídeo alternativos que o navegador
+pode escolher. O navegador usará o primeiro formato reconhecido.
+O texto entre as tags <video> e </video> será exibido apenas em navegadores que não suportam o elemento <video>. -->
+
+                                                  <!-- HTML <video> Autoplay -->
+
+<!-- Para iniciar um vídeo, use automaticamente o atributo autoplay
+
+Exemplo:
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+
+O atributo de reprodução automática não funciona em dispositivos móveis como o iPad e o iPhone. -->
+
+                                            <!-- Vídeo em HTML - Suporte ao Navegador -->
+
+<!-- No HTML5, existem 3 formatos de vídeo suportados: MP4, WebM e Ogg.
+
+O suporte do navegador para os diferentes formatos é:
+
+Browser	            MP4	                WebM	  Ogg
+Internet Explorer	YES	                 NO	       NO
+Chrome	            YES	                 YES	   YES
+Firefox	            YES	                 YES	   YES
+Safari	            YES	                 NO	       NO
+Opera	            YES (from Opera 25)	 YES       YES
+-->
+
+                                                  <!-- Vídeo em HTML - Tipos de mídia -->
+
+<!-- 
+Formato de Arquivo	        Tipo de Mídia
+MP4	                         video/mp4
+WebM	                       video/webm
+Ogg	                         video/ogg 
+-->
+
+                                                <!-- Vídeo HTML - Métodos, Propriedades e Eventos -->
+
+<!-- HTML5 define métodos DOM, propriedades e eventos para o <video>elemento.
+Isso permite que você carregue, reproduza e pause vídeos, além de definir a duração e o volume.
+Há também eventos DOM que podem notificá-lo quando um vídeo começa a ser reproduzido, é pausado etc. -->

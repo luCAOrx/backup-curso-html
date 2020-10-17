@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    padding: 5px;
+}
+
+#cabecalho {
+    background-color: aqua;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#menusuperior {
+    background-color: blueviolet;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#conteudo {
+    background-color: chartreuse;
+    width: 1187px;
+    height: 400px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#menulateral {
+    background-color: crimson;
+    width: 142px;
+    height: 400px;
+    position: absolute;
+    top: 159px;
+    left: 1200px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#rodape {
+    background-color: burlywood;
+    width: 1338px;
+    height: 25px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}

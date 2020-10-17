@@ -1,0 +1,374 @@
+                                                      <!-- 
+                                                      ######################
+                                                      ***HTML Input Types***
+                                                      ######################
+                                                        -->   
+
+<!-- Aqui estão os diferentes tipos de entrada que você pode usar em HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+-->
+
+                                                    <!-- Input Type Text -->
+
+<!-- <input type="text"> define um campo de entrada de texto de uma linha
+
+Exemplo:
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+-->
+
+                                                  <!-- Input Type Password -->
+
+<!-- <input type="password"> define um campo de senha
+
+Exemplo:
+
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+
+Os caracteres em um campo de senha são mascarados (mostrados como asteriscos ou círculos).-->
+
+                                                    <!-- Input Type Submit -->
+
+<!-- 
+<input type="submit"> define um botão para enviar dados de formulário para um manipulador de formulários .
+O manipulador de formulários geralmente é uma página do servidor com um script para processar dados de entrada.
+O manipulador de formulários é especificado no atributo action  do formulário
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+Se você omitir o atributo de valor do botão de envio, o botão receberá um texto padrão
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit">
+</form>
+-->
+
+                                                      <!-- Input Type Reset -->
+
+<!-- <input type="reset"> define um botão de redefinição que redefinirá todos os valores de formulário para seus valores padrão
+
+Exemplo:
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+Se você alterar os valores de entrada e clicar no botão "Redefinir", os dados do formulário serão redefinidos para os valores padrão.-->
+
+                                                          <!-- Input Type Radio -->
+
+<!-- <input type="radio"> define um botão de opção .
+Os botões de opção permitem que um usuário selecione APENAS UM de um número limitado de opções
+
+Exemplo:
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+ -->
+
+                                                          <!-- Input Type Checkbox -->
+
+<!-- <input type="checkbox"> define uma caixa de seleção .
+As caixas de seleção permitem que um usuário selecione opções ZERO ou MORE de um número limitado de opções.
+
+Exemplo:
+
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+ -->
+
+                                                        <!-- Input Type Button -->
+
+<!-- <input type="button"> define um botão
+
+Exemplo:
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+-->
+
+                                                  <!-- HTML5 Input Types -->
+
+<!-- O HTML5 adicionou vários novos tipos de entrada:
+
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+Novos tipos de entrada que não são suportados por navegadores da Web mais antigos se comportarão como <input type="text">.-->
+
+                                                          <!-- Input Type Color -->
+
+<!-- O <input type="color"> é usado para campos de entrada que devem conter uma cor.
+Dependendo do suporte ao navegador, um seletor de cores pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+-->
+
+                                                          <!-- Input Type Date -->
+
+<!-- 
+O <input type="date"> é usado para campos de entrada que devem conter uma data.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday:
+  <input type="date" name="bday">
+</form>
+-->
+
+<!-- Você também pode usar os atributos min e max para adicionar restrições às datas
+
+Exemplo:
+
+<form>
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+</form>
+-->
+
+                                                    <!-- Input Type Datetime-local -->
+
+<!-- O <input type="datetime-local"> especifica um campo de entrada de data e hora, sem fuso horário.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+</form>
+-->
+
+                                                        <!-- Input Type Email -->
+
+<!-- O <input type="email"> é usado para campos de entrada que devem conter um endereço de e-mail.
+Dependendo do suporte ao navegador, o endereço de e-mail pode ser validado automaticamente quando enviado.
+Alguns smartphones reconhecem o tipo de e-mail e adicionam ".com" ao teclado para corresponder à entrada de e-mail.
+
+Exemplo:
+
+<form>
+  E-mail:
+  <input type="email" name="email">
+</form>
+-->
+
+                                                        <!-- Input Type File -->
+
+<!-- O <input type="file"> define um campo de seleção de arquivos e um botão "Browse" para uploads de arquivos.
+
+Exemplo:
+
+<form>
+  Select a file: <input type="file" name="myFile">
+</form>
+-->
+
+                                                        <!-- Input Type Month -->
+
+<!-- 
+O <input type="month"> permite ao usuário selecionar um mês e ano.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+</form>
+-->
+
+                                                        <!-- Input Type Number -->
+
+<!-- 
+O <input type="number"> define um campo de entrada numérico .
+Você também pode definir restrições sobre quais números são aceitos.
+O exemplo a seguir exibe um campo de entrada numérico, no qual você pode inserir um valor de 1 a 5
+
+Exemplo:
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+</form>
+-->
+
+                                                    <!-- Input Restrictions -->
+
+<!-- Aqui está uma lista de algumas restrições comuns de entrada:
+
+Atributo	                         Descrição
+
+disabled	          Especifica que um campo de entrada deve ser desativado
+max	                Especifica o valor máximo para um campo de entrada
+maxlength	          Especifica o número máximo de caracteres para um campo de entrada
+min	                Especifica o valor mínimo para um campo de entrada
+pattern	            Especifica uma expressão regular para verificar o valor de entrada
+readonly	          Especifica que um campo de entrada é somente leitura (não pode ser alterado)
+required	          Especifica que um campo de entrada é obrigatório (deve ser preenchido)
+size	              Especifica a largura (em caracteres) de um campo de entrada
+step	              Especifica os intervalos numéricos legais para um campo de entrada
+value	              Especifica o valor padrão para um campo de entrada
+-->
+
+<!-- O exemplo a seguir exibe um campo de entrada numérico,
+no qual você pode inserir um valor de 0 a 100, em etapas de 10. O valor padrão é 30:
+
+<form>
+  Quantity:
+  <input type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+-->
+
+                                                        <!-- Input Type Range -->
+
+<!-- O <input type="range"> define um controle para inserir um número cujo valor exato não é importante (como um controle deslizante). 
+Intervalo padrão é de 0 a 100. No entanto, você pode definir restrições sobre o que
+os números são aceitos com os atributos min, max e step:
+
+Exemplo:
+
+<form>
+  <input type="range" name="points" min="0" max="10">
+</form>
+-->
+
+                                                      <!-- Input Type Search -->
+
+<!-- O <input type="search">é usado para campos de pesquisa (um campo de pesquisa se comporta como um campo de texto regular).
+
+Exemplo:
+
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+-->
+
+                                                        <!-- Input Type Tel -->
+
+<!-- O <input type="tel">é usado para campos de entrada que devem conter um número de telefone.
+
+Exemplo:
+
+<form>
+  Telephone:
+  <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+-->
+
+                                                        <!-- Input Type Time -->
+
+<!-- O <input type="time"> permite ao usuário selecionar um horário (sem fuso horário).
+Dependendo do suporte ao navegador, um seletor de tempo pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select a time:
+  <input type="time" name="usr_time">
+</form>
+-->
+
+                                                        <!-- Input Type Url -->
+
+<!-- 
+O <input type="url"> é usado para campos de entrada que devem conter um endereço de URL.
+Dependendo do suporte ao navegador, o campo url pode ser validado automaticamente quando enviado.
+Alguns smartphones reconhecem o tipo de URL e adicionam ".com" ao teclado para corresponder à entrada do URL.
+
+Exemplo:
+
+<form>
+  Add your homepage:
+  <input type="url" name="homepage">
+</form>
+-->
+
+                                                        <!-- Input Type Week -->
+
+<!-- 
+O <input type="week"> permite ao usuário selecionar uma semana e ano.
+Dependendo do suporte ao navegador, um selecionador de data pode aparecer no campo de entrada.
+
+Exemplo:
+
+<form>
+  Select a week:
+  <input type="week" name="week_year">
+</form>
+-->

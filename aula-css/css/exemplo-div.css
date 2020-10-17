@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+
+#corpo {
+    background-color: blueviolet;
+    width: 500px;
+    margin: auto;
+}
+
+#cabecalho{
+    background-color: chartreuse;
+}
+
+#conteudo{
+    background-color: darksalmon;
+    height: 400px;
+}
+
+#rodape{
+    background-color: darkred;
+}
+
+#menu{
+    background-color: aquamarine;
+    width: 80px;
+    height: 380px;
+    float: left;
+    padding: 10px;
+}
+
+#texto{
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    float: right;
+}

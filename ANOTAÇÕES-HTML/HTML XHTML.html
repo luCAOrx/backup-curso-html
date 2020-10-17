@@ -1,0 +1,192 @@
+                                                            <!-- 
+                                                            ##################
+                                                            ***HTML e XHTML***
+                                                            ##################
+                                                              -->   
+
+<!-- XHTML é HTML escrito como XML. -->
+
+                                                          <!-- O que é o XHTML? -->
+
+<!-- XHTML está para eXtensible Hyper Text Markup Language
+XHTML é quase idêntico ao HTML
+XHTML é mais rigoroso que HTML
+XHTML é HTML definido como um aplicativo XML
+XHTML é suportado por todos os principais navegadores -->
+
+                                                        <!-- Por que XHTML? -->
+
+<!-- Muitas páginas na internet contêm HTML "ruim".
+Este código HTML funciona bem na maioria dos navegadores (mesmo que não siga as regras HTML) 
+
+<html>
+<head>
+  <title>This is bad HTML</title>
+
+<body>
+  <h1>Bad HTML
+  <p>This is a paragraph
+</body>
+-->
+
+<!-- O mercado de hoje consiste em diferentes tecnologias de navegadores.
+Alguns navegadores são executados em computadores e alguns navegadores são executados em
+telefones celulares ou outros dispositivos pequenos. Dispositivos menores geralmente não têm
+recursos ou poder para interpretar marcações "ruins".
+XML é uma linguagem de marcação em que os documentos devem ser marcados corretamente (serem "bem formados").
+O XHTML foi desenvolvido combinando os pontos fortes de HTML e XML.
+XHTML é HTML redesenhado como XML. -->
+
+                                              <!-- As diferenças mais importantes do HTML -->
+
+<!-- Estrutura do documento:
+
+XHTML DOCTYPE é obrigatório
+O atributo xmlns em <html> é obrigatório
+<html>, <head>, <title> e <body> são obrigatórios
+-->
+
+                                                      <!-- Elementos XHTML -->
+
+<!-- 
+Elementos XHTML devem estar corretamente aninhados
+Elementos XHTML devem estar sempre fechados
+Os elementos XHTML devem estar em minúsculas
+Documentos XHTML devem ter um elemento raiz -->
+
+                                                      <!-- Atributos XHTML -->
+
+<!-- Os nomes dos atributos devem estar em minúsculas
+Os valores dos atributos devem ser citados
+A minimização de atributos é proibida -->
+
+                                              <!-- <! DOCTYPE ....> é obrigatório -->
+
+<!-- Um documento XHTML deve ter uma declaração XHTML DOCTYPE.
+Uma lista completa de todos os Doctipos XHTML é encontrada em nossa Referência de tags HTML.
+Os elementos <html>, <head>, <title> e <body> também devem estar presentes,
+e o atributo xmlns em <html> deve especificar o namespace xml para o documento.
+Este exemplo mostra um documento XHTML com um mínimo de tags obrigatórias:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Title of document</title>
+</head>
+
+<body>
+  some content 
+</body>
+
+</html>
+-->
+
+                                          <!-- Elementos XHTML devem ser adequadamente aninhados -->
+
+<!-- Em HTML, alguns elementos podem ser aninhados de forma inadequada entre si, assim:
+
+<b><i>This text is bold and italic</b></i>
+
+Em XHTML, todos os elementos devem estar adequadamente aninhados entre si, assim:
+
+<b><i>This text is bold and italic</i></b>
+ -->
+
+                                          <!-- Elementos XHTML devem estar sempre fechados -->
+
+<!-- Isto está errado:
+
+<p>This is a paragraph
+<p>This is another paragraph
+
+Isto está certo:
+
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+-->
+
+                                            <!-- Elementos vazios também devem ser fechados -->
+
+<!-- 
+Isto está errado:
+
+A break: <br>
+A horizontal rule: <hr>
+An image: <img src="happy.gif" alt="Happy face">
+
+
+Isto está certo:
+
+A break: <br />
+A horizontal rule: <hr />
+An image: <img src="happy.gif" alt="Happy face" />
+-->
+
+                                              <!-- Elementos XHTML devem estar em minúsculas -->
+
+<!-- 
+Isto está errado:
+
+<BODY>
+<P>This is a paragraph</P>
+</BODY>
+
+Isto está certo:
+
+<body>
+<p>This is a paragraph</p>
+</body>
+-->
+
+                                        <!-- Nomes de atributos XHTML devem estar em minúsculas -->
+
+<!-- Isto está errado:
+
+<table WIDTH="100%">
+  
+Isto está certo:
+
+<table width="100%">
+-->
+
+                                              <!-- Valores de atributos devem ser citados -->
+
+<!-- Isto está errado:
+
+<table width=100%>
+  
+Isto está certo:
+
+<table width="100%">
+-->
+
+                                            <!-- Minimização de Atributos é Proibida -->
+
+<!-- Errado:
+
+<input type="checkbox" name="vehicle" value="car" checked />
+
+Corrigir:
+
+<input type="checkbox" name="vehicle" value="car" checked="checked" />
+
+Errado:
+
+<input type="text" name="lastname" disabled />
+
+Corrigir:
+
+<input type="text" name="lastname" disabled="disabled" />
+-->
+
+                                            <!-- Como converter de HTML para XHTML -->
+
+<!-- Adicione um XHTML <! DOCTYPE> à primeira linha de cada página
+Adicione um atributo xmlns ao elemento html de cada página
+Alterar todos os nomes de elementos para minúsculas
+Feche todos os elementos vazios
+Alterar todos os nomes de atributos para minúsculas
+Cite todos os valores de atributo -->
